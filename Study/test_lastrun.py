@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on April 16, 2021, at 19:38
+    on April 18, 2021, at 21:39
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -39,6 +39,12 @@ num_items = 14
 num_iter = 5
 
 path_stim = []
+path_input = []
+path_right = []
+path_wrong1 = []
+path_wrong2 = []
+idx_values = [x for x in range(num_items)]
+
 current_idx = 0
 
 TCP_IP = 'localhost'
@@ -108,11 +114,12 @@ for rowx in range(1, num_items+1):
     row = insheet.row_values(rowx)
     
     path_stim.append(row[0])
+    path_input.append(row[1])
+    path_right.append(row[2])
+    path_wrong1.append(row[3])
+    path_wrong2.append(row[4])
     
-random.shuffle(path_stim)
-
-    
-path_stim[0] = "./Resources/snippets/Ackerman.PNG"
+random.shuffle(idx_values)
 
 # Initialize components for Routine "SendSignal"
 SendSignalClock = core.Clock()
@@ -142,7 +149,7 @@ Response = keyboard.Keyboard()
 input = visual.ImageStim(
     win=win,
     name='input', 
-    image=path_stim[current_idx], mask=None,
+    image=path_input[idx_values[current_idx]], mask=None,
     ori=0, pos=(0, 0.3), size=(0.5, 0.1),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -150,24 +157,24 @@ input = visual.ImageStim(
 answer1 = visual.ImageStim(
     win=win,
     name='answer1', 
-    image=path_stim[current_idx], mask=None,
-    ori=0, pos=(-0.6, -0.1), size=(0.5, 0.5),
+    image=path_right[idx_values[current_idx]], mask=None,
+    ori=0, pos=(-0.6, -0.1), size=(0.2, 0.2),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-3.0)
 answer2 = visual.ImageStim(
     win=win,
     name='answer2', 
-    image=path_stim[current_idx], mask=None,
-    ori=0, pos=([0,-0.1]), size=(0.5, 0.5),
+    image=path_wrong1[idx_values[current_idx]], mask=None,
+    ori=0, pos=([0,-0.1]), size=(0.2, 0.2),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-4.0)
 answer3 = visual.ImageStim(
     win=win,
     name='answer3', 
-    image=path_stim[current_idx], mask=None,
-    ori=0, pos=([0.6, -0.1]), size=(0.5, 0.5),
+    image=path_wrong2[idx_values[current_idx]], mask=None,
+    ori=0, pos=([0.6, -0.1]), size=(0.2, 0.2),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-5.0)
@@ -349,7 +356,7 @@ for thisTrial in trials:
         continueRoutine = True
         routineTimer.add(180.000000)
         # update component parameters for each repeat
-        Image.setImage(path_stim[current_idx])
+        Image.setImage(path_stim[idx_values[current_idx]])
         response.keys = []
         response.rt = []
         _response_allKeys = []
@@ -445,7 +452,7 @@ for thisTrial in trials:
                 thisComponent.setAutoDraw(False)
         Loop.addData('Image.started', Image.tStartRefresh)
         Loop.addData('Image.stopped', Image.tStopRefresh)
-        thisExp.addData("path", path_stim[current_idx])
+        thisExp.addData("path", path_stim[idx_values[current_idx]])
         
         current_idx = current_idx + 1
         

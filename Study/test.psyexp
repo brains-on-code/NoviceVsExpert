@@ -41,7 +41,7 @@
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
         <Param name="flipVert" updates="constant" val="False" valType="bool"/>
-        <Param name="image" updates="set every repeat" val="$path_stim[current_idx]" valType="str"/>
+        <Param name="image" updates="set every repeat" val="$path_stim[idx_values[current_idx]]" valType="str"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
         <Param name="mask" updates="constant" val="None" valType="str"/>
         <Param name="name" updates="None" val="Image" valType="code"/>
@@ -90,7 +90,7 @@
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="thisExp.addData(&quot;path&quot;, path_stim[current_idx])&amp;#10;&amp;#10;current_idx = current_idx + 1&amp;#10;&amp;#10;if current_idx &gt;= 14:&amp;#10;    exit(0)" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="thisExp.addData(&quot;path&quot;, path_stim[idx_values[current_idx]])&amp;#10;&amp;#10;current_idx = current_idx + 1&amp;#10;&amp;#10;if current_idx &gt;= 14:&amp;#10;    exit(0)" valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="code" valType="code"/>
       </CodeComponent>
@@ -167,9 +167,9 @@
     </Routine>
     <Routine name="codeStartup">
       <CodeComponent name="codeInit">
-        <Param name="Before Experiment" updates="constant" val="import random, xlrd&amp;#10;import socket&amp;#10;&amp;#10;random.seed()&amp;#10;&amp;#10;in_file = &quot;conditions.xlsx&quot;&amp;#10;&amp;#10;num_items = 14&amp;#10;num_iter = 5&amp;#10;&amp;#10;path_stim = []&amp;#10;current_idx = 0&amp;#10;&amp;#10;TCP_IP = 'localhost'&amp;#10;TCP_PORT = 50000&amp;#10;Message = 1" valType="extendedCode"/>
+        <Param name="Before Experiment" updates="constant" val="import random, xlrd&amp;#10;import socket&amp;#10;&amp;#10;random.seed()&amp;#10;&amp;#10;in_file = &quot;conditions.xlsx&quot;&amp;#10;&amp;#10;num_items = 14&amp;#10;num_iter = 5&amp;#10;&amp;#10;path_stim = []&amp;#10;path_input = []&amp;#10;path_right = []&amp;#10;path_wrong1 = []&amp;#10;path_wrong2 = []&amp;#10;idx_values = [x for x in range(num_items)]&amp;#10;&amp;#10;current_idx = 0&amp;#10;&amp;#10;TCP_IP = 'localhost'&amp;#10;TCP_PORT = 50000&amp;#10;Message = 1" valType="extendedCode"/>
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Experiment" updates="constant" val="#open execl&amp;#10;inbook = xlrd.open_workbook(in_file)&amp;#10;insheet = inbook.sheet_by_index(0)&amp;#10;&amp;#10;#loop through rows&amp;#10;for rowx in range(1, num_items+1):&amp;#10;    &amp;#10;    row = insheet.row_values(rowx)&amp;#10;    &amp;#10;    path_stim.append(row[0])&amp;#10;    &amp;#10;random.shuffle(path_stim)&amp;#10;&amp;#10;    &amp;#10;path_stim[0] = &quot;./Resources/snippets/Ackerman.PNG&quot;" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="#open execl&amp;#10;inbook = xlrd.open_workbook(in_file)&amp;#10;insheet = inbook.sheet_by_index(0)&amp;#10;&amp;#10;#loop through rows&amp;#10;for rowx in range(1, num_items+1):&amp;#10;    &amp;#10;    row = insheet.row_values(rowx)&amp;#10;    &amp;#10;    path_stim.append(row[0])&amp;#10;    path_input.append(row[1])&amp;#10;    path_right.append(row[2])&amp;#10;    path_wrong1.append(row[3])&amp;#10;    path_wrong2.append(row[4])&amp;#10;    &amp;#10;random.shuffle(idx_values)" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
@@ -253,7 +253,7 @@
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
         <Param name="flipVert" updates="constant" val="False" valType="bool"/>
-        <Param name="image" updates="constant" val="$path_stim[current_idx]" valType="str"/>
+        <Param name="image" updates="constant" val="$path_input[idx_values[current_idx]]" valType="str"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
         <Param name="mask" updates="constant" val="None" valType="str"/>
         <Param name="name" updates="None" val="input" valType="code"/>
@@ -278,7 +278,7 @@
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
         <Param name="flipVert" updates="constant" val="False" valType="bool"/>
-        <Param name="image" updates="constant" val="$path_stim[current_idx]" valType="str"/>
+        <Param name="image" updates="constant" val="$path_right[idx_values[current_idx]]" valType="str"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
         <Param name="mask" updates="constant" val="None" valType="str"/>
         <Param name="name" updates="None" val="answer1" valType="code"/>
@@ -286,7 +286,7 @@
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(-0.6, -0.1)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="size" updates="constant" val="(0.5, 0.5)" valType="code"/>
+        <Param name="size" updates="constant" val="(0.2, 0.2)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -303,7 +303,7 @@
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
         <Param name="flipVert" updates="constant" val="False" valType="bool"/>
-        <Param name="image" updates="constant" val="$path_stim[current_idx]" valType="str"/>
+        <Param name="image" updates="constant" val="$path_wrong1[idx_values[current_idx]]" valType="str"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
         <Param name="mask" updates="constant" val="None" valType="str"/>
         <Param name="name" updates="None" val="answer2" valType="code"/>
@@ -311,7 +311,7 @@
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="([0,-0.1])" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="size" updates="constant" val="(0.5, 0.5)" valType="code"/>
+        <Param name="size" updates="constant" val="(0.2, 0.2)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -328,7 +328,7 @@
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
         <Param name="flipVert" updates="constant" val="False" valType="bool"/>
-        <Param name="image" updates="constant" val="$path_stim[current_idx]" valType="str"/>
+        <Param name="image" updates="constant" val="$path_wrong2[idx_values[current_idx]]" valType="str"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
         <Param name="mask" updates="constant" val="None" valType="str"/>
         <Param name="name" updates="None" val="answer3" valType="code"/>
@@ -336,7 +336,7 @@
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="([0.6, -0.1])" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="size" updates="constant" val="(0.5, 0.5)" valType="code"/>
+        <Param name="size" updates="constant" val="(0.2, 0.2)" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
