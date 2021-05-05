@@ -9,7 +9,7 @@ import java.util.Queue;
  * How much do you like the snippet in a scale from (1(bad) to 5(good)), may leave your comments below
  *
  * Norman:
- * Anabell:
+ * Annabelle: 2 because remove() may not be clear to everyone
  * Jonas
  *
  */
