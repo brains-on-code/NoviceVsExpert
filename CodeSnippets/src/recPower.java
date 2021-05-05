@@ -2,7 +2,7 @@
  * How much do you like the snippet in a scale from (1(bad) to 5(good)), may leave your comments below
  *
  * Norman:
- * Anabell:
+ * Anabelle: 3 very easy, the standard example of recursive in the first programming lecture
  * Jonas
  *
  */
