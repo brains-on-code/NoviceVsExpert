@@ -3,8 +3,8 @@ package extras;
 /**
  * How much do you like the snippet in a scale from (1(bad) to 5(good)), may leave your comments below
  *
- * Norman:
  * Annabelle: 4
+ * Norman: 4 (not too happy with the variable name "b", also should discuss always having {} even if not necessary)
  * Jonas
  *
  */

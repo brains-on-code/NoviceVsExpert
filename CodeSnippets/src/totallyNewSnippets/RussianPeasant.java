@@ -3,8 +3,8 @@ package totallyNewSnippets;
 /**
  * How much do you like the snippet in a scale from (1(bad) to 5(good)), may leave your comments below
  *
- * Norman:
  * Annabelle: 2 bitoperations might be unkown
+ * Norman: 3 (bit shift is tricky, but would be fine as a test)
  * Jonas
  *
  */

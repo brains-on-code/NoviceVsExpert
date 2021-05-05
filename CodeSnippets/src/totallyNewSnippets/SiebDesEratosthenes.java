@@ -3,8 +3,8 @@ package totallyNewSnippets;
 /**
  * How much do you like the snippet in a scale from (1(bad) to 5(good)), may leave your comments below
  *
- * Norman:
  * Annabelle:4
+ * Norman: 3 (more complex than others with ~4 for loops)
  * Jonas
  *
  */

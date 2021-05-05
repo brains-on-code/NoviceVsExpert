@@ -3,8 +3,8 @@ package newSnippets;
 /**
  * How much do you like the snippet in a scale from (1(bad) to 5(good)), may leave your comments below
  *
- * Norman:
  * Annabelle: 5
+ * Norman: 2 (structurally different than all the others since it needs a class construct)
  * Jonas
  *
  */

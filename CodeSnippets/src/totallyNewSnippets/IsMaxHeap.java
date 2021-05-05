@@ -3,8 +3,8 @@ package totallyNewSnippets;
 /**
  * How much do you like the snippet in a scale from (1(bad) to 5(good)), may leave your comments below
  *
- * Norman:
  * Annabelle: 1 difficult to understand if Heap concept is not known
+ * Norman: Can't judge, don't really understand this one :)
  * Jonas
  *
  */
