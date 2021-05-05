@@ -1,5 +1,14 @@
 package newSnippets;
 
+/**
+ * How much do you like the snippet in a scale from (1(bad) to 5(good)), may leave your comments below
+ *
+ * Norman:
+ * Anabell:
+ * Jonas
+ *
+ */
+
 public class CheckIfLettersOnly {
 
     public static boolean checkIfLettersOnly(String stringToTest) {

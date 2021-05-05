@@ -5,6 +5,15 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
+/**
+ * How much do you like the snippet in a scale from (1(bad) to 5(good)), may leave your comments below
+ *
+ * Norman:
+ * Anabell:
+ * Jonas
+ *
+ */
+
 public class ReverseQueue {
 
     public static void main(String[] args) {

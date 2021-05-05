@@ -4,6 +4,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * How much do you like the snippet in a scale from (1(bad) to 5(good)), may leave your comments below
+ *
+ * Norman:
+ * Anabell:
+ * Jonas
+ *
+ */
+
 public class PermuteString {
     public static void main(String[] args) {
         String str = "ABC";
