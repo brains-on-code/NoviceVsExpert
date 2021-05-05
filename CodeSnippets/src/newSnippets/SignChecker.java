@@ -3,7 +3,7 @@ package newSnippets;
 /**
  * How much do you like the snippet in a scale from (1(bad) to 5(good)), may leave your comments below
  *
- * Norman:
+ * Norman: 2-3 (very simple, structurally different)
  * Anabell:
  * Jonas
  *

@@ -1,7 +1,7 @@
 /**
  * How much do you like the snippet in a scale from (1(bad) to 5(good)), may leave your comments below
  *
- * Norman:
+ * Norman: 3
  * Anabell:
  * Jonas
  *
@@ -17,15 +17,15 @@ public class dropNum {
         System.out.println("8 8 4");
         System.out.println("");
         int[] values = {8, 8, 1, 3, 4};
-        int[] middle = dopNumber(values, 3);
-        int[] out = dopNumber(middle, 1);
+        int[] middle = dropNumber(values, 3);
+        int[] out = dropNumber(middle, 1);
 
         for (int value : out) {
             System.out.print("" + value + " ");
         }
     }
 
-    public static int[] dopNumber(int[] input, int pos) {
+    public static int[] dropNumber(int[] input, int pos) {
         if (input.length == 0 || pos >= input.length) {
             throw new IllegalArgumentException();
         }

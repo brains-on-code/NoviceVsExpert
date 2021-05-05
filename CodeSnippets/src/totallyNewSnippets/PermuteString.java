@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * How much do you like the snippet in a scale from (1(bad) to 5(good)), may leave your comments below
  *
- * Norman:
+ * Norman: 2 (I like permutation, but isn't there a simpler algorithm? I feel like this one has a lot of syntax, but maybe that's just Java..)
  * Anabell:
  * Jonas
  *

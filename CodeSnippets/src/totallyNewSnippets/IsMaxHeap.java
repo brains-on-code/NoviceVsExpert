@@ -3,7 +3,7 @@ package totallyNewSnippets;
 /**
  * How much do you like the snippet in a scale from (1(bad) to 5(good)), may leave your comments below
  *
- * Norman:
+ * Norman: Can't judge, don't really understand this one :)
  * Anabell:
  * Jonas
  *
