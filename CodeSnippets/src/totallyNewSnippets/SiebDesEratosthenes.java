@@ -8,7 +8,7 @@ public class SiebDesEratosthenes {
     public static void main(String args[]) {
         int n = 10;
         List<Integer> result = sieveOfEratosthenes(n);
-        for(Integer number : result){
+        for (Integer number : result) {
             System.out.println(number);
         }
     }

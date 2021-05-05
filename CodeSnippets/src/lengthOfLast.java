@@ -11,16 +11,16 @@ public class lengthOfLast {
     }
 
 
-    public static int lengthOfLastWord(String text){
+    public static int lengthOfLastWord(String text) {
         int length = 0;
         boolean isLastWord = false;
-        for(int i=text.length() - 1; i>=0; i--){
+        for (int i = text.length() - 1; i >= 0; i--) {
             char c = text.charAt(i);
-            if((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')){
+            if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) {
                 isLastWord = true;
                 length++;
-            }else{
-                if(isLastWord){
+            } else {
+                if (isLastWord) {
                     break;
                 }
             }

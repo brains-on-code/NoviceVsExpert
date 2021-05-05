@@ -10,11 +10,11 @@ public class array_average {
         System.out.println(arrayAverage(input));
     }
 
-    public static float arrayAverage(int[] numbers){
+    public static float arrayAverage(int[] numbers) {
         int count = 0;
         int sum = 0;
 
-        while (count < numbers.length){
+        while (count < numbers.length) {
             sum = sum + numbers[count];
             count = count + 1;
         }

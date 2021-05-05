@@ -7,7 +7,7 @@ public class MedianOnSorted {
         System.out.println(median(array));
     }
 
-    public static float median(int[] array){
+    public static float median(int[] array) {
         float b;
         if (array.length % 2 == 1)
             b = array[array.length / 2];

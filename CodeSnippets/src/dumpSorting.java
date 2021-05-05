@@ -13,15 +13,35 @@ public class dumpSorting {
         int b = 12;
         int c = 8;
         int d = 11;
-        System.out.println(sort(a,b,c,d));
+        System.out.println(sort(a, b, c, d));
     }
 
-    public static List<Integer> sort(int a, int b, int c, int d){
-        if (a > b ){ int temp = b; b = a; c = temp;}
-        if (c > d ){ int temp = d; d = c; c = temp;}
-        if (a > c ){ int temp = c; c = a; a = temp;}
-        if (b > d ){ int temp = d; d = b; b = temp;}
-        if (b > c ){ int temp = c; c = b; b = temp;}
+    public static List<Integer> sort(int a, int b, int c, int d) {
+        if (a > b) {
+            int temp = b;
+            b = a;
+            c = temp;
+        }
+        if (c > d) {
+            int temp = d;
+            d = c;
+            c = temp;
+        }
+        if (a > c) {
+            int temp = c;
+            c = a;
+            a = temp;
+        }
+        if (b > d) {
+            int temp = d;
+            d = b;
+            b = temp;
+        }
+        if (b > c) {
+            int temp = c;
+            c = b;
+            b = temp;
+        }
 
         return Arrays.asList(a, b, c, d);
     }

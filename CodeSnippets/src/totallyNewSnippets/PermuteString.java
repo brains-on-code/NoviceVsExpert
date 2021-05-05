@@ -9,7 +9,7 @@ public class PermuteString {
         String str = "ABC";
         int n = str.length();
         List<String> result = permute(str, 0, 2);
-        for(String permutation: result){
+        for (String permutation : result) {
             System.out.println(permutation);
         }
     }

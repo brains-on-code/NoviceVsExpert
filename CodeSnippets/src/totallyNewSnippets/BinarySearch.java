@@ -3,7 +3,7 @@ package totallyNewSnippets;
 public class BinarySearch {
 
     public static void main(String[] args) {
-        int[] sortedArray = {2,4,8,16,32,64,128};
+        int[] sortedArray = {2, 4, 8, 16, 32, 64, 128};
         System.out.println(binarySearch(sortedArray, 8, 0, sortedArray.length));
     }
 

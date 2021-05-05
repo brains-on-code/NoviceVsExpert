@@ -5,9 +5,9 @@ public class Palindrome {
         System.out.println(isPalindrome("otto"));
     }
 
-    public static boolean isPalindrome(String text){
-        for(int i=0; i<text.length()/2 -1 ; i++){
-            if(text.charAt(i)!=text.charAt(text.length()-1-i)){
+    public static boolean isPalindrome(String text) {
+        for (int i = 0; i < text.length() / 2 - 1; i++) {
+            if (text.charAt(i) != text.charAt(text.length() - 1 - i)) {
                 return false;
             }
         }

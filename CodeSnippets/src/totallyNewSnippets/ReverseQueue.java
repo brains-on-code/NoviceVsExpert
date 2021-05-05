@@ -16,13 +16,13 @@ public class ReverseQueue {
 
         reverse(Q);
 
-        for(Integer element : Q){
+        for (Integer element : Q) {
             System.out.print(element + " ");
         }
     }
 
-    public static void reverse(Queue<Integer> Q){
-        if(Q.isEmpty()){
+    public static void reverse(Queue<Integer> Q) {
+        if (Q.isEmpty()) {
             return;
         }
         Integer data = Q.remove();

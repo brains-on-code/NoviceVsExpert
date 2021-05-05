@@ -6,11 +6,11 @@ public class dropNum {
         System.out.println("");
         System.out.println("8 8 4");
         System.out.println("");
-        int[] values = {8,8,1,3,4};
+        int[] values = {8, 8, 1, 3, 4};
         int[] middle = dopNumber(values, 3);
         int[] out = dopNumber(middle, 1);
 
-        for(int value: out){
+        for (int value : out) {
             System.out.print("" + value + " ");
         }
     }

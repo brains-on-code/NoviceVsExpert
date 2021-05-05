@@ -6,19 +6,19 @@ public class Sudoku {
 
     public static void main(String[] args) {
         int[][] field = {
-                {1,0,0},
-                {0,0,1},
-                {3,0,0}
+                {1, 0, 0},
+                {0, 0, 1},
+                {3, 0, 0}
         };
 
-        if(solveEasySudoku(field,0,0)){
-            for(int[] row : field){
-                for(int element : row){
+        if (solveEasySudoku(field, 0, 0)) {
+            for (int[] row : field) {
+                for (int element : row) {
                     System.out.print("" + element + " ");
                 }
                 System.out.println();
             }
-        }else{
+        } else {
             System.out.println("Keine Lösung");
         }
     }
