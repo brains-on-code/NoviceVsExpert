@@ -1,0 +1,32 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 14,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "    public static int[] sort(int[] unsorted) {",
+        "        for (int i = 1; i < unsorted.length; i++) {",
+        "            for (int j = i; j > 0; j--) {",
+        "                int jthElement = unsorted[j];",
+        "                int jMinusOneElement = unsorted[j - 1];",
+        "                if (jthElement < jMinusOneElement) {",
+        "                    unsorted[j - 1] = jthElement;",
+        "                    unsorted[j] = jMinusOneElement;",
+        "                } else {",
+        "                    break;",
+        "                }",
+        "            }",
+        "        }",
+        "        return unsorted;",
+        "    }"
+    ]
+}

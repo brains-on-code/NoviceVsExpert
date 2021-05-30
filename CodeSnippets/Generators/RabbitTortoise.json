@@ -1,0 +1,33 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 14,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "    public static int rabbitTortoise(int[] number_field) {",
+        "        int tortoise = number_field[0];",
+        "        int rabbit = number_field[number_field[0]];",
+        "",
+        "        while (tortoise != rabbit) {",
+        "            tortoise = number_field[tortoise];",
+        "            rabbit = number_field[number_field[rabbit]];",
+        "        }",
+        "",
+        "        rabbit = 0;",
+        "        while (tortoise != rabbit) {",
+        "            tortoise = number_field[tortoise];",
+        "            rabbit = number_field[rabbit];",
+        "        }",
+        "        return rabbit;",
+        "    }"
+    ]
+}

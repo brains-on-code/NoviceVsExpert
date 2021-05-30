@@ -1,0 +1,34 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 14,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "    public static int lengthOfLastWord(String text) {",
+        "        int length = 0;",
+        "        boolean isLastWord = false;",
+        "        for (int i = text.length() - 1; i >= 0; i--) {",
+        "            char c = text.charAt(i);",
+        "            if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) {",
+        "                isLastWord = true;",
+        "                length++;",
+        "            } else {",
+        "                if (isLastWord) {",
+        "                    break;",
+        "                }",
+        "            }",
+        "        }",
+        "",
+        "        return length;",
+        "    }"
+    ]
+}

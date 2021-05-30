@@ -1,0 +1,22 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 14,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "    public static void main(String args[]) {",
+        "        Vehicle v = new Vehicle(\"Audi\", \"A6\", 200);",
+        "        v.accelerate(10);",
+        "        System.out.println(v.currentSpeed);",
+        "    }"
+    ]
+}

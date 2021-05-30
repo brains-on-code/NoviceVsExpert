@@ -1,0 +1,25 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 14,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "    public static boolean isPrime(int number) {",
+        "        for (int i = 2; i < number; i++) {",
+        "            if (number % i == 0) {",
+        "                return false;",
+        "            }",
+        "        }",
+        "        return true;",
+        "    }"
+    ]
+}

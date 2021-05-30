@@ -1,0 +1,38 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 14,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "package newSnippets;",
+        "",
+        "public class SignChecker {",
+        "    private int number;",
+        "",
+        "    public SignChecker(int currentNumber) {",
+        "        number = currentNumber;",
+        "    }",
+        "",
+        "    public String check() {",
+        "        String theSign = \"\";",
+        "        if (number < 0) {",
+        "            theSign = \"negative\";",
+        "        } else if (number > 0) {",
+        "            theSign = \"positive\";",
+        "        } else {",
+        "            theSign = \"null\";",
+        "        }",
+        "        return theSign;",
+        "    }",
+        "}"
+    ]
+}

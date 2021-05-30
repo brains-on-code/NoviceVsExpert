@@ -1,0 +1,28 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 14,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "    public static boolean checkIfLettersOnly(String stringToTest) {",
+        "        char ch;",
+        "        int i = 0;",
+        "        while (i < stringToTest.length()) {",
+        "            ch = stringToTest.charAt(i);",
+        "            if (!(ch >= 'a' && ch <= 'z') && !(ch >= 'A' && ch <= 'Z'))",
+        "                return false;",
+        "            i++;",
+        "        }",
+        "        return true;",
+        "    }"
+    ]
+}

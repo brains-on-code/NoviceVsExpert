@@ -1,0 +1,43 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 14,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "public class Rectangle {",
+        "    private final int x1;",
+        "    private final int y1;",
+        "    private final int x2;",
+        "    private final int y2;",
+        "",
+        "    public Rectangle(int x1, int y1, int x2, int y2) {",
+        "        this.x1 = x1;",
+        "        this.y1 = y1;",
+        "        this.x2 = x2;",
+        "        this.y2 = y2;",
+        "    }",
+        "",
+        "    public int width() {",
+        "        return this.x2 - this.x1;",
+        "    }",
+        "",
+        "    public int height() {",
+        "        return this.y2 - this.y1;",
+        "    }",
+        "",
+        "    public double area() {",
+        "        return this.width() * this.height();",
+        "    }",
+        "",
+        "}"
+    ]
+}

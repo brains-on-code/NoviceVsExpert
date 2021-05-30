@@ -1,0 +1,29 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 14,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "    public static int binomialCoefficient(int n, int k) {",
+        "        int res = 1;",
+        "",
+        "        if (k > n - k)",
+        "            k = n - k;",
+        "",
+        "        for (int i = 0; i < k; ++i) {",
+        "            res *= (n - i);",
+        "            res /= (i + 1);",
+        "        }",
+        "        return res;",
+        "    }"
+    ]
+}

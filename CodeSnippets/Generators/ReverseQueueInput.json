@@ -1,0 +1,30 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 14,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "    public static void main(String[] args) {",
+        "        Queue<Integer> Q = new LinkedList<>();",
+        "        Q.add(1);",
+        "        Q.add(3);",
+        "        Q.add(2);",
+        "        Q.add(4);",
+        "",
+        "        reverse(Q);",
+        "",
+        "        for (Integer element : Q) {",
+        "            System.out.print(element + \" \");",
+        "        }",
+        "    }"
+    ]
+}

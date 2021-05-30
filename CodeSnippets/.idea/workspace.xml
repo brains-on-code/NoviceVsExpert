@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e6222b8c-0415-45c2-8702-21042d428e2a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/CodeSnippets.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SourceCode/IdeaProjects.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IdeaProjects.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/BinToDecimal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/HIndex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/InsertSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/Power.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/RandomNum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/ackerman.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/array_average.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/containsSubstring.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/dropNum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/dumpSorting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/extras/MedianOnSorted.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/extras/Palindrome.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/extras/isPrime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/extras/reverseArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/gcd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/lengthOfLast.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/newSnippets/CheckIfLettersOnly.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/newSnippets/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/newSnippets/SignChecker.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/newSnippets/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/newSnippets/SumArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/newSnippets/Vehicle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/recPower.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/removeDoubleChar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/totallyNewSnippets/BinarySearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/totallyNewSnippets/BinomialCoefficient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/totallyNewSnippets/BogoSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/totallyNewSnippets/HeightOfTree$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/totallyNewSnippets/HeightOfTree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/totallyNewSnippets/IsAnagram.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/totallyNewSnippets/IsMaxHeap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/totallyNewSnippets/NumberOfLeaves$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/totallyNewSnippets/NumberOfLeaves.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/totallyNewSnippets/PermuteString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/totallyNewSnippets/RabbitTortoise.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/totallyNewSnippets/ReverseQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/totallyNewSnippets/RussianPeasant.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/totallyNewSnippets/SiebDesEratosthenes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IdeaProjects/totallyNewSnippets/Sudoku.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BinToDecimal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HIndex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/InsertSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Power.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RandomNum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ackerman.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/array_average.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containsSubstring.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dropNum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dumpSorting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/extras/MedianOnSorted.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/extras/Palindrome.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/extras/isPrime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/extras/reverseArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/extras/smallGauss.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gcd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lengthOfLast.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/newSnippets/CheckIfLettersOnly.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/newSnippets/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/newSnippets/SignChecker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/newSnippets/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/newSnippets/SumArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/newSnippets/Vehicle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/recPower.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/removeDoubleChar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/totallyNewSnippets/BinarySearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/totallyNewSnippets/BinomialCoefficient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/totallyNewSnippets/BogoSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/totallyNewSnippets/HeightOfTree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/totallyNewSnippets/IsAnagram.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/totallyNewSnippets/IsMaxHeap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/totallyNewSnippets/NumberOfLeaves.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/totallyNewSnippets/PermuteString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/totallyNewSnippets/RabbitTortoise.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/totallyNewSnippets/ReverseQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/totallyNewSnippets/RussianPeasant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/totallyNewSnippets/SiebDesEratosthenes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/totallyNewSnippets/Sudoku.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/Ackerman/Ackerman.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/Ackerman/Eingabe.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/Ackerman/right.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/Ackerman/wrong1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/Ackerman/wrong2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/Array_Average/Array_Average.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/Array_Average/Eingabe.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/Array_Average/right.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/Array_Average/wrong1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/Array_Average/wrong2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/BinaryToDecimal/BinaryToDecimal.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/BinaryToDecimal/Eingabe.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/BinaryToDecimal/right.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/BinaryToDecimal/wrong1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/BinaryToDecimal/wrong2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/DumpSort/DumpSort.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/DumpSort/Eingabe.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/DumpSort/right.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/DumpSort/wrong1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/DumpSort/wrong2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/GreatestComonDivisor/Eingabe.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/GreatestComonDivisor/GreatestComonDivisor.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/GreatestComonDivisor/right.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/GreatestComonDivisor/wrong1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/GreatestComonDivisor/wrong2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/InsertionSort/Eingabe.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/InsertionSort/InsertionSort.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/InsertionSort/right.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/InsertionSort/wrong1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/InsertionSort/wrong2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/RandomNumber/Eingabe.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/RandomNumber/RandomNumber.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/RandomNumber/right.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/RandomNumber/wrong1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/RandomNumber/wrong2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/containsSubstring/Eingabe.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/containsSubstring/containsSubstring.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/containsSubstring/right.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/containsSubstring/wrong1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/containsSubstring/wrong2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/doubleCharacter/Eingabe.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/doubleCharacter/doubleCharacter.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/doubleCharacter/right.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/doubleCharacter/wrong1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/doubleCharacter/wrong2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/dropNumber/DropNumber.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/dropNumber/Eingabe.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/dropNumber/right.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/dropNumber/wrong1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/dropNumber/wrong2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/hindex/Eingabe.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/hindex/hIndex.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/hindex/right.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/hindex/wrong1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/hindex/wrong2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/lengthOfLastWord/Eingabe.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/lengthOfLastWord/lengthOfLastWord.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/lengthOfLastWord/right.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/lengthOfLastWord/wrong1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/lengthOfLastWord/wrong2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/power/Eingabe.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/power/power.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/power/right.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/power/wrong1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/power/wrong2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/recursivePower/Eingabe.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/recursivePower/recursivePower.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/recursivePower/right.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/recursivePower/wrong1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/Resources/snippets/recursivePower/wrong2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/conditions.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../Study/conditions.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/test.psyexp" beforeDir="false" afterPath="$PROJECT_DIR$/../Study/test.psyexp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Study/test_lastrun.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Study/test_lastrun.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1tFzDC7YoHO6CsTc41ns9DIXStj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager" selected="Application.Vehicle">
+    <configuration name="SiebDesEratosthenes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="totallyNewSnippets.SiebDesEratosthenes" />
+      <module name="CodeSnippets" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="totallyNewSnippets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SignChecker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="newSnippets.SignChecker" />
+      <module name="CodeSnippets" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="newSnippets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SumArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="newSnippets.SumArray" />
+      <module name="CodeSnippets" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="newSnippets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Vehicle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="newSnippets.Vehicle" />
+      <module name="CodeSnippets" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="newSnippets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="smallGauss" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="extras.smallGauss" />
+      <module name="CodeSnippets" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="extras.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Vehicle" />
+        <item itemvalue="Application.SumArray" />
+        <item itemvalue="Application.smallGauss" />
+        <item itemvalue="Application.SignChecker" />
+        <item itemvalue="Application.SiebDesEratosthenes" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e6222b8c-0415-45c2-8702-21042d428e2a" name="Default Changelist" comment="" />
+      <created>1622379503818</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622379503818</updated>
+      <workItem from="1622379504951" duration="3504000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
