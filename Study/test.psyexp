@@ -26,7 +26,7 @@
     <Param name="Use version" updates="None" val="" valType="str"/>
     <Param name="Window size (pixels)" updates="None" val="[1920, 1080]" valType="code"/>
     <Param name="blendMode" updates="None" val="avg" valType="str"/>
-    <Param name="color" updates="None" val="$[0,0,0]" valType="str"/>
+    <Param name="color" updates="None" val="$[0.5,0.5,0.5]" valType="str"/>
     <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
     <Param name="expName" updates="None" val="test" valType="str"/>
     <Param name="exportHTML" updates="None" val="on Sync" valType="str"/>
@@ -141,7 +141,7 @@
     </Routine>
     <Routine name="codeStartup">
       <CodeComponent name="codeInit">
-        <Param name="Before Experiment" updates="constant" val="import random, xlrd&amp;#10;import socket&amp;#10;import pandas as pd&amp;#10;&amp;#10;global current_image_path&amp;#10;&amp;#10;random.seed()&amp;#10;&amp;#10;in_file = &quot;conditions.xlsx&quot;&amp;#10;&amp;#10;num_items = 32&amp;#10;num_iter = 5&amp;#10;idx_values = [x for x in range(num_items)]&amp;#10;&amp;#10;TCP_IP = 'localhost'&amp;#10;TCP_PORT = 50000&amp;#10;Message = 1&amp;#10;&amp;#10;from psychopy import monitors&amp;#10;&amp;#10;mon = None&amp;#10;for tmp_mon in monitors.getAllMonitors():&amp;#10;    mon = tmp_mon&amp;#10;    &amp;#10;width = monitors.Monitor(mon).getSizePix()[0]&amp;#10;ll = -0.8 * width&amp;#10;lm = -0.4 * width&amp;#10;mm = 0.0 * width&amp;#10;rm = 0.4 * width&amp;#10;rr = 0.8 * width" valType="extendedCode"/>
+        <Param name="Before Experiment" updates="constant" val="import random, xlrd&amp;#10;import socket&amp;#10;import pandas as pd&amp;#10;&amp;#10;global current_image_path&amp;#10;&amp;#10;random.seed()&amp;#10;&amp;#10;in_file = &quot;conditions.xlsx&quot;&amp;#10;&amp;#10;num_items = 32&amp;#10;num_iter = 5&amp;#10;idx_values = [x for x in range(num_items)]&amp;#10;&amp;#10;TCP_IP = 'localhost'&amp;#10;TCP_PORT = 50000&amp;#10;Message = 1&amp;#10;&amp;#10;from psychopy import monitors&amp;#10;&amp;#10;mon = None&amp;#10;for tmp_mon in monitors.getAllMonitors():&amp;#10;    mon = tmp_mon&amp;#10;    &amp;#10;width = monitors.Monitor(mon).getSizePix()[0]&amp;#10;height = monitors.Monitor(mon).getSizePix()[1]&amp;#10;ll = -0.8 * width&amp;#10;lm = -0.4 * width&amp;#10;mm = 0.0 * width&amp;#10;rm = 0.4 * width&amp;#10;rr = 0.8 * width&amp;#10;md = -0.1 * height" valType="extendedCode"/>
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Experiment" updates="constant" val="#open execl&amp;#10;inbook = pd.read_excel(in_file)&amp;#10;    &amp;#10;random.shuffle(idx_values)&amp;#10;current_idx = idx_values.pop(0)" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
@@ -386,6 +386,66 @@
         <Param name="texture resolution" updates="constant" val="128" valType="code"/>
         <Param name="units" updates="None" val="pix" valType="str"/>
       </ImageComponent>
+      <ImageComponent name="arrow">
+        <Param name="color" updates="constant" val="$[1,1,1]" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flipHoriz" updates="constant" val="False" valType="bool"/>
+        <Param name="flipVert" updates="constant" val="False" valType="bool"/>
+        <Param name="image" updates="set every repeat" val="Resources/arrow.png" valType="str"/>
+        <Param name="interpolate" updates="constant" val="linear" valType="str"/>
+        <Param name="mask" updates="constant" val="None" valType="str"/>
+        <Param name="name" updates="None" val="arrow" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="set every frame" val="(arrow_position, md)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="size" updates="constant" val="(86, 54)" valType="code"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="30.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="texture resolution" updates="constant" val="128" valType="code"/>
+        <Param name="units" updates="None" val="pix" valType="str"/>
+      </ImageComponent>
+      <CodeComponent name="code_4">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="from psychopy.hardware import keyboard&amp;#10;from psychopy import core&amp;#10;&amp;#10;kb = keyboard.Keyboard()&amp;#10;&amp;#10;current = 0&amp;#10;position_array = [ll, lm, mm, rm, rr]&amp;#10;arrow_position = position_array[current]" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="&amp;#10;keys = kb.getKeys(['right', 'left'], waitRelease=True)&amp;#10;if 'left' in keys:&amp;#10;    current = current - 1&amp;#10;&amp;#10;if 'right' in keys:&amp;#10;    current = current + 1&amp;#10;    &amp;#10;current = max(0, current)&amp;#10;current = min(4, current)&amp;#10;&amp;#10;arrow_position = position_array[current]&amp;#10;&amp;#10;" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_4" valType="code"/>
+      </CodeComponent>
+      <KeyboardComponent name="key_resp_3">
+        <Param name="allowedKeys" updates="constant" val="'down'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="key_resp_3" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="last key" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
     </Routine>
   </Routines>
   <Flow>

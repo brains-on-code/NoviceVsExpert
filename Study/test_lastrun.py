@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on Mai 30, 2021, at 18:09
+    on Mai 31, 2021, at 11:01
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -53,11 +53,13 @@ for tmp_mon in monitors.getAllMonitors():
     mon = tmp_mon
     
 width = monitors.Monitor(mon).getSizePix()[0]
+height = monitors.Monitor(mon).getSizePix()[1]
 ll = -0.8 * width
 lm = -0.4 * width
 mm = 0.0 * width
 rm = 0.4 * width
 rr = 0.8 * width
+md = -0.1 * height
 
 
 # Ensure that relative paths start from the same directory as this script
@@ -97,7 +99,7 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 win = visual.Window(
     size=[1920, 1080], fullscr=True, screen=-1, 
     winType='pyglet', allowGUI=False, allowStencil=False,
-    monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
+    monitor='testMonitor', color=[0.5,0.5,0.5], colorSpace='rgb',
     blendMode='avg', useFBO=True, 
     units='height')
 # store frame rate of monitor if we can measure it
@@ -219,6 +221,15 @@ image_5 = visual.ImageStim(
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=128, interpolate=True, depth=-4.0)
+arrow = visual.ImageStim(
+    win=win,
+    name='arrow', units='pix', 
+    image='sin', mask=None,
+    ori=0, pos=[0,0], size=(86, 54),
+    color=[1,1,1], colorSpace='rgb', opacity=1,
+    flipHoriz=False, flipVert=False,
+    texRes=128, interpolate=True, depth=-5.0)
+key_resp_3 = keyboard.Keyboard()
 
 # Initialize components for Routine "updateIndex"
 updateIndexClock = core.Clock()
@@ -646,7 +657,6 @@ for thisTrial in trials:
         
         # ------Prepare to start Routine "ShowOptions"-------
         continueRoutine = True
-        routineTimer.add(30.000000)
         # update component parameters for each repeat
         image_1.setPos((ll, 0))
         image_1.setSize([right_width, right_height])
@@ -663,8 +673,20 @@ for thisTrial in trials:
         image_5.setPos((rr, 0))
         image_5.setSize([next_width, next_height])
         image_5.setImage(next_input_path)
+        arrow.setImage('Resources/arrow.png')
+        from psychopy.hardware import keyboard
+        from psychopy import core
+        
+        kb = keyboard.Keyboard()
+        
+        current = 0
+        position_array = [ll, lm, mm, rm, rr]
+        arrow_position = position_array[current]
+        key_resp_3.keys = []
+        key_resp_3.rt = []
+        _key_resp_3_allKeys = []
         # keep track of which components have finished
-        ShowOptionsComponents = [image_1, image_2, image_3, image_4, image_5]
+        ShowOptionsComponents = [image_1, image_2, image_3, image_4, image_5, arrow, key_resp_3]
         for thisComponent in ShowOptionsComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -679,7 +701,7 @@ for thisTrial in trials:
         frameN = -1
         
         # -------Run Routine "ShowOptions"-------
-        while continueRoutine and routineTimer.getTime() > 0:
+        while continueRoutine:
             # get current time
             t = ShowOptionsClock.getTime()
             tThisFlip = win.getFutureFlipTime(clock=ShowOptionsClock)
@@ -772,6 +794,61 @@ for thisTrial in trials:
                     win.timeOnFlip(image_5, 'tStopRefresh')  # time at next scr refresh
                     image_5.setAutoDraw(False)
             
+            # *arrow* updates
+            if arrow.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                arrow.frameNStart = frameN  # exact frame index
+                arrow.tStart = t  # local t and not account for scr refresh
+                arrow.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(arrow, 'tStartRefresh')  # time at next scr refresh
+                arrow.setAutoDraw(True)
+            if arrow.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > arrow.tStartRefresh + 30.0-frameTolerance:
+                    # keep track of stop time/frame for later
+                    arrow.tStop = t  # not accounting for scr refresh
+                    arrow.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(arrow, 'tStopRefresh')  # time at next scr refresh
+                    arrow.setAutoDraw(False)
+            if arrow.status == STARTED:  # only update if drawing
+                arrow.setPos((arrow_position, md))
+            
+            keys = kb.getKeys(['right', 'left'], waitRelease=True)
+            if 'left' in keys:
+                current = current - 1
+            
+            if 'right' in keys:
+                current = current + 1
+                
+            current = max(0, current)
+            current = min(4, current)
+            
+            arrow_position = position_array[current]
+            
+            
+            
+            # *key_resp_3* updates
+            waitOnFlip = False
+            if key_resp_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                key_resp_3.frameNStart = frameN  # exact frame index
+                key_resp_3.tStart = t  # local t and not account for scr refresh
+                key_resp_3.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(key_resp_3, 'tStartRefresh')  # time at next scr refresh
+                key_resp_3.status = STARTED
+                # keyboard checking is just starting
+                waitOnFlip = True
+                win.callOnFlip(key_resp_3.clock.reset)  # t=0 on next screen flip
+                win.callOnFlip(key_resp_3.clearEvents, eventType='keyboard')  # clear events on next screen flip
+            if key_resp_3.status == STARTED and not waitOnFlip:
+                theseKeys = key_resp_3.getKeys(keyList=['down'], waitRelease=False)
+                _key_resp_3_allKeys.extend(theseKeys)
+                if len(_key_resp_3_allKeys):
+                    key_resp_3.keys = _key_resp_3_allKeys[-1].name  # just the last key pressed
+                    key_resp_3.rt = _key_resp_3_allKeys[-1].rt
+                    # a response ends the routine
+                    continueRoutine = False
+            
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
                 core.quit()
@@ -803,6 +880,18 @@ for thisTrial in trials:
         Loop.addData('image_4.stopped', image_4.tStopRefresh)
         Loop.addData('image_5.started', image_5.tStartRefresh)
         Loop.addData('image_5.stopped', image_5.tStopRefresh)
+        Loop.addData('arrow.started', arrow.tStartRefresh)
+        Loop.addData('arrow.stopped', arrow.tStopRefresh)
+        # check responses
+        if key_resp_3.keys in ['', [], None]:  # No response was made
+            key_resp_3.keys = None
+        Loop.addData('key_resp_3.keys',key_resp_3.keys)
+        if key_resp_3.keys != None:  # we had a response
+            Loop.addData('key_resp_3.rt', key_resp_3.rt)
+        Loop.addData('key_resp_3.started', key_resp_3.tStartRefresh)
+        Loop.addData('key_resp_3.stopped', key_resp_3.tStopRefresh)
+        # the Routine "ShowOptions" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
         
         # ------Prepare to start Routine "updateIndex"-------
         continueRoutine = True
