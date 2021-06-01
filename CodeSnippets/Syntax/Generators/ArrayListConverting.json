@@ -1,0 +1,35 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 14,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "public class ArrayListConverting {",
+        "",
+        "    public static void main(String[] args) {",
+        "        String[] array = {new String(\"David\"), new String(\"John\"), new String(\"Mike\")};",
+        "",
+        "        ArrayList<String> theArrayList = convertToArrayList(array);",
+        "    }",
+        "",
+        "    private static ArrayList<String> convertToArrayList(String[] array) {",
+        "        ArrayList<String> convertedArray = new ArrayList<String>();",
+        "",
+        "        for (String element : array) {",
+        "            convertedArray.add(element);",
+        "        }",
+        "",
+        "        return convertedArray;",
+        "    }",
+        "}"
+    ]
+}

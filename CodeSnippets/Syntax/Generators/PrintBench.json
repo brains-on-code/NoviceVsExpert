@@ -1,0 +1,33 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 14,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "public class PrintBench {",
+        "    public static void main(String[] args) {",
+        "        Random r = new Random();",
+        "        for (int i = 0; i < 1000; i++) {",
+        "            for (int j = 0; j < 1000; j++) {",
+        "                if (r.nextInt(4) == 0) {",
+        "                    System.out.print(\"O\");",
+        "                } else {",
+        "                    System.out.print(\"#\");",
+        "                }",
+        "            }",
+        "",
+        "            System.out.println(\"\");",
+        "        }",
+        "    }",
+        "}"
+    ]
+}

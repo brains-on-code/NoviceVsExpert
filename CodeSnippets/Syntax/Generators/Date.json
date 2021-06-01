@@ -1,0 +1,29 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 14,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "public class Date {",
+        "    public static void main(String[] args) throws ParseException {",
+        "        SimpleDateFormat sf = new SimpleDateFormat(\"yyyy-MM-dd HH:mm:ss\");",
+        "        String str3 = \"1927-12-31 23:54:07\";",
+        "        String str4 = \"1927-12-31 23:54:08\";",
+        "        Date sDt3 = sf.parse(str3);",
+        "        Date sDt4 = sf.parse(str4);",
+        "        long ld3 = sDt3.getTime() / 1000;",
+        "        long ld4 = sDt4.getTime() / 1000;",
+        "        System.out.println(ld4 - ld3);",
+        "    }",
+        "}"
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 14,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "public class Student {",
+        "    private final String name;",
+        "    private int age;",
+        "",
+        "    public Student(String name, int age) {",
+        "        this.name = name;",
+        "        this.age = age;",
+        "    }",
+        "",
+        "    public int getAge() {",
+        "        return age;",
+        "    }",
+        "",
+        "    public int hadBirthday() {",
+        "        return age = age + 1;",
+        "    }",
+        "}",
+        ""
+    ]
+}
