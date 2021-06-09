@@ -84,7 +84,7 @@
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="thisExp.addData(&quot;ImagePath&quot;, inbook.iloc[current_idx][&quot;ImagePath&quot;])" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="eeg_rec.set_event(hash(&quot;DisplayImage&quot; + str(current_idx)))&amp;#10;thisExp.addData(&quot;ImagePath&quot;, inbook.iloc[current_idx][&quot;ImagePath&quot;])" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
@@ -230,7 +230,7 @@
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="thisExp.addData(&quot;InputPath&quot;, inbook.iloc[current_idx][&quot;InputPath&quot;])" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="eeg_rec.set_event(hash(&quot;ShowInput&quot; + str(current_idx)))&amp;#10;thisExp.addData(&quot;InputPath&quot;, inbook.iloc[current_idx][&quot;InputPath&quot;])" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
@@ -249,7 +249,7 @@
         <Param name="Begin Experiment" updates="constant" val="import random&amp;#10;&amp;#10;&amp;#10;&amp;#10;" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="&amp;#10;current_image_path = inbook.iloc[current_idx][&quot;ImagePath&quot;]&amp;#10;width = inbook.iloc[current_idx][&quot;ImagePathWidth&quot;]&amp;#10;height = inbook.iloc[current_idx][&quot;ImagePathHeight&quot;]&amp;#10;&amp;#10;current_input_path = inbook.iloc[current_idx][&quot;InputPath&quot;]&amp;#10;input_width = inbook.iloc[current_idx][&quot;InputPathWidth&quot;]&amp;#10;input_height = inbook.iloc[current_idx][&quot;InputPathHeight&quot;]&amp;#10;&amp;#10;right_path = inbook.iloc[current_idx][&quot;RightPath&quot;]&amp;#10;right_width = inbook.iloc[current_idx][&quot;RightPathWidth&quot;]&amp;#10;right_height = inbook.iloc[current_idx][&quot;RightPathHeight&quot;]&amp;#10;&amp;#10;wrong1_input_path = inbook.iloc[current_idx][&quot;Wrong1Path&quot;]&amp;#10;wrong1_width = inbook.iloc[current_idx][&quot;Wrong1PathWidth&quot;]&amp;#10;wrong1_height = inbook.iloc[current_idx][&quot;Wrong1PathHeight&quot;]&amp;#10;&amp;#10;wrong2_input_path = inbook.iloc[current_idx][&quot;Wrong2Path&quot;]&amp;#10;wrong2_width = inbook.iloc[current_idx][&quot;Wrong2PathWidth&quot;]&amp;#10;wrong2_height = inbook.iloc[current_idx][&quot;Wrong2PathHeight&quot;]&amp;#10;&amp;#10;dk_input_path = inbook.iloc[current_idx][&quot;DontKnowPath&quot;]&amp;#10;dk_width = inbook.iloc[current_idx][&quot;DontKnowPathWidth&quot;]&amp;#10;dk_height = inbook.iloc[current_idx][&quot;DontKnowPathHeight&quot;]&amp;#10;&amp;#10;next_input_path = inbook.iloc[current_idx][&quot;NextPath&quot;]&amp;#10;next_width = inbook.iloc[current_idx][&quot;NextPathWidth&quot;]&amp;#10;next_height = inbook.iloc[current_idx][&quot;NextPathHeight&quot;]&amp;#10;&amp;#10;answer_array = [right_path, wrong1_input_path, wrong2_input_path]&amp;#10;width_array = [right_width, wrong1_width, wrong2_width]&amp;#10;height_array = [right_height, wrong1_height, wrong2_height]&amp;#10;&amp;#10;answer_idx = [0,1,2]&amp;#10;random.shuffle(answer_idx)" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="eeg_rec.refresh()&amp;#10;eeg_rec..set_event(current_idx)&amp;#10;&amp;#10;current_image_path = inbook.iloc[current_idx][&quot;ImagePath&quot;]&amp;#10;width = inbook.iloc[current_idx][&quot;ImagePathWidth&quot;]&amp;#10;height = inbook.iloc[current_idx][&quot;ImagePathHeight&quot;]&amp;#10;&amp;#10;current_input_path = inbook.iloc[current_idx][&quot;InputPath&quot;]&amp;#10;input_width = inbook.iloc[current_idx][&quot;InputPathWidth&quot;]&amp;#10;input_height = inbook.iloc[current_idx][&quot;InputPathHeight&quot;]&amp;#10;&amp;#10;right_path = inbook.iloc[current_idx][&quot;RightPath&quot;]&amp;#10;right_width = inbook.iloc[current_idx][&quot;RightPathWidth&quot;]&amp;#10;right_height = inbook.iloc[current_idx][&quot;RightPathHeight&quot;]&amp;#10;&amp;#10;wrong1_input_path = inbook.iloc[current_idx][&quot;Wrong1Path&quot;]&amp;#10;wrong1_width = inbook.iloc[current_idx][&quot;Wrong1PathWidth&quot;]&amp;#10;wrong1_height = inbook.iloc[current_idx][&quot;Wrong1PathHeight&quot;]&amp;#10;&amp;#10;wrong2_input_path = inbook.iloc[current_idx][&quot;Wrong2Path&quot;]&amp;#10;wrong2_width = inbook.iloc[current_idx][&quot;Wrong2PathWidth&quot;]&amp;#10;wrong2_height = inbook.iloc[current_idx][&quot;Wrong2PathHeight&quot;]&amp;#10;&amp;#10;dk_input_path = inbook.iloc[current_idx][&quot;DontKnowPath&quot;]&amp;#10;dk_width = inbook.iloc[current_idx][&quot;DontKnowPathWidth&quot;]&amp;#10;dk_height = inbook.iloc[current_idx][&quot;DontKnowPathHeight&quot;]&amp;#10;&amp;#10;next_input_path = inbook.iloc[current_idx][&quot;NextPath&quot;]&amp;#10;next_width = inbook.iloc[current_idx][&quot;NextPathWidth&quot;]&amp;#10;next_height = inbook.iloc[current_idx][&quot;NextPathHeight&quot;]&amp;#10;&amp;#10;answer_array = [right_path, wrong1_input_path, wrong2_input_path]&amp;#10;width_array = [right_width, wrong1_width, wrong2_width]&amp;#10;height_array = [right_height, wrong1_height, wrong2_height]&amp;#10;&amp;#10;answer_idx = [0,1,2]&amp;#10;random.shuffle(answer_idx)" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
@@ -443,7 +443,7 @@
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="from psychopy.hardware import keyboard&amp;#10;from psychopy import core&amp;#10;&amp;#10;thisExp.addData(&quot;ImagePathInputs&quot;, inbook.iloc[current_idx][&quot;ImagePath&quot;])&amp;#10;&amp;#10;kb = keyboard.Keyboard()&amp;#10;&amp;#10;answers = []&amp;#10;current = 0&amp;#10;position_array = [ll, lm, mm, rm, rr]&amp;#10;arrow_position = position_array[current]" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="from psychopy.hardware import keyboard&amp;#10;from psychopy import core&amp;#10;&amp;#10;eeg_rec.set_event(hash(&quot;GetInput&quot; + str(current_idx)))&amp;#10;thisExp.addData(&quot;ImagePathInputs&quot;, inbook.iloc[current_idx][&quot;ImagePath&quot;])&amp;#10;&amp;#10;kb = keyboard.Keyboard()&amp;#10;&amp;#10;answers = []&amp;#10;current = 0&amp;#10;position_array = [ll, lm, mm, rm, rr]&amp;#10;arrow_position = position_array[current]" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
         <Param name="Each Frame" updates="constant" val="&amp;#10;keys = kb.getKeys(['right', 'left'], waitRelease=True)&amp;#10;if 'left' in keys:&amp;#10;    current = current - 1&amp;#10;&amp;#10;if 'right' in keys:&amp;#10;    current = current + 1&amp;#10;    &amp;#10;current = max(0, current)&amp;#10;current = min(4, current)&amp;#10;&amp;#10;arrow_position = position_array[current]&amp;#10;&amp;#10;" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
@@ -1694,6 +1694,23 @@
         <Param name="texture resolution" updates="constant" val="128" valType="num"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </ImageComponent>
+      <CodeComponent name="code_11">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="eeg_rec.set_event(hash(inbook.iloc[current_idx][&quot;NextPath&quot;]))" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_11" valType="code"/>
+      </CodeComponent>
     </Routine>
     <Routine name="SyntaxWarning">
       <TextComponent name="text_8">
@@ -1798,9 +1815,47 @@
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="End Routine" updates="constant" val="syntax_idx += 1" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="eeg_rec.set_event(hash(&quot;SyntaxTask&quot; + str(syntax_idx)))&amp;#10;syntax_idx += 1" valType="extendedCode"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="name" updates="None" val="code_8" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="eeg_setup">
+      <CodeComponent name="code_10">
+        <Param name="Before Experiment" updates="constant" val="from EEGTools.Recorders.LiveAmpRecorder.liveamp_recorder import LiveAmpRecorder as Recorder&amp;#10;from EEGTools.Recorders.Unicorn_Recorder.unicorn_recorder import Unicorn_recorder as Recorder" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="eeg_rec = Recorder()&amp;#10;eeg_rec.connect()&amp;#10;eeg_rec.connect_plot()&amp;#10;eeg_rec.start_recording()" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_10" valType="code"/>
+      </CodeComponent>
+    </Routine>
+    <Routine name="EndEEG">
+      <CodeComponent name="code_12">
+        <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="rec.disconnect_plot()&amp;#10;rec.disconnect()&amp;#10;rec.save(&quot;CollectedData&quot;)" valType="extendedCode"/>
+        <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Code Type" updates="None" val="Py" valType="str"/>
+        <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End JS Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="End Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="name" updates="None" val="code_12" valType="code"/>
       </CodeComponent>
     </Routine>
   </Routines>
@@ -1822,6 +1877,7 @@
     <Routine name="Crossfixation"/>
     <Routine name="Overview"/>
     <Routine name="Warning_StartSession"/>
+    <Routine name="eeg_setup"/>
     <LoopInitiator loopType="TrialHandler" name="trials">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="None" valType="str"/>
@@ -1844,7 +1900,6 @@
       <Param name="name" updates="None" val="Loop" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
-    <Routine name="SendSignal"/>
     <Routine name="SetVariables"/>
     <Routine name="ShowImage"/>
     <Routine name="ShowInput"/>
@@ -1857,5 +1912,6 @@
     <Routine name="Crossfixation"/>
     <Routine name="AskToContinue"/>
     <LoopTerminator name="trials"/>
+    <Routine name="EndEEG"/>
   </Flow>
 </PsychoPy2experiment>
