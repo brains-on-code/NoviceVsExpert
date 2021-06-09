@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.1.4),
-    on Juni 03, 2021, at 14:01
+    on Juni 09, 2021, at 09:27
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -64,6 +64,8 @@ rm = 0.4 * width
 rr = 0.8 * width
 md = -0.1 * height
 mu = 0.2 * height
+#from EEGTools.Recorders.LiveAmpRecorder.liveamp_recorder import LiveAmpRecorder as Recorder
+#from EEGTools.Recorders.Unicorn_Recorder.unicorn_recorder import Unicorn_recorder as Recorder
 
 
 # Ensure that relative paths start from the same directory as this script
@@ -455,8 +457,8 @@ warningStartStudy = visual.ImageStim(
     flipHoriz=False, flipVert=False,
     texRes=128.0, interpolate=True, depth=-2.0)
 
-# Initialize components for Routine "SendSignal"
-SendSignalClock = core.Clock()
+# Initialize components for Routine "eeg_setup"
+eeg_setupClock = core.Clock()
 
 # Initialize components for Routine "SetVariables"
 SetVariablesClock = core.Clock()
@@ -600,6 +602,12 @@ continuQuestion = visual.TextStim(win=win, name='continuQuestion',
     languageStyle='LTR',
     depth=0.0);
 stop = keyboard.Keyboard()
+
+# Initialize components for Routine "EndEEG"
+EndEEGClock = core.Clock()
+#rec.disconnect_plot()
+#rec.disconnect()
+#rec.save("CollectedData")
 
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
@@ -2418,6 +2426,61 @@ thisExp.addData('warningStartStudy.stopped', warningStartStudy.tStopRefresh)
 # the Routine "Warning_StartSession" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
+# ------Prepare to start Routine "eeg_setup"-------
+continueRoutine = True
+# update component parameters for each repeat
+#eeg_rec = Recorder()
+#eeg_rec.connect()
+#eeg_rec.connect_plot()
+#eeg_rec.start_recording()
+# keep track of which components have finished
+eeg_setupComponents = []
+for thisComponent in eeg_setupComponents:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+eeg_setupClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+frameN = -1
+
+# -------Run Routine "eeg_setup"-------
+while continueRoutine:
+    # get current time
+    t = eeg_setupClock.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=eeg_setupClock)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in eeg_setupComponents:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "eeg_setup"-------
+for thisComponent in eeg_setupComponents:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# the Routine "eeg_setup" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
+
 # set up handler to look after randomisation of conditions etc
 trials = data.TrialHandler(nReps=8, method='random', 
     extraInfo=expInfo, originPath=-1,
@@ -2456,65 +2519,11 @@ for thisTrial in trials:
             for paramName in thisLoop:
                 exec('{} = thisLoop[paramName]'.format(paramName))
         
-        # ------Prepare to start Routine "SendSignal"-------
-        continueRoutine = True
-        # update component parameters for each repeat
-        # keep track of which components have finished
-        SendSignalComponents = []
-        for thisComponent in SendSignalComponents:
-            thisComponent.tStart = None
-            thisComponent.tStop = None
-            thisComponent.tStartRefresh = None
-            thisComponent.tStopRefresh = None
-            if hasattr(thisComponent, 'status'):
-                thisComponent.status = NOT_STARTED
-        # reset timers
-        t = 0
-        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-        SendSignalClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-        frameN = -1
-        
-        # -------Run Routine "SendSignal"-------
-        while continueRoutine:
-            # get current time
-            t = SendSignalClock.getTime()
-            tThisFlip = win.getFutureFlipTime(clock=SendSignalClock)
-            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-            # update/draw components on each frame
-            
-            # check for quit (typically the Esc key)
-            if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-                core.quit()
-            
-            # check if all components have finished
-            if not continueRoutine:  # a component has requested a forced-end of Routine
-                break
-            continueRoutine = False  # will revert to True if at least one component still running
-            for thisComponent in SendSignalComponents:
-                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                    continueRoutine = True
-                    break  # at least one component has not yet finished
-            
-            # refresh the screen
-            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-                win.flip()
-        
-        # -------Ending Routine "SendSignal"-------
-        for thisComponent in SendSignalComponents:
-            if hasattr(thisComponent, "setAutoDraw"):
-                thisComponent.setAutoDraw(False)
-        #s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        #s.connect((TCP_IP, TCP_PORT))
-        #s.send(Message.to_bytes(1, 'big'))
-        #Message = Message + 1
-        #s.close()
-        # the Routine "SendSignal" was not non-slip safe, so reset the non-slip timer
-        routineTimer.reset()
-        
         # ------Prepare to start Routine "SetVariables"-------
         continueRoutine = True
         # update component parameters for each repeat
+        #eeg_rec.refresh()
+        #eeg_rec.set_event(current_idx)
         
         current_image_path = inbook.iloc[current_idx]["ImagePath"]
         width = inbook.iloc[current_idx]["ImagePathWidth"]
@@ -2607,6 +2616,7 @@ for thisTrial in trials:
         response.keys = []
         response.rt = []
         _response_allKeys = []
+        #eeg_rec.set_event(hash("DisplayImage" + str(current_idx)))
         thisExp.addData("ImagePath", inbook.iloc[current_idx]["ImagePath"])
         # keep track of which components have finished
         ShowImageComponents = [Image, response]
@@ -2713,6 +2723,7 @@ for thisTrial in trials:
         key_resp_2.keys = []
         key_resp_2.rt = []
         _key_resp_2_allKeys = []
+        #eeg_rec.set_event(hash("ShowInput" + str(current_idx)))
         thisExp.addData("InputPath", inbook.iloc[current_idx]["InputPath"])
         # keep track of which components have finished
         ShowInputComponents = [image, key_resp_2]
@@ -2831,6 +2842,7 @@ for thisTrial in trials:
         from psychopy.hardware import keyboard
         from psychopy import core
         
+        #eeg_rec.set_event(hash("GetInput" + str(current_idx)))
         thisExp.addData("ImagePathInputs", inbook.iloc[current_idx]["ImagePath"])
         
         kb = keyboard.Keyboard()
@@ -3394,6 +3406,7 @@ for thisTrial in trials:
         trials.addData('key_resp_18.rt', key_resp_18.rt)
     trials.addData('key_resp_18.started', key_resp_18.tStartRefresh)
     trials.addData('key_resp_18.stopped', key_resp_18.tStopRefresh)
+    #eeg_rec.set_event(hash("SyntaxTask" + str(syntax_idx)))
     syntax_idx += 1
     # the Routine "SyntaxTask" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
@@ -3565,6 +3578,57 @@ for thisTrial in trials:
     
 # completed 8 repeats of 'trials'
 
+
+# ------Prepare to start Routine "EndEEG"-------
+continueRoutine = True
+# update component parameters for each repeat
+# keep track of which components have finished
+EndEEGComponents = []
+for thisComponent in EndEEGComponents:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+EndEEGClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+frameN = -1
+
+# -------Run Routine "EndEEG"-------
+while continueRoutine:
+    # get current time
+    t = EndEEGClock.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=EndEEGClock)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in EndEEGComponents:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "EndEEG"-------
+for thisComponent in EndEEGComponents:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+# the Routine "EndEEG" was not non-slip safe, so reset the non-slip timer
+routineTimer.reset()
 
 # Flip one final time so any remaining win.callOnFlip() 
 # and win.timeOnFlip() tasks get executed before quitting
