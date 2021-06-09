@@ -495,7 +495,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="num"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Haben Sie noch Fragen?&amp;#10;&amp;#10;&lt;Weiter mit Leertaste&gt;" valType="str"/>
+        <Param name="text" updates="constant" val="Vielen Dank, dass Sie an dieser Studie teilnehmen.&amp;#10;&amp;#10;In dieser Studie werden wir Ihnen kurze Java Programme zeigen&amp;#10;(maximale Dauer je 3 Minuten).&amp;#10;Ihre Aufgabe ist es, die Programme zu verstehen. &amp;#10;Danach werden wir Ihnen eine Frage zu der Funktionalität des Programms stellen." valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
@@ -880,7 +880,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="num"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Wählen Sie mit den Pfeiltasten die passende Ausgabe.&amp;#10;&amp;#10;Wenn keine der Antwortmöglichkeiten passt, wählen Sie bitte &quot;?&quot;.&amp;#10;" valType="str"/>
+        <Param name="text" updates="constant" val="Wählen Sie mit den Pfeiltasten die passende Ausgabe.&amp;#10;&amp;#10;Wenn keine der Antwortmöglichkeiten passt, wählen Sie bitte &quot;next&quot;.&amp;#10;" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
@@ -995,7 +995,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="num"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Bitte Antworten Sie nur, wenn Sie das Ergebnis auch kennen. &amp;#10;&amp;#10;Genau wie in diesem Beispiel wird Ihnen immer ein Funktionsaufruf präsentiert werden, und Sie sollen die korrekte Ausgabe auswählen. &amp;#10;&amp;#10;Bitte raten Sie nicht, sondern wählen Sie &quot;?&quot;. &quot;?&quot; ist besser, als eine Antwort zu raten. Am Wichtigsten ist jedoch, dass Sie sich nicht frustrieren lassen. &amp;#10;&amp;#10;Haben Sie noch Fragen?&amp;#10;Nun folgt ein Trainingsbeispiel:" valType="str"/>
+        <Param name="text" updates="constant" val="Bitte antworten Sie nur, wenn Sie das Ergebnis auch kennen. &amp;#10;&amp;#10;Genau wie in diesem Beispiel wird Ihnen immer ein Funktionsaufruf präsentiert werden, und Sie sollen die korrekte Ausgabe auswählen. &amp;#10;&amp;#10;Bitte raten Sie nicht, sondern wählen Sie &quot;next&quot;. &quot;next&quot; ist besser, als eine Antwort zu raten. Am Wichtigsten ist jedoch, dass Sie sich nicht frustrieren lassen. &amp;#10;&amp;#10;Haben Sie noch Fragen?&amp;#10;Nun folgt ein Trainingsbeispiel:" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
@@ -1247,7 +1247,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="num"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Klammer gefunden: &lt;Pfeiltatste nach unten&gt;&amp;#10;z.B. 5 Klammern = 5 mal Pfeiltaste nach unten drücken&amp;#10;&amp;#10;&lt;Weiter mit Leertaste&gt;" valType="str"/>
+        <Param name="text" updates="constant" val="Hilfestellung: Klammer gefunden: &lt;Pfeiltatste nach unten&gt;&amp;#10;&amp;#10;&lt;Weiter mit Leertaste&gt;" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
@@ -1843,10 +1843,10 @@
       <CodeComponent name="code_12">
         <Param name="Before Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Experiment" updates="constant" val="eeg_rec.refresh()&amp;#10;rec.disconnect_plot()&amp;#10;rec.disconnect()&amp;#10;rec.save(&quot;CollectedData&quot;)" valType="extendedCode"/>
+        <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="eeg_rec.refresh()&amp;#10;rec.disconnect_plot()&amp;#10;rec.disconnect()&amp;#10;rec.save(&quot;CollectedData&quot;)" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
@@ -1862,11 +1862,11 @@
   <Flow>
     <Routine name="codeStartup"/>
     <Routine name="Hello"/>
+    <Routine name="Instructions"/>
+    <Routine name="Instructions2"/>
     <Routine name="Hello_World"/>
     <Routine name="input"/>
     <Routine name="output"/>
-    <Routine name="Instructions"/>
-    <Routine name="Instructions2"/>
     <Routine name="TrainingSnippet"/>
     <Routine name="TrainingInput"/>
     <Routine name="TrainingOutput_2"/>
