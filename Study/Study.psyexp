@@ -84,7 +84,7 @@
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="eeg_rec.refresh()&amp;#10;eeg_rec.set_event(hash(&quot;DisplayImage&quot; + str(current_idx)))&amp;#10;thisExp.addData(&quot;ImagePath&quot;, inbook.iloc[current_idx][&quot;ImagePath&quot;])" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="#eeg_rec.refresh()&amp;#10;#eeg_rec.set_event(hash(&quot;DisplayImage&quot; + str(current_idx)))&amp;#10;#thisExp.addData(&quot;ImagePath&quot;, inbook.iloc[current_idx][&quot;ImagePath&quot;])" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
