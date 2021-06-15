@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.1.4),
-    on Juni 15, 2021, at 10:21
+    on Juni 15, 2021, at 10:52
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -445,13 +445,6 @@ key_resp_8 = keyboard.Keyboard()
 # Initialize components for Routine "Warning_StartSession"
 Warning_StartSessionClock = core.Clock()
 key_resp_9 = keyboard.Keyboard()
-text_9 = visual.TextStim(win=win, name='text_9',
-    text='<Start der Studie mit "s">',
-    font='Open Sans',
-    pos=(0, -0.4), height=0.05, wrapWidth=None, ori=0.0, 
-    color='white', colorSpace='rgb', opacity=None, 
-    languageStyle='LTR',
-    depth=-1.0);
 warningStartStudy = visual.ImageStim(
     win=win,
     name='warningStartStudy', 
@@ -459,7 +452,7 @@ warningStartStudy = visual.ImageStim(
     ori=0.0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=None,
     flipHoriz=False, flipVert=False,
-    texRes=128.0, interpolate=True, depth=-2.0)
+    texRes=128.0, interpolate=True, depth=-1.0)
 
 # Initialize components for Routine "eeg_setup"
 eeg_setupClock = core.Clock()
@@ -469,7 +462,7 @@ WarningClock = core.Clock()
 text_12 = visual.TextStim(win=win, name='text_12',
     text=textbase["DoNotMove"][language],
     font='Open Sans',
-    pos=(0, 0), height=0.1, wrapWidth=None, ori=0.0, 
+    pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=0.0);
@@ -2429,7 +2422,7 @@ key_resp_9.keys = []
 key_resp_9.rt = []
 _key_resp_9_allKeys = []
 # keep track of which components have finished
-Warning_StartSessionComponents = [key_resp_9, text_9, warningStartStudy]
+Warning_StartSessionComponents = [key_resp_9, warningStartStudy]
 for thisComponent in Warning_StartSessionComponents:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -2474,15 +2467,6 @@ while continueRoutine:
             # a response ends the routine
             continueRoutine = False
     
-    # *text_9* updates
-    if text_9.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        text_9.frameNStart = frameN  # exact frame index
-        text_9.tStart = t  # local t and not account for scr refresh
-        text_9.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(text_9, 'tStartRefresh')  # time at next scr refresh
-        text_9.setAutoDraw(True)
-    
     # *warningStartStudy* updates
     if warningStartStudy.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
         # keep track of start time/frame for later
@@ -2522,8 +2506,6 @@ if key_resp_9.keys != None:  # we had a response
 thisExp.addData('key_resp_9.started', key_resp_9.tStartRefresh)
 thisExp.addData('key_resp_9.stopped', key_resp_9.tStopRefresh)
 thisExp.nextEntry()
-thisExp.addData('text_9.started', text_9.tStartRefresh)
-thisExp.addData('text_9.stopped', text_9.tStopRefresh)
 thisExp.addData('warningStartStudy.started', warningStartStudy.tStartRefresh)
 thisExp.addData('warningStartStudy.stopped', warningStartStudy.tStopRefresh)
 # the Routine "Warning_StartSession" was not non-slip safe, so reset the non-slip timer
@@ -2532,6 +2514,8 @@ routineTimer.reset()
 # ------Prepare to start Routine "eeg_setup"-------
 continueRoutine = True
 # update component parameters for each repeat
+eeg_rec = None
+logger = None
 if use_eeg==True:
     eeg_rec = Recorder()
     eeg_rec.connect()
@@ -2740,7 +2724,7 @@ for thisTrial in trials:
         # update component parameters for each repeat
         if use_eeg==True: 
             eeg_rec.refresh()
-            eeg_rec.set_event(current_idx)
+            eeg_rec.set_event(current_idx%1000000007)
         
         current_image_path = inbook.iloc[current_idx]["ImagePath"]
         width = inbook.iloc[current_idx]["ImagePathWidth"]
@@ -2835,7 +2819,7 @@ for thisTrial in trials:
         _response_allKeys = []
         if use_eeg==True: 
             eeg_rec.refresh()
-            eeg_rec.set_event(hash("DisplayImage" + str(current_idx)))
+            eeg_rec.set_event(hash("DisplayImage" + str(current_idx))%1000000007)
         thisExp.addData("ImagePath", inbook.iloc[current_idx]["ImagePath"])
         # keep track of which components have finished
         ShowImageComponents = [Image, response]
@@ -2944,7 +2928,7 @@ for thisTrial in trials:
         _key_resp_2_allKeys = []
         if use_eeg==True: 
             eeg_rec.refresh()
-            eeg_rec.set_event(hash("ShowInput" + str(current_idx)))
+            eeg_rec.set_event(hash("ShowInput" + str(current_idx))%1000000007)
         thisExp.addData("InputPath", inbook.iloc[current_idx]["InputPath"])
         # keep track of which components have finished
         ShowInputComponents = [image, key_resp_2]
@@ -3065,7 +3049,7 @@ for thisTrial in trials:
         
         if use_eeg==True: 
             eeg_rec.refresh()
-            eeg_rec.set_event(hash("GetInput" + str(current_idx)))
+            eeg_rec.set_event(hash("GetInput" + str(current_idx))%1000000007)
         thisExp.addData("ImagePathInputs", inbook.iloc[current_idx]["ImagePath"])
         
         kb = keyboard.Keyboard()
@@ -3634,7 +3618,7 @@ for thisTrial in trials:
     trials.addData('key_resp_18.stopped', key_resp_18.tStopRefresh)
     if use_eeg==True: 
         eeg_rec.refresh()
-        eeg_rec.set_event(hash("SyntaxTask" + str(syntax_idx)))
+        eeg_rec.set_event(hash("SyntaxTask" + str(syntax_idx))%1000000007)
     syntax_idx += 1
     # the Routine "SyntaxTask" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
@@ -3780,7 +3764,6 @@ for thisTrial in trials:
             continuQuestion.setText("Danke für die Teilnahme")
             if use_eeg:
                 eeg_rec.refresh()
-                eeg_rec.disconnect_plot()
                 eeg_rec.disconnect()
                 eeg_rec.save("CollectedData")
             if use_eyetracker:
@@ -3832,7 +3815,6 @@ continueRoutine = True
 # update component parameters for each repeat
 if use_eeg:
     eeg_rec.refresh()
-    eeg_rec.disconnect_plot()
     eeg_rec.disconnect()
     eeg_rec.save("CollectedData")
 if use_eyetracker:
