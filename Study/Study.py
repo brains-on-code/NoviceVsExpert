@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.1.4),
-    on Juni 15, 2021, at 14:31
+    on Juni 15, 2021, at 14:17
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -95,7 +95,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\jonas\\OneDrive\\Dokumente\\GitHub\\NoviceVsExpert\\Study\\Study_lastrun.py',
+    originPath='C:\\Users\\jonas\\OneDrive\\Dokumente\\GitHub\\NoviceVsExpert\\Study\\Study.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -2851,6 +2851,8 @@ for thisTrial in trials:
             eeg_rec.refresh()
             eeg_rec.set_event(hash("DisplayImage" + str(current_idx))%1000000007)
         thisExp.addData("ImagePath", inbook.iloc[current_idx]["ImagePath"])
+        thisExp.nextEntry()
+        logging.console.write("ImagePathLol\n")
         # keep track of which components have finished
         ShowImageComponents = [Image, response]
         for thisComponent in ShowImageComponents:
