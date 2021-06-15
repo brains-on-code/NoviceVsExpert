@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.1.4),
-    on Juni 14, 2021, at 13:32
+    on Juni 15, 2021, at 10:21
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -35,6 +35,9 @@ import json
 
 global current_image_path
 
+use_eyetracker = False
+use_eeg = False
+
 random.seed()
 
 in_file = "conditions.xlsx"
@@ -66,7 +69,7 @@ rr = 0.8 * width
 md = -0.1 * height
 mu = 0.2 * height
 #from EEGTools.Recorders.LiveAmpRecorder.liveamp_recorder import LiveAmpRecorder as Recorder
-#from EEGTools.Recorders.Unicorn_Recorder.unicorn_recorder import Unicorn_recorder as Recorder
+#from base_functionalities.logger import Logger
 
 
 # Ensure that relative paths start from the same directory as this script
@@ -614,9 +617,25 @@ continuQuestion = visual.TextStim(win=win, name='continuQuestion',
     languageStyle='LTR',
     depth=0.0);
 stop = keyboard.Keyboard()
+from psychopy.hardware import keyboard
+from psychopy import core
+import time
+
+
+kb = keyboard.Keyboard()
 
 # Initialize components for Routine "EndEEG"
 EndEEGClock = core.Clock()
+
+# Initialize components for Routine "Danke"
+DankeClock = core.Clock()
+text_15 = visual.TextStim(win=win, name='text_15',
+    text='Danke fürs Teilnehmen.',
+    font='Open Sans',
+    pos=(0, 0), height=0.1, wrapWidth=None, ori=0.0, 
+    color='white', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=0.0);
 
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
@@ -1828,7 +1847,7 @@ routineTimer.reset()
 
 # ------Prepare to start Routine "Crossfixation"-------
 continueRoutine = True
-routineTimer.add(30.000000)
+routineTimer.add(1.000000)
 # update component parameters for each repeat
 # keep track of which components have finished
 CrossfixationComponents = [image_7]
@@ -1864,7 +1883,7 @@ while continueRoutine and routineTimer.getTime() > 0:
         image_7.setAutoDraw(True)
     if image_7.status == STARTED:
         # is it time to stop? (based on global clock, using actual start)
-        if tThisFlipGlobal > image_7.tStartRefresh + 30.0-frameTolerance:
+        if tThisFlipGlobal > image_7.tStartRefresh + 1.0-frameTolerance:
             # keep track of stop time/frame for later
             image_7.tStop = t  # not accounting for scr refresh
             image_7.frameNStop = frameN  # exact frame index
@@ -2229,7 +2248,7 @@ routineTimer.reset()
 
 # ------Prepare to start Routine "Crossfixation"-------
 continueRoutine = True
-routineTimer.add(30.000000)
+routineTimer.add(1.000000)
 # update component parameters for each repeat
 # keep track of which components have finished
 CrossfixationComponents = [image_7]
@@ -2265,7 +2284,7 @@ while continueRoutine and routineTimer.getTime() > 0:
         image_7.setAutoDraw(True)
     if image_7.status == STARTED:
         # is it time to stop? (based on global clock, using actual start)
-        if tThisFlipGlobal > image_7.tStartRefresh + 30.0-frameTolerance:
+        if tThisFlipGlobal > image_7.tStartRefresh + 1.0-frameTolerance:
             # keep track of stop time/frame for later
             image_7.tStop = t  # not accounting for scr refresh
             image_7.frameNStop = frameN  # exact frame index
@@ -2513,10 +2532,27 @@ routineTimer.reset()
 # ------Prepare to start Routine "eeg_setup"-------
 continueRoutine = True
 # update component parameters for each repeat
-#eeg_rec = Recorder()
-#eeg_rec.connect()
-#eeg_rec.connect_plot()
-#eeg_rec.start_recording()
+if use_eeg==True:
+    eeg_rec = Recorder()
+    eeg_rec.connect()
+    eeg_rec.connect_plot()
+    eeg_rec.start_recording()
+
+if use_eyetracker==True:
+    logger = Logger("exepriment_data.csv")
+    logger.add_key_to_log('left_gaze_point_in_user_coordinate_system')
+    logger.add_key_to_log('left_gaze_point_validity')
+    logger.add_key_to_log('right_gaze_point_validity')
+    logger.add_key_to_log('right_gaze_point_in_user_coordinate_system')
+    logger.add_key_to_log('left_gaze_origin_in_user_coordinate_system')
+    logger.add_key_to_log('right_gaze_origin_in_user_coordinate_system')
+    logger.add_key_to_log('left_gaze_point_on_display_area')
+    logger.add_key_to_log('right_gaze_point_on_display_area')
+    logger.add_key_to_log('system_time_stamp')
+    logger.add_key_to_log('left_pupil_diameter')
+    logger.add_key_to_log('right_pupil_diameter')
+    logger.start_recording()
+
 # keep track of which components have finished
 eeg_setupComponents = []
 for thisComponent in eeg_setupComponents:
@@ -2702,8 +2738,9 @@ for thisTrial in trials:
         # ------Prepare to start Routine "SetVariables"-------
         continueRoutine = True
         # update component parameters for each repeat
-        #eeg_rec.refresh()
-        #eeg_rec.set_event(current_idx)
+        if use_eeg==True: 
+            eeg_rec.refresh()
+            eeg_rec.set_event(current_idx)
         
         current_image_path = inbook.iloc[current_idx]["ImagePath"]
         width = inbook.iloc[current_idx]["ImagePathWidth"]
@@ -2796,9 +2833,10 @@ for thisTrial in trials:
         response.keys = []
         response.rt = []
         _response_allKeys = []
-        #eeg_rec.refresh()
-        #eeg_rec.set_event(hash("DisplayImage" + str(current_idx)))
-        #thisExp.addData("ImagePath", inbook.iloc[current_idx]["ImagePath"])
+        if use_eeg==True: 
+            eeg_rec.refresh()
+            eeg_rec.set_event(hash("DisplayImage" + str(current_idx)))
+        thisExp.addData("ImagePath", inbook.iloc[current_idx]["ImagePath"])
         # keep track of which components have finished
         ShowImageComponents = [Image, response]
         for thisComponent in ShowImageComponents:
@@ -2904,9 +2942,10 @@ for thisTrial in trials:
         key_resp_2.keys = []
         key_resp_2.rt = []
         _key_resp_2_allKeys = []
-        #eeg_rec.refresh()
-        #eeg_rec.set_event(hash("ShowInput" + str(current_idx)))
-        #thisExp.addData("InputPath", inbook.iloc[current_idx]["InputPath"])
+        if use_eeg==True: 
+            eeg_rec.refresh()
+            eeg_rec.set_event(hash("ShowInput" + str(current_idx)))
+        thisExp.addData("InputPath", inbook.iloc[current_idx]["InputPath"])
         # keep track of which components have finished
         ShowInputComponents = [image, key_resp_2]
         for thisComponent in ShowInputComponents:
@@ -3024,9 +3063,10 @@ for thisTrial in trials:
         from psychopy.hardware import keyboard
         from psychopy import core
         
-        #eeg_rec.refresh()
-        #eeg_rec.set_event(hash("GetInput" + str(current_idx)))
-        #thisExp.addData("ImagePathInputs", inbook.iloc[current_idx]["ImagePath"])
+        if use_eeg==True: 
+            eeg_rec.refresh()
+            eeg_rec.set_event(hash("GetInput" + str(current_idx)))
+        thisExp.addData("ImagePathInputs", inbook.iloc[current_idx]["ImagePath"])
         
         kb = keyboard.Keyboard()
         
@@ -3262,7 +3302,10 @@ for thisTrial in trials:
         # ------Prepare to start Routine "updateIndex"-------
         continueRoutine = True
         # update component parameters for each repeat
-        current_idx = idx_values.pop(0)
+        try:
+            current_idx = idx_values.pop(0)
+        except:
+            pass
         # keep track of which components have finished
         updateIndexComponents = []
         for thisComponent in updateIndexComponents:
@@ -3313,7 +3356,7 @@ for thisTrial in trials:
         
         # ------Prepare to start Routine "Crossfixation"-------
         continueRoutine = True
-        routineTimer.add(30.000000)
+        routineTimer.add(1.000000)
         # update component parameters for each repeat
         # keep track of which components have finished
         CrossfixationComponents = [image_7]
@@ -3349,7 +3392,7 @@ for thisTrial in trials:
                 image_7.setAutoDraw(True)
             if image_7.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > image_7.tStartRefresh + 30.0-frameTolerance:
+                if tThisFlipGlobal > image_7.tStartRefresh + 1.0-frameTolerance:
                     # keep track of stop time/frame for later
                     image_7.tStop = t  # not accounting for scr refresh
                     image_7.frameNStop = frameN  # exact frame index
@@ -3589,15 +3632,16 @@ for thisTrial in trials:
         trials.addData('key_resp_18.rt', key_resp_18.rt)
     trials.addData('key_resp_18.started', key_resp_18.tStartRefresh)
     trials.addData('key_resp_18.stopped', key_resp_18.tStopRefresh)
-    #eeg_rec.refresh()
-    #eeg_rec.set_event(hash("SyntaxTask" + str(syntax_idx)))
+    if use_eeg==True: 
+        eeg_rec.refresh()
+        eeg_rec.set_event(hash("SyntaxTask" + str(syntax_idx)))
     syntax_idx += 1
     # the Routine "SyntaxTask" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
     # ------Prepare to start Routine "Crossfixation"-------
     continueRoutine = True
-    routineTimer.add(30.000000)
+    routineTimer.add(1.000000)
     # update component parameters for each repeat
     # keep track of which components have finished
     CrossfixationComponents = [image_7]
@@ -3633,7 +3677,7 @@ for thisTrial in trials:
             image_7.setAutoDraw(True)
         if image_7.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > image_7.tStartRefresh + 30.0-frameTolerance:
+            if tThisFlipGlobal > image_7.tStartRefresh + 1.0-frameTolerance:
                 # keep track of stop time/frame for later
                 image_7.tStop = t  # not accounting for scr refresh
                 image_7.frameNStop = frameN  # exact frame index
@@ -3670,6 +3714,7 @@ for thisTrial in trials:
     stop.keys = []
     stop.rt = []
     _stop_allKeys = []
+    stop_experiment = False
     # keep track of which components have finished
     AskToContinueComponents = [continuQuestion, stop]
     for thisComponent in AskToContinueComponents:
@@ -3725,6 +3770,25 @@ for thisTrial in trials:
                 # a response ends the routine
                 continueRoutine = False
         
+        keys = kb.getKeys(['s'], waitRelease=True)
+        
+        if stop_experiment == True:
+            time.sleep(10.0)
+            core.quit()
+        
+        if 's' in keys:
+            continuQuestion.setText("Danke für die Teilnahme")
+            if use_eeg:
+                eeg_rec.refresh()
+                eeg_rec.disconnect_plot()
+                eeg_rec.disconnect()
+                eeg_rec.save("CollectedData")
+            if use_eyetracker:
+                logger.stop_recording()
+            stop_experiment = True
+            
+        
+        
         # check for quit (typically the Esc key)
         if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
             core.quit()
@@ -3766,10 +3830,13 @@ for thisTrial in trials:
 # ------Prepare to start Routine "EndEEG"-------
 continueRoutine = True
 # update component parameters for each repeat
-#eeg_rec.refresh()
-#rec.disconnect_plot()
-#rec.disconnect()
-#rec.save("CollectedData")
+if use_eeg:
+    eeg_rec.refresh()
+    eeg_rec.disconnect_plot()
+    eeg_rec.disconnect()
+    eeg_rec.save("CollectedData")
+if use_eyetracker:
+    logger.stop_recording()
 # keep track of which components have finished
 EndEEGComponents = []
 for thisComponent in EndEEGComponents:
@@ -3817,6 +3884,75 @@ for thisComponent in EndEEGComponents:
         thisComponent.setAutoDraw(False)
 # the Routine "EndEEG" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
+
+# ------Prepare to start Routine "Danke"-------
+continueRoutine = True
+routineTimer.add(10.000000)
+# update component parameters for each repeat
+# keep track of which components have finished
+DankeComponents = [text_15]
+for thisComponent in DankeComponents:
+    thisComponent.tStart = None
+    thisComponent.tStop = None
+    thisComponent.tStartRefresh = None
+    thisComponent.tStopRefresh = None
+    if hasattr(thisComponent, 'status'):
+        thisComponent.status = NOT_STARTED
+# reset timers
+t = 0
+_timeToFirstFrame = win.getFutureFlipTime(clock="now")
+DankeClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
+frameN = -1
+
+# -------Run Routine "Danke"-------
+while continueRoutine and routineTimer.getTime() > 0:
+    # get current time
+    t = DankeClock.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=DankeClock)
+    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+    # update/draw components on each frame
+    
+    # *text_15* updates
+    if text_15.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        text_15.frameNStart = frameN  # exact frame index
+        text_15.tStart = t  # local t and not account for scr refresh
+        text_15.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(text_15, 'tStartRefresh')  # time at next scr refresh
+        text_15.setAutoDraw(True)
+    if text_15.status == STARTED:
+        # is it time to stop? (based on global clock, using actual start)
+        if tThisFlipGlobal > text_15.tStartRefresh + 10.0-frameTolerance:
+            # keep track of stop time/frame for later
+            text_15.tStop = t  # not accounting for scr refresh
+            text_15.frameNStop = frameN  # exact frame index
+            win.timeOnFlip(text_15, 'tStopRefresh')  # time at next scr refresh
+            text_15.setAutoDraw(False)
+    
+    # check for quit (typically the Esc key)
+    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
+        core.quit()
+    
+    # check if all components have finished
+    if not continueRoutine:  # a component has requested a forced-end of Routine
+        break
+    continueRoutine = False  # will revert to True if at least one component still running
+    for thisComponent in DankeComponents:
+        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+            continueRoutine = True
+            break  # at least one component has not yet finished
+    
+    # refresh the screen
+    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+        win.flip()
+
+# -------Ending Routine "Danke"-------
+for thisComponent in DankeComponents:
+    if hasattr(thisComponent, "setAutoDraw"):
+        thisComponent.setAutoDraw(False)
+thisExp.addData('text_15.started', text_15.tStartRefresh)
+thisExp.addData('text_15.stopped', text_15.tStopRefresh)
 
 # Flip one final time so any remaining win.callOnFlip() 
 # and win.timeOnFlip() tasks get executed before quitting
