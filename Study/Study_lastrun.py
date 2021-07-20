@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.1.4),
-    on Juni 15, 2021, at 14:31
+    on Juli 20, 2021, at 15:59
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -37,8 +37,8 @@ logging.console.setLevel(logging.CRITICAL)
 
 global current_image_path
 
-use_eyetracker = False
-use_eeg = False
+use_eyetracker = True
+use_eeg = True
 
 random.seed()
 
@@ -1866,7 +1866,7 @@ routineTimer.reset()
 
 # ------Prepare to start Routine "Crossfixation"-------
 continueRoutine = True
-routineTimer.add(1.000000)
+routineTimer.add(30.000000)
 # update component parameters for each repeat
 # keep track of which components have finished
 CrossfixationComponents = [image_7]
@@ -1902,7 +1902,7 @@ while continueRoutine and routineTimer.getTime() > 0:
         image_7.setAutoDraw(True)
     if image_7.status == STARTED:
         # is it time to stop? (based on global clock, using actual start)
-        if tThisFlipGlobal > image_7.tStartRefresh + 1.0-frameTolerance:
+        if tThisFlipGlobal > image_7.tStartRefresh + 30.0-frameTolerance:
             # keep track of stop time/frame for later
             image_7.tStop = t  # not accounting for scr refresh
             image_7.frameNStop = frameN  # exact frame index
@@ -2270,7 +2270,7 @@ routineTimer.reset()
 
 # ------Prepare to start Routine "Crossfixation"-------
 continueRoutine = True
-routineTimer.add(1.000000)
+routineTimer.add(30.000000)
 # update component parameters for each repeat
 # keep track of which components have finished
 CrossfixationComponents = [image_7]
@@ -2306,7 +2306,7 @@ while continueRoutine and routineTimer.getTime() > 0:
         image_7.setAutoDraw(True)
     if image_7.status == STARTED:
         # is it time to stop? (based on global clock, using actual start)
-        if tThisFlipGlobal > image_7.tStartRefresh + 1.0-frameTolerance:
+        if tThisFlipGlobal > image_7.tStartRefresh + 30.0-frameTolerance:
             # keep track of stop time/frame for later
             image_7.tStop = t  # not accounting for scr refresh
             image_7.frameNStop = frameN  # exact frame index
@@ -3057,6 +3057,7 @@ for thisTrial in trials:
         
         # ------Prepare to start Routine "ShowOptions"-------
         continueRoutine = True
+        routineTimer.add(30.000000)
         # update component parameters for each repeat
         image_1.setPos((ll, 0))
         image_1.setSize([width_array[answer_idx[0]], height_array[answer_idx[0]]])
@@ -3107,7 +3108,7 @@ for thisTrial in trials:
         frameN = -1
         
         # -------Run Routine "ShowOptions"-------
-        while continueRoutine:
+        while continueRoutine and routineTimer.getTime() > 0:
             # get current time
             t = ShowOptionsClock.getTime()
             tThisFlip = win.getFutureFlipTime(clock=ShowOptionsClock)
@@ -3246,6 +3247,14 @@ for thisTrial in trials:
                 waitOnFlip = True
                 win.callOnFlip(key_resp_3.clock.reset)  # t=0 on next screen flip
                 win.callOnFlip(key_resp_3.clearEvents, eventType='keyboard')  # clear events on next screen flip
+            if key_resp_3.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > key_resp_3.tStartRefresh + 30.-frameTolerance:
+                    # keep track of stop time/frame for later
+                    key_resp_3.tStop = t  # not accounting for scr refresh
+                    key_resp_3.frameNStop = frameN  # exact frame index
+                    win.timeOnFlip(key_resp_3, 'tStopRefresh')  # time at next scr refresh
+                    key_resp_3.status = FINISHED
             if key_resp_3.status == STARTED and not waitOnFlip:
                 theseKeys = key_resp_3.getKeys(keyList=['space'], waitRelease=False)
                 _key_resp_3_allKeys.extend(theseKeys)
@@ -3310,8 +3319,6 @@ for thisTrial in trials:
             Loop.addData('key_resp_3.rt', key_resp_3.rt)
         Loop.addData('key_resp_3.started', key_resp_3.tStartRefresh)
         Loop.addData('key_resp_3.stopped', key_resp_3.tStopRefresh)
-        # the Routine "ShowOptions" was not non-slip safe, so reset the non-slip timer
-        routineTimer.reset()
         
         # ------Prepare to start Routine "updateIndex"-------
         continueRoutine = True
@@ -3370,7 +3377,7 @@ for thisTrial in trials:
         
         # ------Prepare to start Routine "Crossfixation"-------
         continueRoutine = True
-        routineTimer.add(1.000000)
+        routineTimer.add(30.000000)
         # update component parameters for each repeat
         # keep track of which components have finished
         CrossfixationComponents = [image_7]
@@ -3406,7 +3413,7 @@ for thisTrial in trials:
                 image_7.setAutoDraw(True)
             if image_7.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > image_7.tStartRefresh + 1.0-frameTolerance:
+                if tThisFlipGlobal > image_7.tStartRefresh + 30.0-frameTolerance:
                     # keep track of stop time/frame for later
                     image_7.tStop = t  # not accounting for scr refresh
                     image_7.frameNStop = frameN  # exact frame index
@@ -3769,7 +3776,7 @@ for thisTrial in trials:
     
     # ------Prepare to start Routine "Crossfixation"-------
     continueRoutine = True
-    routineTimer.add(1.000000)
+    routineTimer.add(30.000000)
     # update component parameters for each repeat
     # keep track of which components have finished
     CrossfixationComponents = [image_7]
@@ -3805,7 +3812,7 @@ for thisTrial in trials:
             image_7.setAutoDraw(True)
         if image_7.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > image_7.tStartRefresh + 1.0-frameTolerance:
+            if tThisFlipGlobal > image_7.tStartRefresh + 30.0-frameTolerance:
                 # keep track of stop time/frame for later
                 image_7.tStop = t  # not accounting for scr refresh
                 image_7.frameNStop = frameN  # exact frame index

@@ -30,7 +30,7 @@ class dumpSorting {
         if (a > b) {
             int temp = b;
             b = a;
-            c = temp;
+            a = temp;
         }
         if (c > d) {
             int temp = d;

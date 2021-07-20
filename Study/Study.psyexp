@@ -160,7 +160,7 @@
     </Routine>
     <Routine name="codeStartup">
       <CodeComponent name="codeInit">
-        <Param name="Before Experiment" updates="constant" val="import random, xlrd&amp;#10;import socket&amp;#10;import pandas as pd&amp;#10;import json&amp;#10;from psychopy import logging&amp;#10;logging.console.setLevel(logging.CRITICAL)&amp;#10;&amp;#10;global current_image_path&amp;#10;&amp;#10;use_eyetracker = False&amp;#10;use_eeg = False&amp;#10;&amp;#10;random.seed()&amp;#10;&amp;#10;in_file = &quot;conditions.xlsx&quot;&amp;#10;example_file = &quot;example_conditions.xlsx&quot;&amp;#10;syntax_file = &quot;syntax_conditions.xlsx&quot;&amp;#10;&amp;#10;syntax_idx = 0&amp;#10;num_items = 32&amp;#10;num_iter = 5&amp;#10;idx_values = [x for x in range(num_items)]&amp;#10;&amp;#10;TCP_IP = 'localhost'&amp;#10;TCP_PORT = 50000&amp;#10;Message = 1&amp;#10;&amp;#10;from psychopy import monitors&amp;#10;&amp;#10;mon = None&amp;#10;for tmp_mon in monitors.getAllMonitors():&amp;#10;    mon = tmp_mon&amp;#10;    &amp;#10;width = monitors.Monitor(mon).getSizePix()[0]&amp;#10;height = monitors.Monitor(mon).getSizePix()[1]&amp;#10;ll = -0.8 * width&amp;#10;lm = -0.4 * width&amp;#10;mm = 0.0 * width&amp;#10;rm = 0.4 * width&amp;#10;rr = 0.8 * width&amp;#10;md = -0.1 * height&amp;#10;mu = 0.2 * height" valType="extendedCode"/>
+        <Param name="Before Experiment" updates="constant" val="import random, xlrd&amp;#10;import socket&amp;#10;import pandas as pd&amp;#10;import json&amp;#10;from psychopy import logging&amp;#10;logging.console.setLevel(logging.CRITICAL)&amp;#10;&amp;#10;global current_image_path&amp;#10;&amp;#10;use_eyetracker = True&amp;#10;use_eeg = True&amp;#10;&amp;#10;random.seed()&amp;#10;&amp;#10;in_file = &quot;conditions.xlsx&quot;&amp;#10;example_file = &quot;example_conditions.xlsx&quot;&amp;#10;syntax_file = &quot;syntax_conditions.xlsx&quot;&amp;#10;&amp;#10;syntax_idx = 0&amp;#10;num_items = 32&amp;#10;num_iter = 5&amp;#10;idx_values = [x for x in range(num_items)]&amp;#10;&amp;#10;TCP_IP = 'localhost'&amp;#10;TCP_PORT = 50000&amp;#10;Message = 1&amp;#10;&amp;#10;from psychopy import monitors&amp;#10;&amp;#10;mon = None&amp;#10;for tmp_mon in monitors.getAllMonitors():&amp;#10;    mon = tmp_mon&amp;#10;    &amp;#10;width = monitors.Monitor(mon).getSizePix()[0]&amp;#10;height = monitors.Monitor(mon).getSizePix()[1]&amp;#10;ll = -0.8 * width&amp;#10;lm = -0.4 * width&amp;#10;mm = 0.0 * width&amp;#10;rm = 0.4 * width&amp;#10;rr = 0.8 * width&amp;#10;md = -0.1 * height&amp;#10;mu = 0.2 * height" valType="extendedCode"/>
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Experiment" updates="constant" val="#open execl&amp;#10;inbook = pd.read_excel(in_file)&amp;#10;example_df = pd.read_excel(example_file)&amp;#10;syntax_df = pd.read_excel(syntax_file)&amp;#10;    &amp;#10;random.shuffle(idx_values)&amp;#10;current_idx = idx_values.pop(0)&amp;#10;&amp;#10;language = &quot;English&quot;&amp;#10;textbase = json.load(open('./Resources/textbase.json', 'rb'))" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
@@ -484,7 +484,7 @@
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
-        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="stopVal" updates="constant" val="30." valType="code"/>
         <Param name="store" updates="constant" val="last key" valType="str"/>
         <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
         <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
@@ -1764,7 +1764,7 @@
     </Routine>
     <Routine name="eeg_setup">
       <CodeComponent name="code_10">
-        <Param name="Before Experiment" updates="constant" val="from EEGTools.Recorders.LiveAmpRecorder.liveamp_recorder import LiveAmpRecorder as Recorder&amp;#10;from base_functionalities.logger import Logger" valType="extendedCode"/>
+        <Param name="Before Experiment" updates="constant" val="#from EEGTools.Recorders.LiveAmpRecorder.liveamp_recorder import LiveAmpRecorder as Recorder&amp;#10;#from base_functionalities.logger import Logger" valType="extendedCode"/>
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>

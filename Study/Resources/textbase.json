@@ -37,7 +37,7 @@
     },
     "SyntaxInstruction": {
         "German" : "Nun kennen Sie einen der beiden Aufgabentypen. Der andere Aufgabentyp heißt “Search ”. Wir zeigen Ihnen ein Java-Programm, dabei ist Ihre Aufgabe so schnell wie möglich für jede der offenen Klammer \"(\" oder \"{\" einmal die <Pfeiltaste unten> zu drücken. Wenn Sie fertig sind, drücken Sie <Leertaste>.\nAchtung! Wir suchen nur die offenen Klammern \"(\" und \"{\",\nandere Klammern, wie beispielsweise },), [, ] sollen ignoriert werden.",
-        "English": "Now you know one of the two task types. The other task type is called \"Search\". We will show you a Java program, your task is to press the <arrow key down> as fast as you can for each of the open parentheses \"(\" or \"{\" once. When you are done, press <spacebar>.\nImportant: We are only looking for the open brackets \"(\" and \"{\",\nther brackets, such as },), [, ] should be ignored."
+        "English": "Now you know one of the two task types. The other task type is called \"Search\". We will show you a Java program, your task is to press the <arrow key down> as fast as you can for each of the open parentheses \"(\" or \"{\" once. When you are done, press <spacebar>.\nImportant: We are only looking for the open brackets \"(\" and \"{\",\n other brackets, such as },), [, ] should be ignored."
     },
     "SampleSyntax": {
         "German" : "Hilfestellung: Klammer gefunden: <Pfeiltaste unten>\n\n<Weiter mit Leertaste>",
