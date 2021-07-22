@@ -1764,7 +1764,7 @@
     </Routine>
     <Routine name="eeg_setup">
       <CodeComponent name="code_10">
-        <Param name="Before Experiment" updates="constant" val="#from EEGTools.Recorders.LiveAmpRecorder.liveamp_recorder import LiveAmpRecorder as Recorder&amp;#10;#from base_functionalities.logger import Logger" valType="extendedCode"/>
+        <Param name="Before Experiment" updates="constant" val="from EEGTools.Recorders.LiveAmpRecorder.liveamp_recorder import LiveAmpRecorder as Recorder&amp;#10;from base_functionalities.logger import Logger" valType="extendedCode"/>
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
