@@ -13,8 +13,6 @@
         255
     ],
     "source-code": [
-        "package newSnippets;",
-        "",
         "public class SignChecker {",
         "    private int number;",
         "",
