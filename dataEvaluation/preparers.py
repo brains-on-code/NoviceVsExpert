@@ -12,7 +12,8 @@ from pathlib import Path
 mne.set_log_level("WARNING")
 
 
-def load_raw(participant_number, cores=12, digits=2, scaling_factor=7e-9, logging=True):
+def load_raw(participant_number, cores=12, digits=2, scaling_factor=7e-9, logging=True, bandpass=(0.5, 80),
+             notch=(50, 100)):
     # setup output for logging
     output = sys.stdout
     if not logging:
@@ -79,24 +80,32 @@ def load_raw(participant_number, cores=12, digits=2, scaling_factor=7e-9, loggin
     # extract the data from the eye-tracking csv to numbers and rename the columns
     df_0 = pd.DataFrame(
         ddf_eye_tracking.apply(lambda x: three_extractor(x[0]), meta=meta_type, axis=1).compute().transpose().tolist(),
-        columns=["l_gaze_point_in_user_coordinate_system_x", "l_gaze_point_in_user_coordinate_system_y", "l_gaze_point_in_user_coordinate_system_z", ],
+        columns=["l_gaze_point_in_user_coordinate_system_x", "l_gaze_point_in_user_coordinate_system_y",
+                 "l_gaze_point_in_user_coordinate_system_z", ],
     )
     df_1 = pd.DataFrame(ddf_eye_tracking[1].compute().transpose().tolist(), columns=["l_valid"])
     df_2 = pd.DataFrame(ddf_eye_tracking[2].compute().transpose().tolist(), columns=["r_valid"])
     df_3 = pd.DataFrame(
         ddf_eye_tracking.apply(lambda x: three_extractor(x[3]), meta=meta_type, axis=1).compute().transpose().tolist(),
-        columns=["r_gaze_point_in_user_coordinate_system_x", "r_gaze_point_in_user_coordinate_system_y", "r_gaze_point_in_user_coordinate_system_z", ],
+        columns=["r_gaze_point_in_user_coordinate_system_x", "r_gaze_point_in_user_coordinate_system_y",
+                 "r_gaze_point_in_user_coordinate_system_z", ],
     )
     df_4 = pd.DataFrame(
         ddf_eye_tracking.apply(lambda x: three_extractor(x[4]), meta=meta_type, axis=1).compute().transpose().tolist(),
-        columns=["l_gaze_origin_in_user_coordinate_system_x", "l_gaze_origin_in_user_coordinate_system_y", "l_gaze_origin_in_user_coordinate_system_z", ],
+        columns=["l_gaze_origin_in_user_coordinate_system_x", "l_gaze_origin_in_user_coordinate_system_y",
+                 "l_gaze_origin_in_user_coordinate_system_z", ],
     )
     df_5 = pd.DataFrame(
         ddf_eye_tracking.apply(lambda x: three_extractor(x[5]), meta=meta_type, axis=1).compute().transpose().tolist(),
-        columns=["r_gaze_origin_in_user_coordinate_system_x", "r_gaze_origin_in_user_coordinate_system_y", "r_gaze_origin_in_user_coordinate_system_z", ],
+        columns=["r_gaze_origin_in_user_coordinate_system_x", "r_gaze_origin_in_user_coordinate_system_y",
+                 "r_gaze_origin_in_user_coordinate_system_z", ],
     )
-    df_6 = pd.DataFrame(ddf_eye_tracking.apply(lambda x: two_extractor(x[6]), meta=meta_type, axis=1).compute().transpose().tolist(), columns=["l_display_x", "l_display_y"], )
-    df_7 = pd.DataFrame(ddf_eye_tracking.apply(lambda x: two_extractor(x[7]), meta=meta_type, axis=1).compute().transpose().tolist(), columns=["r_display_x", "r_display_y"], )
+    df_6 = pd.DataFrame(
+        ddf_eye_tracking.apply(lambda x: two_extractor(x[6]), meta=meta_type, axis=1).compute().transpose().tolist(),
+        columns=["l_display_x", "l_display_y"], )
+    df_7 = pd.DataFrame(
+        ddf_eye_tracking.apply(lambda x: two_extractor(x[7]), meta=meta_type, axis=1).compute().transpose().tolist(),
+        columns=["r_display_x", "r_display_y"], )
     df_8 = pd.DataFrame(ddf_eye_tracking[8].compute().transpose().tolist(), columns=["time"])
     df_9 = pd.DataFrame(ddf_eye_tracking[9].compute().transpose().tolist(), columns=["l_pupil_diameter"])
     df_10 = pd.DataFrame(ddf_eye_tracking[10].compute().transpose().tolist(), columns=["r_pupil_diameter"])
@@ -114,6 +123,8 @@ def load_raw(participant_number, cores=12, digits=2, scaling_factor=7e-9, loggin
 
     # rescale the eeg data
     def rescale(eeg_data):
+        if scaling_factor is None:
+            return eeg_data
         # Scaling factor (to obtain values in [V], depends on device and settings etc.)
         return scaling_factor * eeg_data
 
@@ -142,8 +153,10 @@ def load_raw(participant_number, cores=12, digits=2, scaling_factor=7e-9, loggin
     print("(07/13) Preprocess EEG Data", file=output, flush=True)
     # Preprocessing: Scaling, Bandpass filter (0.5 to 80 Hz) and notch filter (power net frequency and harmonics)
     raw.apply_function(rescale, picks=["eeg"])
-    raw.filter(0.5, 80)
-    raw.notch_filter([50, 100])
+    if bandpass is not None:
+        raw.filter(bandpass[0], bandpass[1])
+    if notch is not None:
+        raw.notch_filter([notch[0], notch[1]])
 
     print("(08/13) Construct Events from EEG Data", file=output, flush=True)
     # get the time of the events in seconds
@@ -167,7 +180,9 @@ def load_raw(participant_number, cores=12, digits=2, scaling_factor=7e-9, loggin
     for i in range(0, len(t_events)):
         if indices_events[i] > 100:
             continue
-        df_time = df_time.append(pd.DataFrame([[None, t_events[i + 1], t_events[i + 2], t_events[i + 2], t_events[i + 3], t_events[i + 3], None, ]], columns=columns, ))
+        df_time = df_time.append(pd.DataFrame(
+            [[None, t_events[i + 1], t_events[i + 2], t_events[i + 2], t_events[i + 3], t_events[i + 3], None, ]],
+            columns=columns, ))
     df_time = df_time.reset_index(drop=True)
 
     # extracts the file name from a path like "/test/path/file.txt" and returns "file"
@@ -195,7 +210,8 @@ def load_raw(participant_number, cores=12, digits=2, scaling_factor=7e-9, loggin
     print("(10/13) Transform PsychoPy Data", file=output, flush=True)
     # create a dataframe which holds the times and answers given for each snippet
     df_psydata = df_psydata[
-        ["ImagePath", "Image.started", "Image.stopped", "InputPath", "image.started", "image.stopped", "ImagePathInputs", "image_1.started", "image_1.stopped", "ChoosenAnwer", "image_7.started", ]
+        ["ImagePath", "Image.started", "Image.stopped", "InputPath", "image.started", "image.stopped",
+         "ImagePathInputs", "image_1.started", "image_1.stopped", "ChoosenAnwer", "image_7.started", ]
     ]
     df_psydata = df_psydata[df_psydata["ImagePath"].notna()]
     df_psydata.insert(0, "Snippet", df_psydata["ImagePath"].apply(to_file_name))
@@ -250,23 +266,30 @@ def load_raw(participant_number, cores=12, digits=2, scaling_factor=7e-9, loggin
     for index, row in df_psydata.iterrows():
         current = template.copy()
         # add data for code
-        current["Code"]["EyeTracking"] = df_eye_tracking[(df_eye_tracking["time"] >= df_time["SnippetStart"][index]) & (df_eye_tracking["time"] < df_time["SnippetStop"][index])]
+        current["Code"]["EyeTracking"] = df_eye_tracking[(df_eye_tracking["time"] >= df_time["SnippetStart"][index]) & (
+                df_eye_tracking["time"] < df_time["SnippetStop"][index])]
         current["Code"]["EEG"] = raw.copy().crop(df_time["SnippetStart"][index], df_time["SnippetStop"][index])
-        current["Code"]["Log"] = df_psylog[(df_psylog["time"] >= df_psydata["SnippetStart"][index]) & (df_psylog["time"] < df_psydata["SnippetStop"][index])]
+        current["Code"]["Log"] = df_psylog[(df_psylog["time"] >= df_psydata["SnippetStart"][index]) & (
+                df_psylog["time"] < df_psydata["SnippetStop"][index])]
         current["Code"]["Time"]["Start"] = df_psydata["SnippetStart"][index]
         current["Code"]["Time"]["Stop"] = df_psydata["SnippetStop"][index]
 
         # add data for input
-        current["Input"]["EyeTracking"] = df_eye_tracking[(df_eye_tracking["time"] >= df_time["InputStart"][index]) & (df_eye_tracking["time"] < df_time["InputStop"][index])]
+        current["Input"]["EyeTracking"] = df_eye_tracking[(df_eye_tracking["time"] >= df_time["InputStart"][index]) & (
+                df_eye_tracking["time"] < df_time["InputStop"][index])]
         current["Input"]["EEG"] = raw.copy().crop(df_time["InputStart"][index], df_time["InputStop"][index])
-        current["Input"]["Log"] = df_psylog[(df_psylog["time"] >= df_psydata["InputStart"][index]) & (df_psylog["time"] < df_psydata["InputStop"][index])]
+        current["Input"]["Log"] = df_psylog[(df_psylog["time"] >= df_psydata["InputStart"][index]) & (
+                df_psylog["time"] < df_psydata["InputStop"][index])]
         current["Input"]["Time"]["Start"] = df_psydata["InputStart"][index]
         current["Input"]["Time"]["Stop"] = df_psydata["InputStop"][index]
 
         # add data for input
-        current["Output"]["EyeTracking"] = df_eye_tracking[(df_eye_tracking["time"] >= df_time["OutputStart"][index]) & (df_eye_tracking["time"] < df_time["OutputStop"][index])]
+        current["Output"]["EyeTracking"] = df_eye_tracking[
+            (df_eye_tracking["time"] >= df_time["OutputStart"][index]) & (
+                    df_eye_tracking["time"] < df_time["OutputStop"][index])]
         current["Output"]["EEG"] = raw.copy().crop(df_time["OutputStart"][index], df_time["OutputStop"][index])
-        current["Output"]["Log"] = df_psylog[(df_psylog["time"] >= df_psydata["OutputStart"][index]) & (df_psylog["time"] < df_psydata["OutputStop"][index])]
+        current["Output"]["Log"] = df_psylog[(df_psylog["time"] >= df_psydata["OutputStart"][index]) & (
+                df_psylog["time"] < df_psydata["OutputStop"][index])]
         current["Output"]["Time"]["Start"] = df_psydata["OutputStart"][index]
         current["Output"]["Time"]["Stop"] = df_psydata["OutputStop"][index]
 
@@ -360,7 +383,7 @@ def save(data_dictonary, participant_number, digits=2, logging=True):
         json.dump(save, fp, indent=4, sort_keys=True)
 
 
-def load(participant_number, digits=2, logging=True):
+def load_all(participant_number, digits=2, logging=True):
     # setup paths for data saving
     json_path = f"./filteredData/Participant{str(participant_number).zfill(digits)}/" + "DataBase.json"
     eye_path = f"./filteredData/Participant{str(participant_number).zfill(digits)}/EyeTracker/"
@@ -419,5 +442,119 @@ def load(participant_number, digits=2, logging=True):
 
     # load meta
     result["_Meta"] = pd.read_excel(meta_path + "Meta.xlsx")
+
+    return result
+
+
+def load_queried(participant_number, digits=2, logging=True, snippets=None, query_eeg=False, query_eye_tracking=False,
+                 query_log=False, query_behavioral=False, query_meta=False, query_code=False, query_input=False,
+                 query_output=False):
+    # setup paths for data saving
+    if snippets is None:
+        snippets = []
+    json_path = f"./filteredData/Participant{str(participant_number).zfill(digits)}/" + "DataBase.json"
+    eye_path = f"./filteredData/Participant{str(participant_number).zfill(digits)}/EyeTracker/"
+    eeg_path = f"./filteredData/Participant{str(participant_number).zfill(digits)}/EEG/"
+    log_path = f"./filteredData/Participant{str(participant_number).zfill(digits)}/LOG/"
+    behavioral_path = f"./filteredData/Participant{str(participant_number).zfill(digits)}/Behavioral/"
+    meta_path = f"./filteredData/Participant{str(participant_number).zfill(digits)}/Meta/"
+
+    result = {}
+    with open(json_path) as json_file:
+        result = json.load(json_file)
+
+    # set the stdout for logging
+    output = sys.stdout
+    if not logging:
+        output = open(os.devnull, 'w')
+
+    # read all the data
+    save = copy.deepcopy(result)
+    for entry in save:
+        if "_Meta" in entry:
+            continue
+
+        if entry not in snippets:
+            del result[entry]
+            continue
+
+        # load code
+        print(f"Loading {entry} Files ...", end="", file=output, flush=True)
+        if query_code:
+            if query_eye_tracking:
+                result[entry]["Code"]["EyeTracking"] = pd.read_excel(eye_path + "Code_" + entry + ".xlsx")
+            else:
+                del result[entry]["Code"]["EyeTracking"]
+
+            print(".", end="", file=output, flush=True)
+            if query_eeg:
+                result[entry]["Code"]["EEG"] = mne.io.read_raw_fif(eeg_path + "Code_" + entry + "_raw.fif")
+            else:
+                del result[entry]["Code"]["EEG"]
+
+            print(".", end="", file=output, flush=True)
+            if query_log:
+                result[entry]["Code"]["Log"] = pd.read_excel(log_path + "Code_" + entry + ".xlsx")
+            else:
+                del result[entry]["Code"]["Log"]
+        else:
+            del result[entry]["Code"]
+
+        # load input
+        if query_input:
+            print(".", end="", file=output, flush=True)
+            if query_eye_tracking:
+                result[entry]["Input"]["EyeTracking"] = pd.read_excel(eye_path + "Input_" + entry + ".xlsx")
+            else:
+                del result[entry]["Input"]["EyeTracking"]
+
+            print(".", end="", file=output, flush=True)
+            if query_eeg:
+                result[entry]["Input"]["EEG"] = mne.io.read_raw_fif(eeg_path + "Input_" + entry + "_raw.fif")
+            else:
+                del result[entry]["Input"]["EEG"]
+
+            print(".", end="", file=output, flush=True)
+            if query_log:
+                result[entry]["Input"]["Log"] = pd.read_excel(log_path + "Input_" + entry + ".xlsx")
+            else:
+                del result[entry]["Input"]["Log"]
+        else:
+            del result[entry]["Input"]
+
+        # load output
+        if query_output:
+            print(".", end="", file=output, flush=True)
+            if query_eye_tracking:
+                result[entry]["Output"]["EyeTracking"] = pd.read_excel(eye_path + "Output_" + entry + ".xlsx")
+            else:
+                del result[entry]["Output"]["EyeTracking"]
+
+            print(".", end="", file=output, flush=True)
+            if query_eeg:
+                result[entry]["Output"]["EEG"] = mne.io.read_raw_fif(eeg_path + "Output_" + entry + "_raw.fif")
+            else:
+                del result[entry]["Output"]["EEG"]
+
+            print(".", end="", file=output, flush=True)
+            if query_log:
+                result[entry]["Output"]["Log"] = pd.read_excel(log_path + "Output_" + entry + ".xlsx")
+            else:
+                del result[entry]["Output"]["Log"]
+        else:
+            del result[entry]["Output"]
+
+        # load behavioral
+        if query_behavioral:
+            print(".", file=output, flush=True)
+            result[entry]["Behavioral"] = pd.read_excel(behavioral_path + entry + ".xlsx")
+        else:
+            del result[entry]["Behavioral"]
+
+    # load meta
+    if query_meta:
+        result["_Meta"] = pd.read_excel(meta_path + "Meta.xlsx")
+    else:
+        del result["_Meta"]
 
     return result
