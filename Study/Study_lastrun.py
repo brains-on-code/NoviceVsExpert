@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v2021.1.4),
-    on Juli 20, 2021, at 15:59
+This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
+    on September 22, 2021, at 14:03
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -37,8 +37,8 @@ logging.console.setLevel(logging.CRITICAL)
 
 global current_image_path
 
-use_eyetracker = True
-use_eeg = True
+use_eyetracker = False
+use_eeg = False
 
 random.seed()
 
@@ -70,8 +70,6 @@ rm = 0.4 * width
 rr = 0.8 * width
 md = -0.1 * height
 mu = 0.2 * height
-#from EEGTools.Recorders.LiveAmpRecorder.liveamp_recorder import LiveAmpRecorder as Recorder
-#from base_functionalities.logger import Logger
 
 
 # Ensure that relative paths start from the same directory as this script
@@ -79,7 +77,7 @@ _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-psychopyVersion = '2021.1.4'
+psychopyVersion = '2021.2.3'
 expName = 'test'  # from the Builder filename that created this script
 expInfo = {'participant': '001', 'session': '001'}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
@@ -95,7 +93,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\jonas\\OneDrive\\Dokumente\\GitHub\\NoviceVsExpert\\Study\\Study_lastrun.py',
+    originPath='C:\\Users\\jonas\\Documents\\GitHub\\NoviceVsExpert\\Study\\Study_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -120,6 +118,9 @@ if expInfo['frameRate'] != None:
     frameDur = 1.0 / round(expInfo['frameRate'])
 else:
     frameDur = 1.0 / 60.0  # could not measure, so guess
+
+# Setup eyetracking
+ioDevice = ioConfig = ioSession = ioServer = eyetracker = None
 
 # create a default keyboard (e.g. to check for escape)
 defaultKeyboard = keyboard.Keyboard()
@@ -366,7 +367,7 @@ CrossfixationClock = core.Clock()
 image_7 = visual.ImageStim(
     win=win,
     name='image_7', 
-    image='Resources\\\\corss.png', mask=None,
+    image='Resources/corss.png', mask=None,
     ori=0.0, pos=(0, 0), size=(0.05, 0.05),
     color=[1,1,1], colorSpace='rgb', opacity=None,
     flipHoriz=False, flipVert=True,
@@ -419,7 +420,7 @@ CrossfixationClock = core.Clock()
 image_7 = visual.ImageStim(
     win=win,
     name='image_7', 
-    image='Resources\\\\corss.png', mask=None,
+    image='Resources/corss.png', mask=None,
     ori=0.0, pos=(0, 0), size=(0.05, 0.05),
     color=[1,1,1], colorSpace='rgb', opacity=None,
     flipHoriz=False, flipVert=True,
@@ -450,7 +451,7 @@ key_resp_9 = keyboard.Keyboard()
 warningStartStudy = visual.ImageStim(
     win=win,
     name='warningStartStudy', 
-    image='Resources\\\\Intro\\\\stopp.png', mask=None,
+    image='Resources/Intro/stopp.png', mask=None,
     ori=0.0, pos=(0, 0), size=(0.5, 0.5),
     color=[1,1,1], colorSpace='rgb', opacity=None,
     flipHoriz=False, flipVert=False,
@@ -562,7 +563,7 @@ CrossfixationClock = core.Clock()
 image_7 = visual.ImageStim(
     win=win,
     name='image_7', 
-    image='Resources\\\\corss.png', mask=None,
+    image='Resources/corss.png', mask=None,
     ori=0.0, pos=(0, 0), size=(0.05, 0.05),
     color=[1,1,1], colorSpace='rgb', opacity=None,
     flipHoriz=False, flipVert=True,
@@ -613,7 +614,7 @@ CrossfixationClock = core.Clock()
 image_7 = visual.ImageStim(
     win=win,
     name='image_7', 
-    image='Resources\\\\corss.png', mask=None,
+    image='Resources/corss.png', mask=None,
     ori=0.0, pos=(0, 0), size=(0.05, 0.05),
     color=[1,1,1], colorSpace='rgb', opacity=None,
     flipHoriz=False, flipVert=True,
@@ -1334,7 +1335,7 @@ while continueRoutine:
         win.timeOnFlip(image_6, 'tStartRefresh')  # time at next scr refresh
         image_6.setAutoDraw(True)
     if image_6.status == STARTED:  # only update if drawing
-        image_6.setPos((arrow_pos_array[arrow_idx_test], md))
+        image_6.setPos((arrow_pos_array[arrow_idx_test], md), log=False)
     
     keys = kb.getKeys(['right', 'left'], waitRelease=True)
     if 'left' in keys:
@@ -1710,7 +1711,7 @@ while continueRoutine:
         win.timeOnFlip(arrow_2, 'tStartRefresh')  # time at next scr refresh
         arrow_2.setAutoDraw(True)
     if arrow_2.status == STARTED:  # only update if drawing
-        arrow_2.setPos((arrow_pos_array[arrow_idx_test], md))
+        arrow_2.setPos((arrow_pos_array[arrow_idx_test], md), log=False)
     
     keys = kb.getKeys(['right', 'left'], waitRelease=True)
     if 'left' in keys:
@@ -1866,7 +1867,7 @@ routineTimer.reset()
 
 # ------Prepare to start Routine "Crossfixation"-------
 continueRoutine = True
-routineTimer.add(30.000000)
+routineTimer.add(1.000000)
 # update component parameters for each repeat
 # keep track of which components have finished
 CrossfixationComponents = [image_7]
@@ -1902,7 +1903,7 @@ while continueRoutine and routineTimer.getTime() > 0:
         image_7.setAutoDraw(True)
     if image_7.status == STARTED:
         # is it time to stop? (based on global clock, using actual start)
-        if tThisFlipGlobal > image_7.tStartRefresh + 30.0-frameTolerance:
+        if tThisFlipGlobal > image_7.tStartRefresh + 1.0-frameTolerance:
             # keep track of stop time/frame for later
             image_7.tStop = t  # not accounting for scr refresh
             image_7.frameNStop = frameN  # exact frame index
@@ -2270,7 +2271,7 @@ routineTimer.reset()
 
 # ------Prepare to start Routine "Crossfixation"-------
 continueRoutine = True
-routineTimer.add(30.000000)
+routineTimer.add(1.000000)
 # update component parameters for each repeat
 # keep track of which components have finished
 CrossfixationComponents = [image_7]
@@ -2306,7 +2307,7 @@ while continueRoutine and routineTimer.getTime() > 0:
         image_7.setAutoDraw(True)
     if image_7.status == STARTED:
         # is it time to stop? (based on global clock, using actual start)
-        if tThisFlipGlobal > image_7.tStartRefresh + 30.0-frameTolerance:
+        if tThisFlipGlobal > image_7.tStartRefresh + 1.0-frameTolerance:
             # keep track of stop time/frame for later
             image_7.tStop = t  # not accounting for scr refresh
             image_7.frameNStop = frameN  # exact frame index
@@ -2547,11 +2548,13 @@ continueRoutine = True
 eeg_rec = None
 logger = None
 if use_eeg==True:
+    from EEGTools.Recorders.LiveAmpRecorder.liveamp_recorder import LiveAmpRecorder as Recorder
     eeg_rec = Recorder()
     eeg_rec.connect()
     eeg_rec.start_recording()
 
 if use_eyetracker==True:
+    from base_functionalities.logger import Logger
     logger = Logger("C:\\Users\\mash02-admin\\Desktop\\experiment_data.csv")
     logger.add_key_to_log('left_gaze_point_in_user_coordinate_system')
     logger.add_key_to_log('left_gaze_point_validity')
@@ -2564,6 +2567,12 @@ if use_eyetracker==True:
     logger.add_key_to_log('system_time_stamp')
     logger.add_key_to_log('left_pupil_diameter')
     logger.add_key_to_log('right_pupil_diameter')
+    logger.start_recording()
+    
+if use_eeg==True:
+    eeg_rec.start_recording()
+    
+if use_eyetracker==True:
     logger.start_recording()
 
 # keep track of which components have finished
@@ -3218,7 +3227,7 @@ for thisTrial in trials:
                     win.timeOnFlip(arrow, 'tStopRefresh')  # time at next scr refresh
                     arrow.setAutoDraw(False)
             if arrow.status == STARTED:  # only update if drawing
-                arrow.setPos((arrow_position, md))
+                arrow.setPos((arrow_position, md), log=False)
             
             keys = kb.getKeys(['right', 'left'], waitRelease=True)
             if 'left' in keys:
@@ -3377,7 +3386,7 @@ for thisTrial in trials:
         
         # ------Prepare to start Routine "Crossfixation"-------
         continueRoutine = True
-        routineTimer.add(30.000000)
+        routineTimer.add(1.000000)
         # update component parameters for each repeat
         # keep track of which components have finished
         CrossfixationComponents = [image_7]
@@ -3413,7 +3422,7 @@ for thisTrial in trials:
                 image_7.setAutoDraw(True)
             if image_7.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > image_7.tStartRefresh + 30.0-frameTolerance:
+                if tThisFlipGlobal > image_7.tStartRefresh + 1.0-frameTolerance:
                     # keep track of stop time/frame for later
                     image_7.tStop = t  # not accounting for scr refresh
                     image_7.frameNStop = frameN  # exact frame index
@@ -3776,7 +3785,7 @@ for thisTrial in trials:
     
     # ------Prepare to start Routine "Crossfixation"-------
     continueRoutine = True
-    routineTimer.add(30.000000)
+    routineTimer.add(1.000000)
     # update component parameters for each repeat
     # keep track of which components have finished
     CrossfixationComponents = [image_7]
@@ -3812,7 +3821,7 @@ for thisTrial in trials:
             image_7.setAutoDraw(True)
         if image_7.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > image_7.tStartRefresh + 30.0-frameTolerance:
+            if tThisFlipGlobal > image_7.tStartRefresh + 1.0-frameTolerance:
                 # keep track of stop time/frame for later
                 image_7.tStop = t  # not accounting for scr refresh
                 image_7.frameNStop = frameN  # exact frame index
