@@ -429,7 +429,7 @@ def load_all(participant_number, digits=2, logging=True):
 
 
 def load_queried(participant_number, digits=2, logging=True, snippets=None, query_eeg=False, query_eye_tracking=False,
-                 query_log=False, query_behavioral=False, query_meta=False, query_code=False, query_input=False,
+                 query_log=False, query_behavioral=False, query_code=False, query_input=False,
                  query_output=False):
     # setup paths for data saving
     if snippets is None:
