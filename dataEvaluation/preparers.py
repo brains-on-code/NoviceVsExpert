@@ -19,23 +19,22 @@ def load_raw(participant_number, cores=12, digits=2, scaling_factor=7e-9, loggin
     if not logging:
         output = open(os.devnull, 'w')
 
-    print("(01/13) Construct Paths", file=output, flush=True)
+    print("(01/12) Construct Paths", file=output, flush=True)
     # setup paths for loading
-    questionnaire_path = "./rawData/Questionnaire.xlsx"
     participant_folder = "./rawData/Participant" + str(participant_number).zfill(digits) + "/"
     eye_tracking_path = participant_folder + "experiment_data.csv"
     eeg_path = participant_folder
-    psychopy_csv_path = participant_folder + "data/"
-    psychopy_log_path = participant_folder + "data/"
+    psychopy_csv_path = participant_folder
+    psychopy_log_path = participant_folder
 
     # get path for psychopy log and csv data
     for (dirpath, dirnames, filenames) in os.walk(psychopy_csv_path):
         for file in filenames:
-            _file, ext = os.path.splitext(file)
-            if ext == ".csv":
-                psychopy_csv_path += file
+            file, ext = os.path.splitext(file)
+            if ext == ".csv" and "test" in file:
+                psychopy_csv_path += file + ext
             if ext == ".log":
-                psychopy_log_path += file
+                psychopy_log_path += file + ext
 
     # get path for psychopy eeg data
     for (dirpath, dirnames, filenames) in os.walk(participant_folder):
@@ -44,15 +43,7 @@ def load_raw(participant_number, cores=12, digits=2, scaling_factor=7e-9, loggin
             if ext == ".fif":
                 eeg_path += file
 
-    print("(02/13) Read Questionnaire", file=output, flush=True)
-    # read questionnaire data and select the participant
-    df_questionnaire = pd.read_excel(questionnaire_path)
-    df_questionnaire = df_questionnaire.transpose()
-    df_questionnaire.columns = df_questionnaire.iloc[0]
-    df_questionnaire = df_questionnaire.iloc[1:]
-    df_questionnaire = df_questionnaire.loc[participant_number]
-
-    print("(03/13) Read Eye Tracker Data", file=output, flush=True)
+    print("(02/12) Read Eye Tracker Data", file=output, flush=True)
     # read tracker data
     df_eye_tracking = pd.read_csv(eye_tracking_path, header=None, sep=";")
 
@@ -76,7 +67,7 @@ def load_raw(participant_number, cores=12, digits=2, scaling_factor=7e-9, loggin
     # partition dataframe for parallel work
     ddf_eye_tracking = dd.from_pandas(df_eye_tracking, npartitions=cores)
 
-    print("(04/13) Transform Eye Tracker Data", file=output, flush=True)
+    print("(03/12) Transform Eye Tracker Data", file=output, flush=True)
     # extract the data from the eye-tracking csv to numbers and rename the columns
     df_0 = pd.DataFrame(
         ddf_eye_tracking.apply(lambda x: three_extractor(x[0]), meta=meta_type, axis=1).compute().transpose().tolist(),
@@ -116,7 +107,7 @@ def load_raw(participant_number, cores=12, digits=2, scaling_factor=7e-9, loggin
     # concat the dataframes to one eyetracking dataframe
     df_eye_tracking = pd.concat([df_0, df_1, df_2, df_3, df_4, df_5, df_6, df_7, df_8, df_9, df_10], axis=1)
 
-    print("(05/13) Normalize Eye Tracker Time", file=output, flush=True)
+    print("(04/12) Normalize Eye Tracker Time", file=output, flush=True)
     # normalize the time to seconds
     t_0 = df_eye_tracking["time"][0]
     df_eye_tracking["time"] = (df_eye_tracking["time"].astype(float) - t_0) / 1000000.0
@@ -146,11 +137,11 @@ def load_raw(participant_number, cores=12, digits=2, scaling_factor=7e-9, loggin
         eventsMNE = np.array(eventsMNE)
         return eventsMNE
 
-    print("(06/13) Read EEG Data", file=output, flush=True)
+    print("(05/12) Read EEG Data", file=output, flush=True)
     # read the eeg data and scale it
     raw = mne.io.read_raw_fif(fname=eeg_path, preload=True)
 
-    print("(07/13) Preprocess EEG Data", file=output, flush=True)
+    print("(06/12) Preprocess EEG Data", file=output, flush=True)
     # Preprocessing: Scaling, Bandpass filter (0.5 to 80 Hz) and notch filter (power net frequency and harmonics)
     raw.apply_function(rescale, picks=["eeg"])
     if bandpass is not None:
@@ -158,7 +149,7 @@ def load_raw(participant_number, cores=12, digits=2, scaling_factor=7e-9, loggin
     if notch is not None:
         raw.notch_filter([notch[0], notch[1]])
 
-    print("(08/13) Construct Events from EEG Data", file=output, flush=True)
+    print("(07/12) Construct Events from EEG Data", file=output, flush=True)
     # get the time of the events in seconds
     sampling_rate = raw.info["sfreq"]
     events = get_events_from_info(raw)
@@ -203,11 +194,11 @@ def load_raw(participant_number, cores=12, digits=2, scaling_factor=7e-9, loggin
         if "Skipped" in answer:
             return "Skipped"
 
-    print("(09/13) Read PsychoPy Data", file=output, flush=True)
+    print("(08/12) Read PsychoPy Data", file=output, flush=True)
     # read the data from the psychopy csv file
     df_psydata = pd.read_csv(psychopy_csv_path)
 
-    print("(10/13) Transform PsychoPy Data", file=output, flush=True)
+    print("(09/12) Transform PsychoPy Data", file=output, flush=True)
     # create a dataframe which holds the times and answers given for each snippet
     df_psydata = df_psydata[
         ["ImagePath", "Image.started", "Image.stopped", "InputPath", "image.started", "image.stopped",
@@ -226,7 +217,7 @@ def load_raw(participant_number, cores=12, digits=2, scaling_factor=7e-9, loggin
     df_psydata["OutputStop"] = df_psydata["CrossStart"]
     df_psydata = df_psydata.drop(["ImagePath", "InputPath", "ImagePathInputs", "CrossStart"], axis=1)
 
-    print("(11/13) Normalize PsychoPy Time", file=output, flush=True)
+    print("(10/12) Normalize PsychoPy Time", file=output, flush=True)
     # normalize the time of all the snippets
     start_time = df_psydata["SnippetStart"][0]
     df_psydata["SnippetStart"] = df_psydata["SnippetStart"] - start_time
@@ -236,7 +227,7 @@ def load_raw(participant_number, cores=12, digits=2, scaling_factor=7e-9, loggin
     df_psydata["OutputStart"] = df_psydata["OutputStart"] - start_time
     df_psydata["OutputStop"] = df_psydata["OutputStop"] - start_time
 
-    print("(12/13) Read PsychoPy Log Data", file=output, flush=True)
+    print("(11/12) Read PsychoPy Log Data", file=output, flush=True)
     # read in the log file from psychopy
     df_psylog = pd.read_csv(psychopy_log_path, header=None, sep="\t")
 
@@ -261,7 +252,7 @@ def load_raw(participant_number, cores=12, digits=2, scaling_factor=7e-9, loggin
         "Behavioral": None,
     }
 
-    print("(13/13) Transform All Data to Dictionary", file=output, flush=True)
+    print("(12/12) Transform All Data to Dictionary", file=output, flush=True)
     # iterate for every snippet to set the data
     for index, row in df_psydata.iterrows():
         current = template.copy()
@@ -295,8 +286,6 @@ def load_raw(participant_number, cores=12, digits=2, scaling_factor=7e-9, loggin
 
         current["Behavioral"] = df_psydata.iloc[index].to_frame().transpose()
         result[row["Snippet"]] = current.copy()
-
-    result["_Meta"] = df_questionnaire.to_frame().transpose()
 
     return result
 
@@ -374,10 +363,6 @@ def save(data_dictonary, participant_number, digits=2, logging=True):
         data_dictonary[entry]["Behavioral"].to_excel(behavioral_path + entry + ".xlsx", index=False)
         save[entry]["Behavioral"] = behavioral_path + entry + ".xlsx"
 
-    # save meta
-    data_dictonary["_Meta"].to_excel(meta_path + "Meta.xlsx", index=False)
-    save["_Meta"] = meta_path + "Meta.xlsx"
-
     # save file
     with open(general_path + "DataBase.json", "w") as fp:
         json.dump(save, fp, indent=4, sort_keys=True)
@@ -440,9 +425,6 @@ def load_all(participant_number, digits=2, logging=True):
         print(".", file=output, flush=True)
         result[entry]["Behavioral"] = pd.read_excel(behavioral_path + entry + ".xlsx")
 
-    # load meta
-    result["_Meta"] = pd.read_excel(meta_path + "Meta.xlsx")
-
     return result
 
 
@@ -457,7 +439,6 @@ def load_queried(participant_number, digits=2, logging=True, snippets=None, quer
     eeg_path = f"./filteredData/Participant{str(participant_number).zfill(digits)}/EEG/"
     log_path = f"./filteredData/Participant{str(participant_number).zfill(digits)}/LOG/"
     behavioral_path = f"./filteredData/Participant{str(participant_number).zfill(digits)}/Behavioral/"
-    meta_path = f"./filteredData/Participant{str(participant_number).zfill(digits)}/Meta/"
 
     result = {}
     with open(json_path) as json_file:
@@ -471,9 +452,6 @@ def load_queried(participant_number, digits=2, logging=True, snippets=None, quer
     # read all the data
     save = copy.deepcopy(result)
     for entry in save:
-        if "_Meta" in entry:
-            continue
-
         if entry not in snippets:
             del result[entry]
             continue
@@ -550,11 +528,5 @@ def load_queried(participant_number, digits=2, logging=True, snippets=None, quer
             result[entry]["Behavioral"] = pd.read_excel(behavioral_path + entry + ".xlsx")
         else:
             del result[entry]["Behavioral"]
-
-    # load meta
-    if query_meta:
-        result["_Meta"] = pd.read_excel(meta_path + "Meta.xlsx")
-    else:
-        del result["_Meta"]
 
     return result
