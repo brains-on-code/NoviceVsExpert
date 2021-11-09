@@ -447,7 +447,7 @@ def load_all(participant_number, digits=2, logging=True):
 
 
 def load_queried(participant_number, digits=2, logging=True, snippets=None, query_eeg=False, query_eye_tracking=False,
-                 query_log=False, query_behavioral=False, query_meta=False, query_code=False, query_input=False,
+                 query_log=False, query_behavioral=False, query_code=False, query_input=False,
                  query_output=False):
     # setup paths for data saving
     if snippets is None:
@@ -457,7 +457,6 @@ def load_queried(participant_number, digits=2, logging=True, snippets=None, quer
     eeg_path = f"./filteredData/Participant{str(participant_number).zfill(digits)}/EEG/"
     log_path = f"./filteredData/Participant{str(participant_number).zfill(digits)}/LOG/"
     behavioral_path = f"./filteredData/Participant{str(participant_number).zfill(digits)}/Behavioral/"
-    meta_path = f"./filteredData/Participant{str(participant_number).zfill(digits)}/Meta/"
 
     result = {}
     with open(json_path) as json_file:
@@ -471,10 +470,7 @@ def load_queried(participant_number, digits=2, logging=True, snippets=None, quer
     # read all the data
     save = copy.deepcopy(result)
     for entry in save:
-        if "_Meta" in entry:
-            continue
-
-        if entry not in snippets:
+        if entry not in snippets and snippets != ["All"]:
             del result[entry]
             continue
 
@@ -550,11 +546,5 @@ def load_queried(participant_number, digits=2, logging=True, snippets=None, quer
             result[entry]["Behavioral"] = pd.read_excel(behavioral_path + entry + ".xlsx")
         else:
             del result[entry]["Behavioral"]
-
-    # load meta
-    if query_meta:
-        result["_Meta"] = pd.read_excel(meta_path + "Meta.xlsx")
-    else:
-        del result["_Meta"]
 
     return result
