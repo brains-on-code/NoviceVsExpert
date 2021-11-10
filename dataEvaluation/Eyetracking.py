@@ -166,6 +166,11 @@ for number in numbers:
         df_eyetracking["l_pupil_diameter"] = replaced_l_diameter
         df_eyetracking["l_valid"] = replaced_l_valid
 
+        df_eyetracking["l_display_x"] = df_eyetracking["l_display_x"].astype(float).fillna(0).astype(int)
+        df_eyetracking["r_display_x"] = df_eyetracking["r_display_x"].astype(float).fillna(0).astype(int)
+        df_eyetracking["l_display_y"] = df_eyetracking["l_display_y"].astype(float).fillna(0).astype(int)
+        df_eyetracking["r_display_y"] = df_eyetracking["r_display_y"].astype(float).fillna(0).astype(int)
+
         # denoise the eyetracking data
         for _i in range(denoise_degree):
             # denoise the right eye
