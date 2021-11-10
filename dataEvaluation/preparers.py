@@ -245,20 +245,19 @@ def load_raw(participant_number, cores=12, digits=2, scaling_factor=7e-9, loggin
     result = {}
 
     # just the template to know the layout of the dictionary
-    template = {
-        "Code": {"EyeTracking": None, "EEG": None, "Log": None, "Time": {"Start": None, "Stop": None, }, },
-        "Input": {"EyeTracking": None, "EEG": None, "Log": None, "Time": {"Start": None, "Stop": None, }, },
-        "Output": {"EyeTracking": None, "EEG": None, "Log": None, "Time": {"Start": None, "Stop": None, }, },
-        "Behavioral": None,
-    }
 
     print("(12/12) Transform All Data to Dictionary", file=output, flush=True)
     # iterate for every snippet to set the data
     for index, row in df_psydata.iterrows():
-        current = template.copy()
+        current = {
+            "Code": {"EyeTracking": None, "EEG": None, "Log": None, "Time": {"Start": None, "Stop": None, }, },
+            "Input": {"EyeTracking": None, "EEG": None, "Log": None, "Time": {"Start": None, "Stop": None, }, },
+            "Output": {"EyeTracking": None, "EEG": None, "Log": None, "Time": {"Start": None, "Stop": None, }, },
+            "Behavioral": None,
+        }
+
         # add data for code
-        current["Code"]["EyeTracking"] = df_eye_tracking[(df_eye_tracking["time"] >= df_time["SnippetStart"][index]) & (
-                df_eye_tracking["time"] < df_time["SnippetStop"][index])]
+        current["Code"]["EyeTracking"] = df_eye_tracking[(df_eye_tracking["time"] >= df_time["SnippetStart"][index]) & (df_eye_tracking["time"] < df_time["SnippetStop"][index])]
         current["Code"]["EEG"] = raw.copy().crop(df_time["SnippetStart"][index], df_time["SnippetStop"][index])
         current["Code"]["Log"] = df_psylog[(df_psylog["time"] >= df_psydata["SnippetStart"][index]) & (
                 df_psylog["time"] < df_psydata["SnippetStop"][index])]
@@ -285,7 +284,7 @@ def load_raw(participant_number, cores=12, digits=2, scaling_factor=7e-9, loggin
         current["Output"]["Time"]["Stop"] = df_psydata["OutputStop"][index]
 
         current["Behavioral"] = df_psydata.iloc[index].to_frame().transpose()
-        result[row["Snippet"]] = current.copy()
+        result[row["Snippet"]] = current
 
     return result
 
@@ -452,10 +451,6 @@ def load_queried(participant_number, digits=2, logging=True, snippets=None, quer
     # read all the data
     save = copy.deepcopy(result)
     for entry in save:
-        if entry not in snippets:
-            del result[entry]
-            continue
-
         # load code
         print(f"Loading {entry} Files ...", end="", file=output, flush=True)
         if query_code:

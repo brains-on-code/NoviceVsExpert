@@ -55,7 +55,7 @@ def interpolate(start_color, end_color, current, max_value):
     b = (1.0 - t) * start_color[2] + t * end_color[2]
     return (r, g, b)
 
-print()
+
 # iterate over all the numbers and perform the eyetracking analysis
 for number in numbers:
     print("Analyzing data from participant " + str(number))
@@ -64,7 +64,7 @@ for number in numbers:
     print("\tLoading data...")
     data = preparers.load_queried(
         participant_number=number,
-        snippets=["Ackerman"],
+        snippets=["All"],
         query_code=True,
         query_eye_tracking=True,
         query_behavioral=True,
@@ -74,13 +74,12 @@ for number in numbers:
     # iterate over every snippet from the eyetracking data and perform the analysis
     for key in data.keys():
         print("\t\tWorking with data ", key, "...")
-        #create a folder for the current snippet
+        # create a folder for the current snippet
         snippet_folder = r"./result/{}/Participant_{}".format(key, number)
 
         # create folder if it does not exist
         if not os.path.exists(snippet_folder):
             os.makedirs(snippet_folder)
-
 
         # check if key in img_dict, otherwise generate image
         if key not in img_dict:
@@ -395,16 +394,17 @@ for number in numbers:
             son.eyetracking.metrics.average_saccades_time(son.eyetracking.metrics.time_of_saccades(saccades_l, d_time)),
             son.eyetracking.metrics.count_saccades(fixxation_l),
             son.eyetracking.metrics.time_of_saccades(fixxation_l, d_time)[0][0],
-            son.eyetracking.metrics.average_saccades_time(son.eyetracking.metrics.time_of_saccades(fixxation_l, d_time)),
+            son.eyetracking.metrics.average_saccades_time(
+                son.eyetracking.metrics.time_of_saccades(fixxation_l, d_time)),
 
             son.eyetracking.metrics.count_saccades(saccades_r),
             son.eyetracking.metrics.time_of_saccades(saccades_r, d_time)[0][0],
             son.eyetracking.metrics.average_saccades_time(son.eyetracking.metrics.time_of_saccades(saccades_r, d_time)),
             son.eyetracking.metrics.count_saccades(fixxation_r),
             son.eyetracking.metrics.time_of_saccades(fixxation_r, d_time)[0][0],
-            son.eyetracking.metrics.average_saccades_time(son.eyetracking.metrics.time_of_saccades(fixxation_r, d_time)),
+            son.eyetracking.metrics.average_saccades_time(
+                son.eyetracking.metrics.time_of_saccades(fixxation_r, d_time)),
         ]], columns=img_quantify_dict[key].columns))
-
 
         # create fixation map
         fixxation_map_l = son.eyetracking.fixxationmap.create_fixxation_map(df_eyetracking["l_display_x"],
