@@ -451,6 +451,8 @@ def load_queried(participant_number, digits=2, logging=True, snippets=None, quer
     # read all the data
     save = copy.deepcopy(result)
     for entry in save:
+        if snippets is not None and entry not in snippets:
+            continue
         # load code
         print(f"Loading {entry} Files ...", end="", file=output, flush=True)
         if query_code:
