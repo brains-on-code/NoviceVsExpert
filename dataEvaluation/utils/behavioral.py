@@ -1,16 +1,12 @@
-import os
 import warnings
 
-import matplotlib.pyplot as plt
-import numpy as np
 import pandas as pd
-import preparers
-import seaborn as sns
+from dataEvaluation.utils import preparers
 import json
-import os
 from pandas.core.common import SettingWithCopyWarning
 
 warnings.simplefilter(action="ignore", category=SettingWithCopyWarning)
+
 
 def extract_time(behavioral_data, participant, kind="Snippet"):
     columns = ["Participant", "Duration"]
@@ -33,7 +29,7 @@ def get_behavioral_df(participants):
     df_total = None
     for participant in participants:
         snippets = []
-        with open("./filteredData/Participant{}/DataBase.json".format(str(participant).zfill(2)), "r") as f:
+        with open("./data/filteredData/Participant{}/DataBase.json".format(str(participant).zfill(2)), "r") as f:
             data = json.load(f)
             for snippet_name in data:
                 snippets.append(snippet_name)

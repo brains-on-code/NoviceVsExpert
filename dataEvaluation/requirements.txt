@@ -3,3 +3,4 @@ mne
 dask
 numpy
 pandas
+git+https://github.com/sonaion-eye-tracking/I2MC_Python

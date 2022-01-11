@@ -1,4 +1,4 @@
-rawData/
+data/rawData/
 venv/
-filteredData/
+data/filteredData/
 result/
