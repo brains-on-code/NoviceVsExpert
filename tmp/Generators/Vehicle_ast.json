@@ -1,0 +1,36 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 14,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        " [aoi=Modifier]public[/aoi=Modifier] [aoi=Keyword]class[/aoi=Keyword] [aoi=Identifier]Vehicle[/aoi=Identifier] [aoi=Separator]{[/aoi=Separator]",
+        "     [aoi=Identifier]String[/aoi=Identifier] [aoi=Identifier]producer[/aoi=Identifier][aoi=Separator],[/aoi=Separator] [aoi=Identifier]type[/aoi=Identifier][aoi=Separator];[/aoi=Separator]",
+        "     [aoi=BasicType]int[/aoi=BasicType] [aoi=Identifier]topSpeed[/aoi=Identifier][aoi=Separator],[/aoi=Separator] [aoi=Identifier]currentSpeed[/aoi=Identifier][aoi=Separator];[/aoi=Separator]",
+        "",
+        "     [aoi=Modifier]public[/aoi=Modifier] [aoi=Identifier]Vehicle[/aoi=Identifier][aoi=Separator]([/aoi=Separator][aoi=Identifier]String[/aoi=Identifier] [aoi=Identifier]p[/aoi=Identifier][aoi=Separator],[/aoi=Separator] [aoi=Identifier]String[/aoi=Identifier] [aoi=Identifier]t[/aoi=Identifier][aoi=Separator],[/aoi=Separator] [aoi=BasicType]int[/aoi=BasicType] [aoi=Identifier]tp[/aoi=Identifier][aoi=Separator])[/aoi=Separator] [aoi=Separator]{[/aoi=Separator]",
+        "         [aoi=Keyword]this[/aoi=Keyword][aoi=Separator].[/aoi=Separator][aoi=Identifier]producer[/aoi=Identifier] [aoi=Operator]=[/aoi=Operator] [aoi=Identifier]p[/aoi=Identifier][aoi=Separator];[/aoi=Separator]",
+        "         [aoi=Keyword]this[/aoi=Keyword][aoi=Separator].[/aoi=Separator][aoi=Identifier]type[/aoi=Identifier] [aoi=Operator]=[/aoi=Operator] [aoi=Identifier]t[/aoi=Identifier][aoi=Separator];[/aoi=Separator]",
+        "         [aoi=Keyword]this[/aoi=Keyword][aoi=Separator].[/aoi=Separator][aoi=Identifier]topSpeed[/aoi=Identifier] [aoi=Operator]=[/aoi=Operator] [aoi=Identifier]tp[/aoi=Identifier][aoi=Separator];[/aoi=Separator]",
+        "         [aoi=Keyword]this[/aoi=Keyword][aoi=Separator].[/aoi=Separator][aoi=Identifier]currentSpeed[/aoi=Identifier] [aoi=Operator]=[/aoi=Operator] [aoi=DecimalInteger]0[/aoi=DecimalInteger][aoi=Separator];[/aoi=Separator]",
+        "     [aoi=Separator]}[/aoi=Separator]",
+        "",
+        "     [aoi=Modifier]public[/aoi=Modifier] [aoi=Keyword]void[/aoi=Keyword] [aoi=Identifier]accelerate[/aoi=Identifier][aoi=Separator]([/aoi=Separator][aoi=BasicType]int[/aoi=BasicType] [aoi=Identifier]kmh[/aoi=Identifier][aoi=Separator])[/aoi=Separator] [aoi=Separator]{[/aoi=Separator]",
+        "         [aoi=Keyword]if[/aoi=Keyword] [aoi=Separator]([/aoi=Separator][aoi=Separator]([/aoi=Separator][aoi=Keyword]this[/aoi=Keyword][aoi=Separator].[/aoi=Separator][aoi=Identifier]currentSpeed[/aoi=Identifier] [aoi=Operator]+[/aoi=Operator] [aoi=Identifier]kmh[/aoi=Identifier][aoi=Separator])[/aoi=Separator] [aoi=Operator]>[/aoi=Operator] [aoi=Keyword]this[/aoi=Keyword][aoi=Separator].[/aoi=Separator][aoi=Identifier]topSpeed[/aoi=Identifier][aoi=Separator])[/aoi=Separator] [aoi=Separator]{[/aoi=Separator]",
+        "             [aoi=Keyword]this[/aoi=Keyword][aoi=Separator].[/aoi=Separator][aoi=Identifier]currentSpeed[/aoi=Identifier] [aoi=Operator]=[/aoi=Operator] [aoi=Keyword]this[/aoi=Keyword][aoi=Separator].[/aoi=Separator][aoi=Identifier]topSpeed[/aoi=Identifier][aoi=Separator];[/aoi=Separator]",
+        "         [aoi=Separator]}[/aoi=Separator] [aoi=Keyword]else[/aoi=Keyword] [aoi=Separator]{[/aoi=Separator]",
+        "             [aoi=Keyword]this[/aoi=Keyword][aoi=Separator].[/aoi=Separator][aoi=Identifier]currentSpeed[/aoi=Identifier] [aoi=Operator]=[/aoi=Operator] [aoi=Keyword]this[/aoi=Keyword][aoi=Separator].[/aoi=Separator][aoi=Identifier]currentSpeed[/aoi=Identifier] [aoi=Operator]+[/aoi=Operator] [aoi=Identifier]kmh[/aoi=Identifier][aoi=Separator];[/aoi=Separator]",
+        "         [aoi=Separator]}[/aoi=Separator]",
+        "     [aoi=Separator]}[/aoi=Separator]",
+        " [aoi=Separator]}[/aoi=Separator]"
+    ]
+}

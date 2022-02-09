@@ -1,0 +1,40 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 19,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "    public static List<String> permute(String str, int l, int r) {",
+        "        List<String> result = new ArrayList<>();",
+        "        if (l == r)",
+        "            result.add(str);",
+        "        else {",
+        "            for (int i = l; i <= r; i++) {",
+        "                str = swap(str, l, i);",
+        "                List<String> temp = permute(str, l + 1, r);",
+        "                result.addAll(temp);",
+        "                str = swap(str, l, i);",
+        "            }",
+        "        }",
+        "        return result;",
+        "    }",
+        "",
+        "    public static String swap(String a, int i, int j) {",
+        "        char temp;",
+        "        char[] charArray = a.toCharArray();",
+        "        temp = charArray[i];",
+        "        charArray[i] = charArray[j];",
+        "        charArray[j] = temp;",
+        "        return String.valueOf(charArray);",
+        "    }"
+    ]
+}

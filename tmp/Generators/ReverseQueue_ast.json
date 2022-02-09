@@ -1,0 +1,25 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 14,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "     [aoi=Modifier]public[/aoi=Modifier] [aoi=Modifier]static[/aoi=Modifier] [aoi=Keyword]void[/aoi=Keyword] [aoi=Identifier]reverse[/aoi=Identifier][aoi=Separator]([/aoi=Separator][aoi=Identifier]Queue[/aoi=Identifier][aoi=Operator]<[/aoi=Operator][aoi=Identifier]Integer[/aoi=Identifier][aoi=Operator]>[/aoi=Operator] [aoi=Identifier]Q[/aoi=Identifier][aoi=Separator])[/aoi=Separator] [aoi=Separator]{[/aoi=Separator]",
+        "         [aoi=Keyword]if[/aoi=Keyword] [aoi=Separator]([/aoi=Separator][aoi=Identifier]Q[/aoi=Identifier][aoi=Separator].[/aoi=Separator][aoi=Identifier]isEmpty[/aoi=Identifier][aoi=Separator]([/aoi=Separator][aoi=Separator])[/aoi=Separator][aoi=Separator])[/aoi=Separator] [aoi=Separator]{[/aoi=Separator]",
+        "             [aoi=Keyword]return[/aoi=Keyword][aoi=Separator];[/aoi=Separator]",
+        "         [aoi=Separator]}[/aoi=Separator]",
+        "         [aoi=Identifier]Integer[/aoi=Identifier] [aoi=Identifier]data[/aoi=Identifier] [aoi=Operator]=[/aoi=Operator] [aoi=Identifier]Q[/aoi=Identifier][aoi=Separator].[/aoi=Separator][aoi=Identifier]remove[/aoi=Identifier][aoi=Separator]([/aoi=Separator][aoi=Separator])[/aoi=Separator][aoi=Separator];[/aoi=Separator]",
+        "         [aoi=Identifier]reverse[/aoi=Identifier][aoi=Separator]([/aoi=Separator][aoi=Identifier]Q[/aoi=Identifier][aoi=Separator])[/aoi=Separator][aoi=Separator];[/aoi=Separator]",
+        "         [aoi=Identifier]Q[/aoi=Identifier][aoi=Separator].[/aoi=Separator][aoi=Identifier]add[/aoi=Identifier][aoi=Separator]([/aoi=Separator][aoi=Identifier]data[/aoi=Identifier][aoi=Separator])[/aoi=Separator][aoi=Separator];[/aoi=Separator]",
+        "     [aoi=Separator]}[/aoi=Separator]"
+    ]
+}

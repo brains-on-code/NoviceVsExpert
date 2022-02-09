@@ -1,0 +1,37 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 14,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "     [aoi=Modifier]public[/aoi=Modifier] [aoi=Modifier]static[/aoi=Modifier] [aoi=Identifier]List[/aoi=Identifier][aoi=Operator]<[/aoi=Operator][aoi=Identifier]Integer[/aoi=Identifier][aoi=Operator]>[/aoi=Operator] [aoi=Identifier]sieveOfEratosthenes[/aoi=Identifier][aoi=Separator]([/aoi=Separator][aoi=BasicType]int[/aoi=BasicType] [aoi=Identifier]n[/aoi=Identifier][aoi=Separator])[/aoi=Separator] [aoi=Separator]{[/aoi=Separator]",
+        "         [aoi=BasicType]boolean[/aoi=BasicType][aoi=Separator][[/aoi=Separator][aoi=Separator]][/aoi=Separator] [aoi=Identifier]prime[/aoi=Identifier] [aoi=Operator]=[/aoi=Operator] [aoi=Keyword]new[/aoi=Keyword] [aoi=BasicType]boolean[/aoi=BasicType][aoi=Separator][[/aoi=Separator][aoi=Identifier]n[/aoi=Identifier] [aoi=Operator]+[/aoi=Operator] [aoi=DecimalInteger]1[/aoi=DecimalInteger][aoi=Separator]][/aoi=Separator][aoi=Separator];[/aoi=Separator]",
+        "         [aoi=Keyword]for[/aoi=Keyword] [aoi=Separator]([/aoi=Separator][aoi=BasicType]int[/aoi=BasicType] [aoi=Identifier]i[/aoi=Identifier] [aoi=Operator]=[/aoi=Operator] [aoi=DecimalInteger]0[/aoi=DecimalInteger][aoi=Separator];[/aoi=Separator] [aoi=Identifier]i[/aoi=Identifier] [aoi=Operator]<=[/aoi=Operator] [aoi=Identifier]n[/aoi=Identifier][aoi=Separator];[/aoi=Separator] [aoi=Identifier]i[/aoi=Identifier][aoi=Operator]++[/aoi=Operator][aoi=Separator])[/aoi=Separator]",
+        "             [aoi=Identifier]prime[/aoi=Identifier][aoi=Separator][[/aoi=Separator][aoi=Identifier]i[/aoi=Identifier][aoi=Separator]][/aoi=Separator] [aoi=Operator]=[/aoi=Operator] [aoi=Boolean]true[/aoi=Boolean][aoi=Separator];[/aoi=Separator]",
+        "",
+        "         [aoi=Keyword]for[/aoi=Keyword] [aoi=Separator]([/aoi=Separator][aoi=BasicType]int[/aoi=BasicType] [aoi=Identifier]p[/aoi=Identifier] [aoi=Operator]=[/aoi=Operator] [aoi=DecimalInteger]2[/aoi=DecimalInteger][aoi=Separator];[/aoi=Separator] [aoi=Identifier]p[/aoi=Identifier] [aoi=Operator]*[/aoi=Operator] [aoi=Identifier]p[/aoi=Identifier] [aoi=Operator]<=[/aoi=Operator] [aoi=Identifier]n[/aoi=Identifier][aoi=Separator];[/aoi=Separator] [aoi=Identifier]p[/aoi=Identifier][aoi=Operator]++[/aoi=Operator][aoi=Separator])[/aoi=Separator] [aoi=Separator]{[/aoi=Separator]",
+        "             [aoi=Keyword]if[/aoi=Keyword] [aoi=Separator]([/aoi=Separator][aoi=Identifier]prime[/aoi=Identifier][aoi=Separator][[/aoi=Separator][aoi=Identifier]p[/aoi=Identifier][aoi=Separator]][/aoi=Separator][aoi=Separator])[/aoi=Separator] [aoi=Separator]{[/aoi=Separator]",
+        "                 [aoi=Keyword]for[/aoi=Keyword] [aoi=Separator]([/aoi=Separator][aoi=BasicType]int[/aoi=BasicType] [aoi=Identifier]i[/aoi=Identifier] [aoi=Operator]=[/aoi=Operator] [aoi=Identifier]p[/aoi=Identifier] [aoi=Operator]*[/aoi=Operator] [aoi=Identifier]p[/aoi=Identifier][aoi=Separator];[/aoi=Separator] [aoi=Identifier]i[/aoi=Identifier] [aoi=Operator]<=[/aoi=Operator] [aoi=Identifier]n[/aoi=Identifier][aoi=Separator];[/aoi=Separator] [aoi=Identifier]i[/aoi=Identifier] [aoi=Operator]+=[/aoi=Operator] [aoi=Identifier]p[/aoi=Identifier][aoi=Separator])[/aoi=Separator]",
+        "                     [aoi=Identifier]prime[/aoi=Identifier][aoi=Separator][[/aoi=Separator][aoi=Identifier]i[/aoi=Identifier][aoi=Separator]][/aoi=Separator] [aoi=Operator]=[/aoi=Operator] [aoi=Boolean]false[/aoi=Boolean][aoi=Separator];[/aoi=Separator]",
+        "             [aoi=Separator]}[/aoi=Separator]",
+        "         [aoi=Separator]}[/aoi=Separator]",
+        "",
+        "         [aoi=Identifier]List[/aoi=Identifier][aoi=Operator]<[/aoi=Operator][aoi=Identifier]Integer[/aoi=Identifier][aoi=Operator]>[/aoi=Operator] [aoi=Identifier]primes[/aoi=Identifier] [aoi=Operator]=[/aoi=Operator] [aoi=Keyword]new[/aoi=Keyword] [aoi=Identifier]ArrayList[/aoi=Identifier][aoi=Operator]<[/aoi=Operator][aoi=Operator]>[/aoi=Operator][aoi=Separator]([/aoi=Separator][aoi=Separator])[/aoi=Separator][aoi=Separator];[/aoi=Separator]",
+        "         [aoi=Keyword]for[/aoi=Keyword] [aoi=Separator]([/aoi=Separator][aoi=BasicType]int[/aoi=BasicType] [aoi=Identifier]i[/aoi=Identifier] [aoi=Operator]=[/aoi=Operator] [aoi=DecimalInteger]2[/aoi=DecimalInteger][aoi=Separator];[/aoi=Separator] [aoi=Identifier]i[/aoi=Identifier] [aoi=Operator]<=[/aoi=Operator] [aoi=Identifier]n[/aoi=Identifier][aoi=Separator];[/aoi=Separator] [aoi=Identifier]i[/aoi=Identifier][aoi=Operator]++[/aoi=Operator][aoi=Separator])[/aoi=Separator] [aoi=Separator]{[/aoi=Separator]",
+        "             [aoi=Keyword]if[/aoi=Keyword] [aoi=Separator]([/aoi=Separator][aoi=Identifier]prime[/aoi=Identifier][aoi=Separator][[/aoi=Separator][aoi=Identifier]i[/aoi=Identifier][aoi=Separator]][/aoi=Separator][aoi=Separator])[/aoi=Separator] [aoi=Separator]{[/aoi=Separator]",
+        "                 [aoi=Identifier]primes[/aoi=Identifier][aoi=Separator].[/aoi=Separator][aoi=Identifier]add[/aoi=Identifier][aoi=Separator]([/aoi=Separator][aoi=Identifier]i[/aoi=Identifier][aoi=Separator])[/aoi=Separator][aoi=Separator];[/aoi=Separator]",
+        "             [aoi=Separator]}[/aoi=Separator]",
+        "         [aoi=Separator]}[/aoi=Separator]",
+        "         [aoi=Keyword]return[/aoi=Keyword] [aoi=Identifier]primes[/aoi=Identifier][aoi=Separator];[/aoi=Separator]",
+        "     [aoi=Separator]}[/aoi=Separator]"
+    ]
+}

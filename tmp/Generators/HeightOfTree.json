@@ -1,0 +1,34 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 19,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "    public static class Node {",
+        "        Node left, right;",
+        "        int value;",
+        "    }",
+        "",
+        "    public static int getHeightOfTree(Node n) {",
+        "        if (n.left == null && n.right == null) {",
+        "            return 1;",
+        "        }",
+        "        if (n.left == null) {",
+        "            return 1 + getHeightOfTree(n.right);",
+        "        }",
+        "        if (n.right == null) {",
+        "            return 1 + getHeightOfTree(n.left);",
+        "        }",
+        "        return 1 + Math.max(getHeightOfTree(n.left), getHeightOfTree(n.right));",
+        "    }"
+    ]
+}

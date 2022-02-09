@@ -1,0 +1,28 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 19,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "    public static int power(int base, int exponent) {",
+        "        if (exponent == 0) {",
+        "            return 1;",
+        "        }",
+        "",
+        "        if (exponent == 1) {",
+        "            return base;",
+        "        }",
+        "",
+        "        return base * power(base, exponent - 1);",
+        "    }"
+    ]
+}

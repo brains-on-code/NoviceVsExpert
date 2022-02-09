@@ -1,0 +1,26 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 14,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "     [aoi=Modifier]public[/aoi=Modifier] [aoi=Modifier]static[/aoi=Modifier] [aoi=BasicType]int[/aoi=BasicType] [aoi=Identifier]sumArray[/aoi=Identifier][aoi=Separator]([/aoi=Separator][aoi=BasicType]int[/aoi=BasicType][aoi=Separator][[/aoi=Separator][aoi=Separator]][/aoi=Separator] [aoi=Identifier]array[/aoi=Identifier][aoi=Separator])[/aoi=Separator] [aoi=Separator]{[/aoi=Separator]",
+        "         [aoi=BasicType]int[/aoi=BasicType] [aoi=Identifier]result[/aoi=Identifier] [aoi=Operator]=[/aoi=Operator] [aoi=DecimalInteger]0[/aoi=DecimalInteger][aoi=Separator];[/aoi=Separator]",
+        "",
+        "         [aoi=Keyword]for[/aoi=Keyword] [aoi=Separator]([/aoi=Separator][aoi=BasicType]int[/aoi=BasicType] [aoi=Identifier]i[/aoi=Identifier] [aoi=Operator]=[/aoi=Operator] [aoi=DecimalInteger]0[/aoi=DecimalInteger][aoi=Separator];[/aoi=Separator] [aoi=Identifier]i[/aoi=Identifier] [aoi=Operator]<[/aoi=Operator] [aoi=Identifier]array[/aoi=Identifier][aoi=Separator].[/aoi=Separator][aoi=Identifier]length[/aoi=Identifier][aoi=Separator];[/aoi=Separator] [aoi=Identifier]i[/aoi=Identifier][aoi=Operator]++[/aoi=Operator][aoi=Separator])[/aoi=Separator] [aoi=Separator]{[/aoi=Separator]",
+        "             [aoi=Identifier]result[/aoi=Identifier] [aoi=Operator]=[/aoi=Operator] [aoi=Identifier]result[/aoi=Identifier] [aoi=Operator]+[/aoi=Operator] [aoi=Identifier]array[/aoi=Identifier][aoi=Separator][[/aoi=Separator][aoi=Identifier]i[/aoi=Identifier][aoi=Separator]][/aoi=Separator][aoi=Separator];[/aoi=Separator]",
+        "         [aoi=Separator]}[/aoi=Separator]",
+        "",
+        "         [aoi=Keyword]return[/aoi=Keyword] [aoi=Identifier]result[/aoi=Identifier][aoi=Separator];[/aoi=Separator]",
+        "     [aoi=Separator]}[/aoi=Separator]"
+    ]
+}

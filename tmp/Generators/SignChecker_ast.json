@@ -1,0 +1,36 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 14,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        " [aoi=Modifier]public[/aoi=Modifier] [aoi=Keyword]class[/aoi=Keyword] [aoi=Identifier]SignChecker[/aoi=Identifier] [aoi=Separator]{[/aoi=Separator]",
+        "     [aoi=Modifier]private[/aoi=Modifier] [aoi=BasicType]int[/aoi=BasicType] [aoi=Identifier]number[/aoi=Identifier][aoi=Separator];[/aoi=Separator]",
+        "",
+        "     [aoi=Modifier]public[/aoi=Modifier] [aoi=Identifier]SignChecker[/aoi=Identifier][aoi=Separator]([/aoi=Separator][aoi=BasicType]int[/aoi=BasicType] [aoi=Identifier]currentNumber[/aoi=Identifier][aoi=Separator])[/aoi=Separator] [aoi=Separator]{[/aoi=Separator]",
+        "         [aoi=Identifier]number[/aoi=Identifier] [aoi=Operator]=[/aoi=Operator] [aoi=Identifier]currentNumber[/aoi=Identifier][aoi=Separator];[/aoi=Separator]",
+        "     [aoi=Separator]}[/aoi=Separator]",
+        "",
+        "     [aoi=Modifier]public[/aoi=Modifier] [aoi=Identifier]String[/aoi=Identifier] [aoi=Identifier]check[/aoi=Identifier][aoi=Separator]([/aoi=Separator][aoi=Separator])[/aoi=Separator] [aoi=Separator]{[/aoi=Separator]",
+        "         [aoi=Identifier]String[/aoi=Identifier] [aoi=Identifier]theSign[/aoi=Identifier] [aoi=Operator]=[/aoi=Operator] [aoi=String]\"\"[/aoi=String][aoi=Separator];[/aoi=Separator]",
+        "         [aoi=Keyword]if[/aoi=Keyword] [aoi=Separator]([/aoi=Separator][aoi=Identifier]number[/aoi=Identifier] [aoi=Operator]<[/aoi=Operator] [aoi=DecimalInteger]0[/aoi=DecimalInteger][aoi=Separator])[/aoi=Separator] [aoi=Separator]{[/aoi=Separator]",
+        "             [aoi=Identifier]theSign[/aoi=Identifier] [aoi=Operator]=[/aoi=Operator] [aoi=String]\"negative\"[/aoi=String][aoi=Separator];[/aoi=Separator]",
+        "         [aoi=Separator]}[/aoi=Separator] [aoi=Keyword]else[/aoi=Keyword] [aoi=Keyword]if[/aoi=Keyword] [aoi=Separator]([/aoi=Separator][aoi=Identifier]number[/aoi=Identifier] [aoi=Operator]>[/aoi=Operator] [aoi=DecimalInteger]0[/aoi=DecimalInteger][aoi=Separator])[/aoi=Separator] [aoi=Separator]{[/aoi=Separator]",
+        "             [aoi=Identifier]theSign[/aoi=Identifier] [aoi=Operator]=[/aoi=Operator] [aoi=String]\"positive\"[/aoi=String][aoi=Separator];[/aoi=Separator]",
+        "         [aoi=Separator]}[/aoi=Separator] [aoi=Keyword]else[/aoi=Keyword] [aoi=Separator]{[/aoi=Separator]",
+        "             [aoi=Identifier]theSign[/aoi=Identifier] [aoi=Operator]=[/aoi=Operator] [aoi=String]\"null\"[/aoi=String][aoi=Separator];[/aoi=Separator]",
+        "         [aoi=Separator]}[/aoi=Separator]",
+        "         [aoi=Keyword]return[/aoi=Keyword] [aoi=Identifier]theSign[/aoi=Identifier][aoi=Separator];[/aoi=Separator]",
+        "     [aoi=Separator]}[/aoi=Separator]",
+        " [aoi=Separator]}[/aoi=Separator]"
+    ]
+}

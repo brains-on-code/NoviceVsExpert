@@ -1,0 +1,35 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 14,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "     [aoi=Modifier]public[/aoi=Modifier] [aoi=Identifier]Rectangle[/aoi=Identifier][aoi=Separator]([/aoi=Separator][aoi=BasicType]int[/aoi=BasicType] [aoi=Identifier]x1[/aoi=Identifier][aoi=Separator],[/aoi=Separator] [aoi=BasicType]int[/aoi=BasicType] [aoi=Identifier]y1[/aoi=Identifier][aoi=Separator],[/aoi=Separator] [aoi=BasicType]int[/aoi=BasicType] [aoi=Identifier]x2[/aoi=Identifier][aoi=Separator],[/aoi=Separator] [aoi=BasicType]int[/aoi=BasicType] [aoi=Identifier]y2[/aoi=Identifier][aoi=Separator])[/aoi=Separator] [aoi=Separator]{[/aoi=Separator]",
+        "         [aoi=Keyword]this[/aoi=Keyword][aoi=Separator].[/aoi=Separator][aoi=Identifier]x1[/aoi=Identifier] [aoi=Operator]=[/aoi=Operator] [aoi=Identifier]x1[/aoi=Identifier][aoi=Separator];[/aoi=Separator]",
+        "         [aoi=Keyword]this[/aoi=Keyword][aoi=Separator].[/aoi=Separator][aoi=Identifier]y1[/aoi=Identifier] [aoi=Operator]=[/aoi=Operator] [aoi=Identifier]y1[/aoi=Identifier][aoi=Separator];[/aoi=Separator]",
+        "         [aoi=Keyword]this[/aoi=Keyword][aoi=Separator].[/aoi=Separator][aoi=Identifier]x2[/aoi=Identifier] [aoi=Operator]=[/aoi=Operator] [aoi=Identifier]x2[/aoi=Identifier][aoi=Separator];[/aoi=Separator]",
+        "         [aoi=Keyword]this[/aoi=Keyword][aoi=Separator].[/aoi=Separator][aoi=Identifier]y2[/aoi=Identifier] [aoi=Operator]=[/aoi=Operator] [aoi=Identifier]y2[/aoi=Identifier][aoi=Separator];[/aoi=Separator]",
+        "     [aoi=Separator]}[/aoi=Separator]",
+        "",
+        "     [aoi=Modifier]public[/aoi=Modifier] [aoi=BasicType]int[/aoi=BasicType] [aoi=Identifier]width[/aoi=Identifier][aoi=Separator]([/aoi=Separator][aoi=Separator])[/aoi=Separator] [aoi=Separator]{[/aoi=Separator]",
+        "         [aoi=Keyword]return[/aoi=Keyword] [aoi=Keyword]this[/aoi=Keyword][aoi=Separator].[/aoi=Separator][aoi=Identifier]x2[/aoi=Identifier] [aoi=Operator]-[/aoi=Operator] [aoi=Keyword]this[/aoi=Keyword][aoi=Separator].[/aoi=Separator][aoi=Identifier]x1[/aoi=Identifier][aoi=Separator];[/aoi=Separator]",
+        "     [aoi=Separator]}[/aoi=Separator]",
+        "",
+        "     [aoi=Modifier]public[/aoi=Modifier] [aoi=BasicType]int[/aoi=BasicType] [aoi=Identifier]height[/aoi=Identifier][aoi=Separator]([/aoi=Separator][aoi=Separator])[/aoi=Separator] [aoi=Separator]{[/aoi=Separator]",
+        "         [aoi=Keyword]return[/aoi=Keyword] [aoi=Keyword]this[/aoi=Keyword][aoi=Separator].[/aoi=Separator][aoi=Identifier]y2[/aoi=Identifier] [aoi=Operator]-[/aoi=Operator] [aoi=Keyword]this[/aoi=Keyword][aoi=Separator].[/aoi=Separator][aoi=Identifier]y1[/aoi=Identifier][aoi=Separator];[/aoi=Separator]",
+        "     [aoi=Separator]}[/aoi=Separator]",
+        "",
+        "     [aoi=Modifier]public[/aoi=Modifier] [aoi=BasicType]double[/aoi=BasicType] [aoi=Identifier]area[/aoi=Identifier][aoi=Separator]([/aoi=Separator][aoi=Separator])[/aoi=Separator] [aoi=Separator]{[/aoi=Separator]",
+        "         [aoi=Keyword]return[/aoi=Keyword] [aoi=Keyword]this[/aoi=Keyword][aoi=Separator].[/aoi=Separator][aoi=Identifier]width[/aoi=Identifier][aoi=Separator]([/aoi=Separator][aoi=Separator])[/aoi=Separator] [aoi=Operator]*[/aoi=Operator] [aoi=Keyword]this[/aoi=Keyword][aoi=Separator].[/aoi=Separator][aoi=Identifier]height[/aoi=Identifier][aoi=Separator]([/aoi=Separator][aoi=Separator])[/aoi=Separator][aoi=Separator];[/aoi=Separator]",
+        "     [aoi=Separator]}[/aoi=Separator]"
+    ]
+}

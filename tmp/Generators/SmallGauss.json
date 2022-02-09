@@ -1,0 +1,24 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 19,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "    public static int sum(int n) {",
+        "        int res = 0;",
+        "        for (int i = 1; i < n; i++) {",
+        "            res += i;",
+        "        }",
+        "        return res;",
+        "    }"
+    ]
+}

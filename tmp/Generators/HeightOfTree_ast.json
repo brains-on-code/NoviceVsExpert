@@ -1,0 +1,34 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 14,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "     [aoi=Modifier]public[/aoi=Modifier] [aoi=Modifier]static[/aoi=Modifier] [aoi=Keyword]class[/aoi=Keyword] [aoi=Identifier]Node[/aoi=Identifier] [aoi=Separator]{[/aoi=Separator]",
+        "         [aoi=Modifier]public[/aoi=Modifier] [aoi=Identifier]Node[/aoi=Identifier] [aoi=Identifier]left[/aoi=Identifier][aoi=Separator],[/aoi=Separator] [aoi=Identifier]right[/aoi=Identifier][aoi=Separator];[/aoi=Separator]",
+        "         [aoi=BasicType]int[/aoi=BasicType] [aoi=Identifier]value[/aoi=Identifier][aoi=Separator];[/aoi=Separator]",
+        "     [aoi=Separator]}[/aoi=Separator]",
+        "",
+        "     [aoi=Modifier]public[/aoi=Modifier] [aoi=Modifier]static[/aoi=Modifier] [aoi=BasicType]int[/aoi=BasicType] [aoi=Identifier]getHeightOfTree[/aoi=Identifier][aoi=Separator]([/aoi=Separator][aoi=Identifier]Node[/aoi=Identifier] [aoi=Identifier]n[/aoi=Identifier][aoi=Separator])[/aoi=Separator] [aoi=Separator]{[/aoi=Separator]",
+        "         [aoi=Keyword]if[/aoi=Keyword] [aoi=Separator]([/aoi=Separator][aoi=Identifier]n[/aoi=Identifier][aoi=Separator].[/aoi=Separator][aoi=Identifier]left[/aoi=Identifier] [aoi=Operator]==[/aoi=Operator] [aoi=Null]null[/aoi=Null] [aoi=Operator]&&[/aoi=Operator] [aoi=Identifier]n[/aoi=Identifier][aoi=Separator].[/aoi=Separator][aoi=Identifier]right[/aoi=Identifier] [aoi=Operator]==[/aoi=Operator] [aoi=Null]null[/aoi=Null][aoi=Separator])[/aoi=Separator] [aoi=Separator]{[/aoi=Separator]",
+        "             [aoi=Keyword]return[/aoi=Keyword] [aoi=DecimalInteger]1[/aoi=DecimalInteger][aoi=Separator];[/aoi=Separator]",
+        "         [aoi=Separator]}[/aoi=Separator]",
+        "         [aoi=Keyword]if[/aoi=Keyword] [aoi=Separator]([/aoi=Separator][aoi=Identifier]n[/aoi=Identifier][aoi=Separator].[/aoi=Separator][aoi=Identifier]left[/aoi=Identifier] [aoi=Operator]==[/aoi=Operator] [aoi=Null]null[/aoi=Null][aoi=Separator])[/aoi=Separator] [aoi=Separator]{[/aoi=Separator]",
+        "             [aoi=Keyword]return[/aoi=Keyword] [aoi=DecimalInteger]1[/aoi=DecimalInteger] [aoi=Operator]+[/aoi=Operator] [aoi=Identifier]getHeightOfTree[/aoi=Identifier][aoi=Separator]([/aoi=Separator][aoi=Identifier]n[/aoi=Identifier][aoi=Separator].[/aoi=Separator][aoi=Identifier]right[/aoi=Identifier][aoi=Separator])[/aoi=Separator][aoi=Separator];[/aoi=Separator]",
+        "         [aoi=Separator]}[/aoi=Separator]",
+        "         [aoi=Keyword]if[/aoi=Keyword] [aoi=Separator]([/aoi=Separator][aoi=Identifier]n[/aoi=Identifier][aoi=Separator].[/aoi=Separator][aoi=Identifier]right[/aoi=Identifier] [aoi=Operator]==[/aoi=Operator] [aoi=Null]null[/aoi=Null][aoi=Separator])[/aoi=Separator] [aoi=Separator]{[/aoi=Separator]",
+        "             [aoi=Keyword]return[/aoi=Keyword] [aoi=DecimalInteger]1[/aoi=DecimalInteger] [aoi=Operator]+[/aoi=Operator] [aoi=Identifier]getHeightOfTree[/aoi=Identifier][aoi=Separator]([/aoi=Separator][aoi=Identifier]n[/aoi=Identifier][aoi=Separator].[/aoi=Separator][aoi=Identifier]left[/aoi=Identifier][aoi=Separator])[/aoi=Separator][aoi=Separator];[/aoi=Separator]",
+        "         [aoi=Separator]}[/aoi=Separator]",
+        "         [aoi=Keyword]return[/aoi=Keyword] [aoi=DecimalInteger]1[/aoi=DecimalInteger] [aoi=Operator]+[/aoi=Operator] [aoi=Identifier]Math[/aoi=Identifier][aoi=Separator].[/aoi=Separator][aoi=Identifier]max[/aoi=Identifier][aoi=Separator]([/aoi=Separator][aoi=Identifier]getHeightOfTree[/aoi=Identifier][aoi=Separator]([/aoi=Separator][aoi=Identifier]n[/aoi=Identifier][aoi=Separator].[/aoi=Separator][aoi=Identifier]left[/aoi=Identifier][aoi=Separator])[/aoi=Separator][aoi=Separator],[/aoi=Separator] [aoi=Identifier]getHeightOfTree[/aoi=Identifier][aoi=Separator]([/aoi=Separator][aoi=Identifier]n[/aoi=Identifier][aoi=Separator].[/aoi=Separator][aoi=Identifier]right[/aoi=Identifier][aoi=Separator])[/aoi=Separator][aoi=Separator])[/aoi=Separator][aoi=Separator];[/aoi=Separator]",
+        "     [aoi=Separator]}[/aoi=Separator]"
+    ]
+}

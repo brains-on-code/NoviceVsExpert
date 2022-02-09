@@ -1,0 +1,32 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 14,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "     [aoi=Modifier]public[/aoi=Modifier] [aoi=Modifier]static[/aoi=Modifier] [aoi=BasicType]int[/aoi=BasicType] [aoi=Identifier]binarySearch[/aoi=Identifier][aoi=Separator]([/aoi=Separator][aoi=BasicType]int[/aoi=BasicType][aoi=Separator][[/aoi=Separator][aoi=Separator]][/aoi=Separator] [aoi=Identifier]sortedArray[/aoi=Identifier][aoi=Separator],[/aoi=Separator] [aoi=BasicType]int[/aoi=BasicType] [aoi=Identifier]key[/aoi=Identifier][aoi=Separator],[/aoi=Separator] [aoi=BasicType]int[/aoi=BasicType] [aoi=Identifier]low[/aoi=Identifier][aoi=Separator],[/aoi=Separator] [aoi=BasicType]int[/aoi=BasicType] [aoi=Identifier]high[/aoi=Identifier][aoi=Separator])[/aoi=Separator] [aoi=Separator]{[/aoi=Separator]",
+        "         [aoi=BasicType]int[/aoi=BasicType] [aoi=Identifier]middle[/aoi=Identifier] [aoi=Operator]=[/aoi=Operator] [aoi=Separator]([/aoi=Separator][aoi=Identifier]low[/aoi=Identifier] [aoi=Operator]+[/aoi=Operator] [aoi=Identifier]high[/aoi=Identifier][aoi=Separator])[/aoi=Separator] [aoi=Operator]/[/aoi=Operator] [aoi=DecimalInteger]2[/aoi=DecimalInteger][aoi=Separator];[/aoi=Separator]",
+        "",
+        "         [aoi=Keyword]if[/aoi=Keyword] [aoi=Separator]([/aoi=Separator][aoi=Identifier]high[/aoi=Identifier] [aoi=Operator]<[/aoi=Operator] [aoi=Identifier]low[/aoi=Identifier][aoi=Separator])[/aoi=Separator] [aoi=Separator]{[/aoi=Separator]",
+        "             [aoi=Keyword]return[/aoi=Keyword] [aoi=Operator]-[/aoi=Operator][aoi=DecimalInteger]1[/aoi=DecimalInteger][aoi=Separator];[/aoi=Separator]",
+        "         [aoi=Separator]}[/aoi=Separator]",
+        "",
+        "         [aoi=Keyword]if[/aoi=Keyword] [aoi=Separator]([/aoi=Separator][aoi=Identifier]key[/aoi=Identifier] [aoi=Operator]==[/aoi=Operator] [aoi=Identifier]sortedArray[/aoi=Identifier][aoi=Separator][[/aoi=Separator][aoi=Identifier]middle[/aoi=Identifier][aoi=Separator]][/aoi=Separator][aoi=Separator])[/aoi=Separator] [aoi=Separator]{[/aoi=Separator]",
+        "             [aoi=Keyword]return[/aoi=Keyword] [aoi=Identifier]middle[/aoi=Identifier][aoi=Separator];[/aoi=Separator]",
+        "         [aoi=Separator]}[/aoi=Separator] [aoi=Keyword]else[/aoi=Keyword] [aoi=Keyword]if[/aoi=Keyword] [aoi=Separator]([/aoi=Separator][aoi=Identifier]key[/aoi=Identifier] [aoi=Operator]<[/aoi=Operator] [aoi=Identifier]sortedArray[/aoi=Identifier][aoi=Separator][[/aoi=Separator][aoi=Identifier]middle[/aoi=Identifier][aoi=Separator]][/aoi=Separator][aoi=Separator])[/aoi=Separator] [aoi=Separator]{[/aoi=Separator]",
+        "             [aoi=Keyword]return[/aoi=Keyword] [aoi=Identifier]binarySearch[/aoi=Identifier][aoi=Separator]([/aoi=Separator][aoi=Identifier]sortedArray[/aoi=Identifier][aoi=Separator],[/aoi=Separator] [aoi=Identifier]key[/aoi=Identifier][aoi=Separator],[/aoi=Separator] [aoi=Identifier]low[/aoi=Identifier][aoi=Separator],[/aoi=Separator] [aoi=Identifier]middle[/aoi=Identifier] [aoi=Operator]-[/aoi=Operator] [aoi=DecimalInteger]1[/aoi=DecimalInteger][aoi=Separator])[/aoi=Separator][aoi=Separator];[/aoi=Separator]",
+        "         [aoi=Separator]}[/aoi=Separator] [aoi=Keyword]else[/aoi=Keyword] [aoi=Separator]{[/aoi=Separator]",
+        "             [aoi=Keyword]return[/aoi=Keyword] [aoi=Identifier]binarySearch[/aoi=Identifier][aoi=Separator]([/aoi=Separator][aoi=Identifier]sortedArray[/aoi=Identifier][aoi=Separator],[/aoi=Separator] [aoi=Identifier]key[/aoi=Identifier][aoi=Separator],[/aoi=Separator] [aoi=Identifier]middle[/aoi=Identifier] [aoi=Operator]+[/aoi=Operator] [aoi=DecimalInteger]1[/aoi=DecimalInteger][aoi=Separator],[/aoi=Separator] [aoi=Identifier]high[/aoi=Identifier][aoi=Separator])[/aoi=Separator][aoi=Separator];[/aoi=Separator]",
+        "         [aoi=Separator]}[/aoi=Separator]",
+        "     [aoi=Separator]}[/aoi=Separator]",
+    ]
+}
