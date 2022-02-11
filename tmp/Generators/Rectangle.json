@@ -13,7 +13,7 @@
         255
     ],
     "source-code": [
-        "public class Rectangle {",
+        "[AOI=class_declaration]public class Rectangle {",
         "    private final int x1;",
         "    private final int y1;",
         "    private final int x2;",
@@ -26,18 +26,18 @@
         "        this.y2 = y2;",
         "    }",
         "",
-        "    public int width() {",
-        "        return this.x2 - this.x1;",
+        "    [AOI=method_signature]public int [AOI=method_identifier]width[/AOI][AOI=method_argument_declaration]() [/AOI][/AOI] {",
+        "        return [AOI=arithmetic_expression]this.x2 - this.x1[/AOI];",
         "    }",
         "",
-        "    public int height() {",
-        "        return this.y2 - this.y1;",
+        "    [AOI=method_signature]public int [AOI=method_identifier]height[/AOI][AOI=method_argument_declaration]() [/AOI][/AOI]{",
+        "        return [AOI=arithmetic_expression]this.y2 - this.y1[/AOI];",
         "    }",
         "",
-        "    public double area() {",
-        "        return this.width() * this.height();",
+        "    [AOI=method_signature]public double [AOI=method_identifier]area[/AOI][AOI=method_argument_declaration]() [/AOI][/AOI]{",
+        "        return [AOI=arithmetic_expression][AOI=method_call]this.[AOI=method_call_identifier]width[/AOI][AOI=method_arguments]()[/AOI][/AOI] * [AOI=method_call]this.[AOI=method_call_identifier]height[/AOI][AOI=method_arguments]()[/AOI][/AOI][/AOI];",
         "    }",
         "",
-        "}"
+        "}[/AOI]"
     ]
 }

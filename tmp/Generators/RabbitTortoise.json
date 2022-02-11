@@ -13,20 +13,20 @@
         255
     ],
     "source-code": [
-        "    public static int rabbitTortoise(int[] number_field) {",
+        "    [AOI=method_signature]public static int [AOI=method_identifier]rabbitTortoise[/AOI][AOI=method_argument_declaration](int[] number_field) [/AOI][/AOI]{",
         "        int tortoise = number_field[0];",
         "        int rabbit = number_field[number_field[0]];",
         "",
-        "        while (tortoise != rabbit) {",
+        "        [AOI=while][AOI=while_head]while (tortoise != rabbit)[/AOI][AOI=while_body] {",
         "            tortoise = number_field[tortoise];",
         "            rabbit = number_field[number_field[rabbit]];",
-        "        }",
+        "        }[/AOI][/AOI]",
         "",
         "        rabbit = 0;",
-        "        while (tortoise != rabbit) {",
+        "        [AOI=while][AOI=while_head]while (tortoise != rabbit) [/AOI][AOI=while_body]{",
         "            tortoise = number_field[tortoise];",
         "            rabbit = number_field[rabbit];",
-        "        }",
+        "        }[/AOI][/AOI]",
         "        return rabbit;",
         "    }"
     ]

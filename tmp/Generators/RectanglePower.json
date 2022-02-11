@@ -13,16 +13,16 @@
         255
     ],
     "source-code": [
-        "    public static int power(int base, int exponent) {",
-        "        if (exponent == 0) {",
+        "    [AOI=method_signature] public static int [AOI=method_identifier]power[/AOI][AOI=method_argument_declaration](int base, int exponent) [/AOI][/AOI]{",
+        "        [AOI=if][AOI=if_head]if (exponent == 0)[/AOI][AOI=if_body] {",
         "            return 1;",
-        "        }",
+        "        }[/AOI][/AOI]",
         "",
-        "        if (exponent == 1) {",
+        "        [AOI=if][AOI=if_head]if (exponent == 1)[/AOI][AOI=if_body] {",
         "            return base;",
-        "        }",
+        "        }[/AOI][/AOI]",
         "",
-        "        return base * power(base, exponent - 1);",
+        "        return [AOI=arithmetic_expression]base * [AOI=method_call][AOI=method_call_identifier]power[/AOI][AOI=method_arguments](base, [AOI=arithmetic_expression]exponent - 1[/AOI])[/AOI][/AOI][/AOI];",
         "    }"
     ]
 }

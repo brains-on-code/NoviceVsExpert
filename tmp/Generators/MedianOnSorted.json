@@ -13,13 +13,14 @@
         255
     ],
     "source-code": [
-        "    public static float median(int[] array) {",
+        "    [AOI=method_signature] public static float [AOI=method_identifier]median[/AOI][AOI=method_argument_declaration](int[] array) [/AOI][/AOI]{",
         "        float b;",
-        "        if (array.length % 2 == 1)",
-        "            b = array[array.length / 2];",
-        "        else",
-        "            b = (array[array.length / 2 - 1] + array[array.length / 2]) / 2f;",
-        "        return b;",
+        "        [AOI=if][AOI=if_head] if ([AOI=arithmetic_expression]array.length % 2[/AOI] == 1)[/AOI][AOI=if_body]",
+        "            b = array[[AOI=arithmetic_expression]array.length / 2[/AOI]];",
+        "        [/AOI][/AOI][AOI=else][AOI=else_head] else [/AOI][AOI=else_body]",
+        "            b = [AOI=arithmetic_expression](array[[AOI=arithmetic_expression]array.length / 2 - 1[/AOI]] + array[[AOI=arithmetic_expression]array.length / 2[/AOI]) / 2f [/AOI];",
+        "        return b; ",
+        "        [/AOI][/AOI]",
         "    }"
     ]
 }
