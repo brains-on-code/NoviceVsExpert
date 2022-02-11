@@ -13,20 +13,20 @@
         255
     ],
     "source-code": [
-        "    public static int binarySearch(int[] sortedArray, int key, int low, int high) {",
-        "        int middle = (low + high) / 2;",
+        "    [AOI=method_signature]public static int [AOI=method_identifier]binarySearch[/AOI][AOI=method_argument_declaration](int[] sortedArray, int key, int low, int high)[/AOI][/AOI] {",
+        "        int middle = [AOI=arithmetic_expression](low + high) / 2[/AOI];",
         "",
-        "        if (high < low) {",
+        "        [AOI=if][AOI=if_head]if (high < low)[/AOI][AOI=if_body] {",
         "            return -1;",
-        "        }",
+        "        }[/AOI][/AOI]",
         "",
-        "        if (key == sortedArray[middle]) {",
+        "        [AOI=if][AOI=if_head]if (key == sortedArray[middle])[/AOI][AOI=if_body] {",
         "            return middle;",
-        "        } else if (key < sortedArray[middle]) {",
-        "            return binarySearch(sortedArray, key, low, middle - 1);",
-        "        } else {",
-        "            return binarySearch(sortedArray, key, middle + 1, high);",
-        "        }",
+        "        }[/AOI][/AOI][AOI=else_if][AOI=else_if_head] else if (key < sortedArray[middle])[/AOI][AOI=else_if_body] {",
+        "            return [AOI=method_call][AOI=method_call_identifier]binarySearch[/AOI][AOI=method_arguments](sortedArray, key, low, middle - 1)[/AOI][/AOI];",
+        "        }[/AOI][/AOI][AOI=else][AOI=else_head] else [/AOI][AOI=else_body]{",
+        "            return [AOI=method_call][AOI=method_call_identifier]binarySearch[/AOI][AOI=method_arguments](sortedArray, key, middle + 1, high)[/AOI][/AOI];",
+        "        }[/AOI][/AOI]",
         "    }"
     ]
 }

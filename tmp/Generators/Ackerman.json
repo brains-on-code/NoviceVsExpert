@@ -13,14 +13,14 @@
         255
     ],
     "source-code": [
-        "    public static int ackermann(int n, int m) {",
-        "        if (n == 0) {",
-        "            return m + 1",
-        "        } else if (m == 0) {",
-        "            return ackermann(n - 1, 1);",
-        "        }",
+        "    [AOI=method_signature]public static int [AOI=method_identifier]ackermann[/AOI][AOI=method_argument_declaration](int n, int m)[/AOI][/AOI]{",
+        "        [AOI=if][AOI=if_head] if (n == 0)[/AOI][AOI=if_body]{",
+        "            return [AOI=arithmetic_expression]m + 1[/AOI]",
+        "        }[/AOI][/AOI][AOI=else_if][AOI=else_if_head] else if (m == 0)[/AOI][AOI=else_if_body] {",
+        "            return [AOI=method_call][AOI=method_call_identifier]ackermann[/AOI][AOI=method_arguments]([AOI=arithmetic_expression]n - 1[/AOI], 1)[/AOI][/AOI];",
+        "        }[/AOI][/AOI]",
         "",
-        "        return ackermann(n - 1, ackermann(n, m - 1);",
+        "        return [AOI=method_call][AOI=method_call_identifier]ackermann[/AOI][AOI=method_arguments]([AOI=arithmetic_expression]n - 1[/AOI], ackermann(n, [AOI=arithmetic_expression]m - 1[/AOI])[/AOI][/AOI];",
         "    }"
     ]
 }

@@ -13,16 +13,16 @@
         255
     ],
     "source-code": [
-        "    public static float arrayAverage(int[] numbers) {",
+        "    [AOI=method_signature]public static float [AOI=method_identifier]arrayAverage[/AOI][AOI=method_argument_declaration](int[] numbers)[/AOI][/AOI] {",
         "        int count = 0;",
         "        int sum = 0;",
         "",
-        "        while (count < numbers.length) {",
-        "            sum = sum + numbers[count];",
-        "            count = count + 1;",
-        "        }",
+        "        [AOI=while][AOI=while_head]while (count < numbers.length)[/AOI][AOI=while_body] {",
+        "            sum = [AOI=arithmetic_expression]sum + numbers[count][/AOI];",
+        "            count = [AOI=arithmetic_expression]count + 1[/AOI];",
+        "        }[/AOI][/AOI]",
         "",
-        "        float average = sum / (float) count;",
+        "        float average = [AOI=arithmetic_expression]sum / (float) count[/AOI];",
         "        return average;",
         "    }"
     ]
