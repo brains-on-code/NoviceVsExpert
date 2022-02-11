@@ -13,15 +13,15 @@
         255
     ],
     "source-code": [
-        "    public static boolean checkIfLettersOnly(String stringToTest) {",
+        "    [AOI=method_signature]public static boolean [AOI=method_identifier]checkIfLettersOnly[/AOI][AOI=method_argument_declaration](String stringToTest)[/AOI][/AOI] {",
         "        char ch;",
         "        int i = 0;",
-        "        while (i < stringToTest.length()) {",
-        "            ch = stringToTest.charAt(i);",
-        "            if (!(ch >= 'a' && ch <= 'z') && !(ch >= 'A' && ch <= 'Z'))",
-        "                return false;",
+        "        [AOI=while][AOI=while_head]while (i < [AOI=method_call]stringToTest.[AOI=method_call_identifier]length[/AOI][AOI=method_arguments]()[/AOI][/AOI])[/AOI][AOI=while_body] {",
+        "            ch = [AOI=method_call]stringToTest.[AOI=method_call_identifier]charAt[/AOI][AOI=method_arguments](i)[/AOI][/AOI];",
+        "            [AOI=if][AOI=if_head] if (!(ch >= 'a' && ch <= 'z') && !(ch >= 'A' && ch <= 'Z'))[/AOI][AOI=if_body]",
+        "                return false;[/AOI][/AOI]",
         "            i++;",
-        "        }",
+        "        }[/AOI][/AOI]",
         "        return true;",
         "    }"
     ]

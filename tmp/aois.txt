@@ -6,9 +6,16 @@ Method Declaration:
 [/AOI][/AOI]
 
 
+(For constructor calls:)
+[AOI=method_call] new [AOI=method_call_identifier] ClassName [/AOI][AOI=method_arguments] () [/AOI] ;
+
+
 Method Call:
 
 [AOI=method_call][AOI=method_call_identifier]
+
+[AOI=method_call]
+[AOI=method_call_identifier]
 [/AOI][AOI=method_arguments]
 [/AOI][/AOI]
 
@@ -34,8 +41,7 @@ if / else / else if:
 [/AOI][/AOI][AOI=else_if][AOI=else_if_head]
 [/AOI][AOI=else_if_body]
 
-[/AOI][/AOI][AOI=else][AOI=else_head]
-[/AOI][AOI=else_body]
+[/AOI][/AOI][AOI=else][AOI=else_head] else [/AOI][AOI=else_body]
 ---
 
 [/AOI][/AOI]
