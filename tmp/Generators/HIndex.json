@@ -13,19 +13,19 @@
         255
     ],
     "source-code": [
-        "    public static int hIndex(int[] numbers) {",
-        "        Arrays.sort(numbers);",
+        "    [AOI=method_signature]public static int [AOI=method_identifier]hIndex[/AOI][AOI=method_argument_declaration](int[] numbers)[/AOI][/AOI] {",
+        "        [AOI=method_call]Arrays.[AOI=method_call_identifier]sort[/AOI][AOI=method_arguments](numbers)[/AOI][/AOI];",
         "",
         "        int count = numbers.length;",
         "        int hIndex = 0;",
-        "        for (int i = count - 1; i >= 0; i--) {",
-        "            int current = count - 1;",
-        "            if (numbers[i] >= current) {",
+        "        [AOI=for][AOI=for_head] for (int i = [AOI=arithmetic_expression]count - 1[/AOI] ; i >= 0; i--) [/AOI][AOI=for_body] {",
+        "            int current = [AOI=arithmetic_expression] count - 1 [/AOI];",
+        "            [AOI=if][AOI=if_head] if (numbers[i] >= current) [/AOI][AOI=if_body]{",
         "                hIndex = current;",
-        "            } else {",
+        "            } [/AOI][/AOI][AOI=else][AOI=else_head] else [/AOI][AOI=else_body] else {",
         "                break;",
-        "            }",
-        "        }",
+        "            }[/AOI][/AOI]",
+        "        }[/AOI][/AOI]",
         "        return hIndex;",
         "    }"
     ]
