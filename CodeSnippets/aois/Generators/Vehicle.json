@@ -1,0 +1,37 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 19,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "[AOI=class_declaration]public class Vehicle {",
+        "    String producer, type;",
+        "    int topSpeed, currentSpeed;",
+        "",
+        "    [AOI=method_signature]public [AOI=method_identifier]Vehicle[/AOI][AOI=method_argument_declaration](String p, String t, int tp)[/AOI][/AOI] {",
+        "        this.producer = p;",
+        "        this.type = t;",
+        "        this.topSpeed = tp;",
+        "        this.currentSpeed = 0;",
+        "    }",
+        "",
+        "    [AOI=method_signature]public void [AOI=method_identifier]accelerate[/AOI][AOI=method_argument_declaration](int kmh)[/AOI][/AOI] {",
+        "        [AOI=if][AOI=if_head]if (([AOI=arithmetic_expression]this.currentSpeed + kmh[/AOI]) > this.topSpeed) [/AOI][AOI=if_body]{",
+        "            this.currentSpeed = this.topSpeed;",
+        "        }[/AOI][/AOI][AOI=else][AOI=else_head] else [/AOI][AOI=else_body]{",
+        "            this.currentSpeed = [AOI=arithmetic_expression]this.currentSpeed + kmh;[/AOI]",
+        "        }[/AOI][/AOI]",
+        "    }",
+        "}[/AOI]",
+        ""
+    ]
+}

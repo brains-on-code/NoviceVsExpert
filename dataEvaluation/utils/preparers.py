@@ -21,6 +21,7 @@ def load_raw(participant_number, cores=12, digits=2, logging=True,
     participant_folder = raw_path + "Participant" + str(participant_number).zfill(digits) + "/"
     eye_tracking_path = participant_folder + "eyetracking_raw.csv"
     eeg_path = participant_folder + "eeg_raw.fif"
+    eeg_set_path = participant_folder + "eeg_raw_" + str(participant_number).zfill(digits) + ".set"
     psychopy_csv_path = participant_folder + "experiment.csv"
 
     print("(02/10) Read Eye Tracker Data", file=output, flush=True)
@@ -113,6 +114,7 @@ def load_raw(participant_number, cores=12, digits=2, logging=True,
     print("(05/10) Read EEG Data", file=output, flush=True)
     # read the eeg data and scale it
     raw = mne.io.read_raw_fif(fname=eeg_path, preload=True)
+    raw_set = mne.io.read_raw_eeglab(eeg_set_path, preload=True)
 
     print("(06/10) Construct Events from EEG Data", file=output, flush=True)
     # get the time of the events in seconds
@@ -213,14 +215,14 @@ def load_raw(participant_number, cores=12, digits=2, logging=True,
         # add data for code
         current["Code"]["EyeTracking"] = df_eye_tracking[(df_eye_tracking["time"] >= df_time["SnippetStart"][index]) & (
                 df_eye_tracking["time"] < df_time["SnippetStop"][index])]
-        current["Code"]["EEG"] = raw.copy().crop(df_time["SnippetStart"][index], df_time["SnippetStop"][index])
+        current["Code"]["EEG"] = raw_set.copy().crop(df_time["SnippetStart"][index], df_time["SnippetStop"][index])
         current["Code"]["Time"]["Start"] = df_psydata["SnippetStart"][index]
         current["Code"]["Time"]["Stop"] = df_psydata["SnippetStop"][index]
 
         # add data for input
         current["Input"]["EyeTracking"] = df_eye_tracking[(df_eye_tracking["time"] >= df_time["InputStart"][index]) & (
                 df_eye_tracking["time"] < df_time["InputStop"][index])]
-        current["Input"]["EEG"] = raw.copy().crop(df_time["InputStart"][index], df_time["InputStop"][index])
+        current["Input"]["EEG"] = raw_set.copy().crop(df_time["InputStart"][index], df_time["InputStop"][index])
         current["Input"]["Time"]["Start"] = df_psydata["InputStart"][index]
         current["Input"]["Time"]["Stop"] = df_psydata["InputStop"][index]
 
@@ -228,7 +230,7 @@ def load_raw(participant_number, cores=12, digits=2, logging=True,
         current["Output"]["EyeTracking"] = df_eye_tracking[
             (df_eye_tracking["time"] >= df_time["OutputStart"][index]) & (
                     df_eye_tracking["time"] < df_time["OutputStop"][index])]
-        current["Output"]["EEG"] = raw.copy().crop(df_time["OutputStart"][index], df_time["OutputStop"][index])
+        current["Output"]["EEG"] = raw_set.copy().crop(df_time["OutputStart"][index], df_time["OutputStop"][index])
         current["Output"]["Time"]["Start"] = df_psydata["OutputStart"][index]
         current["Output"]["Time"]["Stop"] = df_psydata["OutputStop"][index]
 

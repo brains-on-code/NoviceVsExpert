@@ -1,0 +1,25 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 19,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "    [AOI=method_signature]public static void [AOI=method_identifier]reverse[/AOI][AOI=method_argument_declaration](Queue<Integer> Q)[/AOI][/AOI] {",
+        "        [AOI=if][AOI=if_head]if (Q.[AOI=method_call][AOI=method_call_identifier]isEmpty[/AOI][AOI=method_arguments]()[/AOI][/AOI]) [/AOI][AOI=if_body]{",
+        "            return;",
+        "        }[/AOI][/AOI]",
+        "        Integer data = Q.[AOI=method_call][AOI=method_call_identifier]remove[/AOI][AOI=method_arguments]()[/AOI][/AOI];",
+        "        [AOI=method_call][AOI=method_call_identifier]reverse[/AOI][AOI=method_arguments](Q)[/AOI][/AOI];",
+        "        Q.[AOI=method_call][AOI=method_call_identifier]add[/AOI][AOI=method_arguments](data)[/AOI][/AOI];",
+        "    }"
+    ]
+}

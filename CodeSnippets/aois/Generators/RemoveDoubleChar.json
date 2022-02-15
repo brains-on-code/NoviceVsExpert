@@ -1,0 +1,36 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 19,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "    [AOI=method_signature]public static String [AOI=method_identifier]removeDoubleCharacters[/AOI][AOI=method_argument_declaration](String str)[/AOI][/AOI] {",
+        "        [AOI=if][AOI=if_head]if (str.[AOI=method_call][AOI=method_call_identifier]isEmpty[/AOI][AOI=method_arguments]()[/AOI][/AOI])[/AOI][AOI=if_body] {",
+        "            return str;",
+        "        }[/AOI][/AOI]",
+        "",
+        "        StringBuilder result =[AOI=method_call] new [AOI=method_call_identifier]StringBuilder[/AOI][AOI=method_arguments]()[/AOI];",
+        "",
+        "        char prev = str.[AOI=method_call][AOI=method_call_identifier]charAt[/AOI][AOI=method_arguments](0)[/AOI][/AOI];",
+        "        result.[AOI=method_call][AOI=method_call_identifier]append[/AOI][AOI=method_arguments](prev)[/AOI][/AOI];",
+        "        [AOI=for][AOI=for_head]for (int i = 1; i < str.[AOI=method_call][AOI=method_call_identifier]length[/AOI][AOI=method_arguments]()[/AOI][/AOI]; i++) [/AOI][AOI=for_body]{",
+        "            char cur = str.[AOI=method_call][AOI=method_call_identifier]charAt[/AOI][AOI=method_arguments](i)[/AOI][/AOI];",
+        "            [AOI=if][AOI=if_head]if (prev != cur) [/AOI][AOI=if_body]{",
+        "                result.[AOI=method_call][AOI=method_call_identifier]append[/AOI][AOI=method_arguments](str.[AOI=method_call][AOI=method_call_identifier]charAt[/AOI][AOI=method_arguments](i)[/AOI][/AOI])[/AOI][/AOI];",
+        "            }[/AOI][/AOI]",
+        "            prev = cur;",
+        "        }[/AOI][/AOI]",
+        "",
+        "        return result.[AOI=method_call][AOI=method_call_identifier]toString[/AOI][AOI=method_arguments]()[/AOI][/AOI];",
+        "    }"
+    ]
+}

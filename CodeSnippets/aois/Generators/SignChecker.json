@@ -1,0 +1,36 @@
+{
+    "font-normal": "JetBrainsMono-Regular.ttf",
+    "font-bold": "JetBrainsMono-Bold.ttf",
+    "font-italic": "JetBrainsMono-BoldItalic.ttf",
+    "font-bold-italic": "JetBrainsMono-Italic.ttf",
+    "font-size": 19,
+    "width-margin": 5,
+    "height-margin": 5,
+    "spacing": 1,
+    "background-color": [
+        255,
+        255,
+        255
+    ],
+    "source-code": [
+        "[AOI=class_declaration]public class SignChecker {",
+        "    private int number;",
+        "",
+        "    [AOI=method_signature]public [AOI=method_identifier]SignChecker[/AOI][AOI=method_argument_declaration](int currentNumber)[/AOI][/AOI] {",
+        "        number = currentNumber;",
+        "    }",
+        "",
+        "    [AOI=method_signature]public String [AOI=method_identifier]check[/AOI][AOI=method_argument_declaration]()[/AOI][/AOI] {",
+        "        String theSign = \"\";",
+        "        [AOI=if][AOI=if_head]if (number < 0) {[/AOI][AOI=if_body]",
+        "            theSign = \"negative\";",
+        "        }[/AOI][/AOI][AOI=else_if][AOI=else_if_head] else if (number > 0) [/AOI][AOI=else_if_body]{",
+        "            theSign = \"positive\";",
+        "        } [/AOI][/AOI][AOI=else][AOI=else_head]else [/AOI][AOI=else_body]{",
+        "            theSign = \"null\";",
+        "        }[/AOI][/AOI]",
+        "        return theSign;",
+        "    }",
+        "}[/AOI]"
+    ]
+}

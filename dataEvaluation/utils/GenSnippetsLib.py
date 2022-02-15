@@ -19,7 +19,7 @@ def parse_bbcode_list(bbcode):
     bold = False
     italic = False
     aoi_default = "None"
-    aoi_name = aoi_default
+    aoi_name = [aoi_default]
     while idx < len(bbcode):
         data = re.search(pattern, bbcode[idx:])
         meta = False
@@ -29,10 +29,17 @@ def parse_bbcode_list(bbcode):
 
             if "/AOI" in value:
                 meta = True
-                aoi_name = aoi_default
+                aoi_name.pop()
             elif "AOI" in value:
                 meta = True
-                aoi_name = value[4:]
+                aoi_name.append(value[4:])
+
+            if "/aoi" in value:
+                meta = True
+                aoi_name.pop()
+            elif "aoi" in value:
+                meta = True
+                aoi_name.append(value[4:])
 
             if "/color" in value:
                 meta = True
@@ -60,9 +67,10 @@ def parse_bbcode_list(bbcode):
                 idx += data.end(0)
 
         if meta == False:
-            result.append({"letter": bbcode[idx], "color": color, "bold": bold, "italic": italic, "AOI": aoi_name})
+            result.append({"letter": bbcode[idx], "color": color, "bold": bold, "italic": italic, "AOI": [value for value in aoi_name]})
             idx += 1
-
+    if len(aoi_name) != 1:
+        raise Exception("AOI not closed - " + aoi_name[0])
     return result
 
 
