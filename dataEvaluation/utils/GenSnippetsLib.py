@@ -10,7 +10,7 @@ from pygments.lexers import JavaLexer
 from pygments.styles import get_style_by_name
 
 
-def parse_bbcode_list(bbcode):
+def parse_bbcode_list(bbcode, logging=False):
     result = []
     pattern = "\[[^\[\]]*?\]"
     idx = 0
@@ -30,9 +30,13 @@ def parse_bbcode_list(bbcode):
             if "/AOI" in value:
                 meta = True
                 aoi_name.pop()
+                if logging:
+                    print(f"after deletion {aoi_name}")
             elif "AOI" in value:
                 meta = True
                 aoi_name.append(value[4:])
+                if logging:
+                    print(f"after insertion {aoi_name}")
 
             if "/aoi" in value:
                 meta = True
@@ -48,20 +52,6 @@ def parse_bbcode_list(bbcode):
                 meta = True
                 color = tuple(int(value[i: i + 2], 16) for i in (7, 9, 11))
                 color = (color[0], color[1], color[2], 255)
-
-            # if '/b' in value:
-            #    meta = True
-            #    bold = False
-            # elif 'b' in value:
-            #    meta = True
-            #    bold = True
-
-            # if '/i' in value:
-            #    meta = True
-            #    italic = False
-            # elif 'i' in value:
-            #    meta = True
-            #    italic = True
 
             if meta == True:
                 idx += data.end(0)
@@ -94,7 +84,7 @@ def set_font(data, regular, bold, italic, bolditalic):
     return new_result
 
 
-def create_image(source_json, font_path="\\fonts\\ttf\\", lexer=JavaLexer):
+def create_image(source_json, font_path="\\fonts\\ttf\\", lexer=JavaLexer, logging=False):
     data = {}
     with open(source_json) as f:
         data = json.load(f)
@@ -116,7 +106,7 @@ def create_image(source_json, font_path="\\fonts\\ttf\\", lexer=JavaLexer):
     )
 
     code = highlight(code, lexer(), BBCodeFormatter(line_numbers=False, style=get_style_by_name("vs")))
-    code = parse_bbcode_list(code)
+    code = parse_bbcode_list(code, logging)
     code = set_font(code, regular, bold, italic, bolditalic)
 
     source_code = []

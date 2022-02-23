@@ -17,7 +17,7 @@
         "        int count = 0;",
         "        int sum = 0;",
         "",
-        "        [AOI=while][AOI=while_head]while (count < numbers.length)[/AOI][AOI=while_body] {",
+        "        [AOI=while_loop][AOI=while_head]while (count < numbers.length)[/AOI][AOI=while_body] {",
         "            sum = [AOI=arithmetic_expression]sum + numbers[count][/AOI];",
         "            count = [AOI=arithmetic_expression]count + 1[/AOI];",
         "        }[/AOI][/AOI]",

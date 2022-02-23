@@ -14,11 +14,11 @@
     ],
     "source-code": [
         "    [AOI=method_signature] public static int [AOI=method_identifier]power[/AOI][AOI=method_argument_declaration](int base, int exponent) [/AOI][/AOI]{",
-        "        [AOI=if][AOI=if_head]if (exponent == 0)[/AOI][AOI=if_body] {",
+        "        [AOI=if_statement][AOI=if_head]if (exponent == 0)[/AOI][AOI=if_body] {",
         "            return 1;",
         "        }[/AOI][/AOI]",
         "",
-        "        [AOI=if][AOI=if_head]if (exponent == 1)[/AOI][AOI=if_body] {",
+        "        [AOI=if_statement][AOI=if_head]if (exponent == 1)[/AOI][AOI=if_body] {",
         "            return base;",
         "        }[/AOI][/AOI]",
         "",

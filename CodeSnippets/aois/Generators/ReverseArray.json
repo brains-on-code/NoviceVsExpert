@@ -14,7 +14,7 @@
     ],
     "source-code": [
         "    [AOI=method_signature]public static void [AOI=method_identifier]reverse[/AOI][AOI=method_argument_declaration](int[] array) [/AOI][/AOI]{",
-        "        [AOI=for][AOI=for_head]for (int i = 0; i <= [AOI=arithmetic_expression]array.length / 2 - 1[/AOI]; i++)[/AOI][AOI=for_body] {",
+        "        [AOI=for_loop][AOI=for_head]for (int i = 0; i <= [AOI=arithmetic_expression]array.length / 2 - 1[/AOI]; i++)[/AOI][AOI=for_body] {",
         "            int tmp = array[[AOI=arithmetic_expression]array.length - 1 - i[/AOI]];",
         "            array[[AOI=arithmetic_expression]array.length - i - 1[/AOI]] = array[i];",
         "            array[i] = tmp;",

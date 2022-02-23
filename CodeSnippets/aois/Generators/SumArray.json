@@ -16,7 +16,7 @@
         "    [AOI=method_signature]public static int [AOI=method_identifier]sumArray[/AOI][AOI=method_argument_declaration](int[] array)[/AOI][/AOI] {",
         "        int result = 0;",
         "",
-        "        [AOI=for][AOI=for_head]for (int i = 0; i < array.length; i++)[/AOI][AOI=for_body] {",
+        "        [AOI=for_loop][AOI=for_head]for (int i = 0; i < array.length; i++)[/AOI][AOI=for_body] {",
         "            result = [AOI=arithmetic_expression]result + array[i][/AOI];",
         "        }[/AOI][/AOI]",
         "",

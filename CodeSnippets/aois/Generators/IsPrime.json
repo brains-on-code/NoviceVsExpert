@@ -14,8 +14,8 @@
     ],
     "source-code": [
         "    [AOI=method_signature] public static boolean [AOI=method_identifier]isPrime[/AOI][AOI=method_argument_declaration](int number)[/AOI][/AOI] {",
-        "        [AOI=for][AOI=for_head] for (int i = 2; i < number; i++) [/AOI][AOI=for_body]{",
-        "            [AOI=if][AOI=if_head] if ([AOI=arithmetic_expression]number % i[/AOI] == 0) [/AOI][AOI=if_body]{",
+        "        [AOI=for_loop][AOI=for_head] for (int i = 2; i < number; i++) [/AOI][AOI=for_body]{",
+        "            [AOI=if_statement][AOI=if_head] if ([AOI=arithmetic_expression]number % i[/AOI] == 0) [/AOI][AOI=if_body]{",
         "                return false;",
         "            }[/AOI][/AOI]",
         "        }[/AOI][/AOI]",

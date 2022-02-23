@@ -14,9 +14,9 @@
     ],
     "source-code": [
         "    [AOI=method_signature]static int [AOI=method_identifier]binaryToDecimal[/AOI][AOI=method_argument_declaration](String str, int position)[/AOI][/AOI] {",
-        "        [AOI=if][AOI=if_head]if (position < 0)[/AOI][AOI=if_body] {",
+        "        [AOI=if_statement][AOI=if_head]if (position < 0)[/AOI][AOI=if_body] {",
         "            return 0;",
-        "        }[/AOI][/AOI][AOI=else_if][AOI=else_if_head] else if (str.charAt(position) == '0')[/AOI][AOI=else_if_body] {",
+        "        }[/AOI][/AOI][AOI=else_if_statement][AOI=else_if_head] else if (str.charAt(position) == '0')[/AOI][AOI=else_if_body] {",
         "            return [AOI=arithmetic_expression]2 * [AOI=method_call][AOI=method_call_identifier]binaryToDecimal[/AOI][AOI=method_arguments](str, position - 1)[/AOI][/AOI][/AOI];",
         "        }[/AOI][/AOI]",
         "",

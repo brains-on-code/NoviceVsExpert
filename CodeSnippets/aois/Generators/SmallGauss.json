@@ -15,7 +15,7 @@
     "source-code": [
         "    [AOI=method_signature]public static int [AOI=method_identifier]sum[/AOI][AOI=method_argument_declaration](int n)[/AOI][/AOI] {",
         "        int res = 0;",
-        "        [AOI=for][AOI=for_head]for (int i = 1; i < n; i++)[/AOI][AOI=for_body] {",
+        "        [AOI=for_loop][AOI=for_head]for (int i = 1; i < n; i++)[/AOI][AOI=for_body] {",
         "            [AOI=arithmetic_expression]res += i;[/AOI]",
         "        }[/AOI][/AOI]",
         "        return res;",

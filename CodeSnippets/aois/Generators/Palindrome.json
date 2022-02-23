@@ -14,8 +14,8 @@
     ],
     "source-code": [
         "    [AOI=method_signature] public static boolean [AOI=method_identifier]isPalindrome[/AOI][AOI=method_argument_declaration](String text)[/AOI][/AOI] {",
-        "        [AOI=for][AOI=for_head]for (int i = 0; i < [AOI=arithmetic_expression][AOI=method_call]text.[AOI=method_call_identifier]length[/AOI][AOI=method_arguments]()[/AOI][/AOI] / 2 - 1[/AOI]; i++) [/AOI][AOI=for_body]{",
-        "            [AOI=if][AOI=if_head]if ([AOI=method_call]text.[AOI=method_call_identifier]charAt[/AOI][AOI=method_arguments](i)[/AOI][/AOI] != [AOI=method_call]text.[AOI=method_call_identifier]charAt[/AOI][AOI=method_arguments]([AOI=arithmetic_expression][AOI=method_call]text.[AOI=method_call_identifier]length[/AOI][AOI=method_arguments]()[/AOI][/AOI] - 1 - i[/AOI])[/AOI][/AOI]) [/AOI][AOI=if_body]{",
+        "        [AOI=for_loop][AOI=for_head]for (int i = 0; i < [AOI=arithmetic_expression][AOI=method_call]text.[AOI=method_call_identifier]length[/AOI][AOI=method_arguments]()[/AOI][/AOI] / 2 - 1[/AOI]; i++) [/AOI][AOI=for_body]{",
+        "            [AOI=if_statement][AOI=if_head]if ([AOI=method_call]text.[AOI=method_call_identifier]charAt[/AOI][AOI=method_arguments](i)[/AOI][/AOI] != [AOI=method_call]text.[AOI=method_call_identifier]charAt[/AOI][AOI=method_arguments]([AOI=arithmetic_expression][AOI=method_call]text.[AOI=method_call_identifier]length[/AOI][AOI=method_arguments]()[/AOI][/AOI] - 1 - i[/AOI])[/AOI][/AOI]) [/AOI][AOI=if_body]{",
         "                return false;",
         "            }[/AOI][/AOI]",
         "        }[/AOI][/AOI]",

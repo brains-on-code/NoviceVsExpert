@@ -15,7 +15,7 @@
     "source-code": [
         "    [AOI=method_signature] public static int [AOI=method_identifier]power[/AOI][AOI=method_argument_declaration](int base, int exponent) [/AOI][/AOI]{",
         "        int result = base;",
-        "        [AOI=for][AOI=for_head] for (int i = 2; i <= exponent; i++) [/AOI][AOI=for_body]{",
+        "        [AOI=for_loop][AOI=for_head] for (int i = 2; i <= exponent; i++) [/AOI][AOI=for_body]{",
         "            result = [AOI=arithmetic_expression]result * base[/AOI];",
         "        }[/AOI][/AOI]",
         "        return result;",
