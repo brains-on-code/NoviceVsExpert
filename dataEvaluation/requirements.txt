@@ -1,5 +1,6 @@
 ###### Requirements without Version Specifiers ######
 mne
+fooof
 dask
 numpy
 pandas
