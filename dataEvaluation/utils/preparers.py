@@ -133,14 +133,14 @@ def load_raw(participant_number, cores=12, digits=2, logging=True,
         "InputStop",
         "OutputStart",
         "OutputStop",
+        "CrossStart",
+        "CrossStop"
     ]
     df_time = pd.DataFrame([], columns=columns)
     for i in range(0, len(t_events)):
         if indices_events[i] > 100:
             continue
-        df_time = df_time.append(pd.DataFrame(
-            [[None, t_events[i + 1], t_events[i + 2], t_events[i + 2], t_events[i + 3], t_events[i + 3], None, ]],
-            columns=columns, ))
+        df_time = df_time.append(pd.DataFrame([[None, t_events[i + 1], t_events[i + 2], t_events[i + 2], t_events[i + 3], t_events[i + 3], None, None, None]], columns=columns, ))
     df_time = df_time.reset_index(drop=True)
 
     # extracts the file name from a path like "/test/path/file.txt" and returns "file"
@@ -198,6 +198,8 @@ def load_raw(participant_number, cores=12, digits=2, logging=True,
     # set snippet name and the stop time of each snippet using deltas
     df_time["Snippet"] = df_psydata["Snippet"]
     df_time["OutputStop"] = df_time["OutputStart"] + df_psydata["OutputStop"] - df_psydata["OutputStart"]
+    df_time["CrossStart"] = df_time["OutputStop"]
+    df_time["CrossStop"] = df_time["CrossStart"] + 30
 
     # store all the data in a dictionary for better handling. split everything up by snippet
     result = {}
@@ -210,6 +212,7 @@ def load_raw(participant_number, cores=12, digits=2, logging=True,
         current = {"Code": {"EyeTracking": None, "EEG": None, "Time": {"Start": None, "Stop": None, }, },
                    "Input": {"EyeTracking": None, "EEG": None, "Time": {"Start": None, "Stop": None, }, },
                    "Output": {"EyeTracking": None, "EEG": None, "Time": {"Start": None, "Stop": None, }, },
+                   "Cross": {"EyeTracking": None, "EEG": None, "Time": {"Start": None, "Stop": None, }, },
                    "Behavioral": None}
 
         # add data for code
@@ -233,6 +236,10 @@ def load_raw(participant_number, cores=12, digits=2, logging=True,
         current["Output"]["EEG"] = raw_set.copy().crop(df_time["OutputStart"][index], df_time["OutputStop"][index])
         current["Output"]["Time"]["Start"] = df_psydata["OutputStart"][index]
         current["Output"]["Time"]["Stop"] = df_psydata["OutputStop"][index]
+
+        current["Cross"]["EEG"] = raw_set.copy().crop(df_time["CrossStart"][index], df_time["CrossStop"][index])
+        current["Cross"]["Time"]["Start"] = df_time["CrossStart"][index]
+        current["Cross"]["Time"]["Stop"] = df_time["CrossStop"][index]
 
         current["Behavioral"] = df_psydata.iloc[index].to_frame().transpose()
         result[row["Snippet"]] = current
