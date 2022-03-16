@@ -5,345 +5,73 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40e8c1d7-ce30-4185-9a8c-ef6bd9f06b08" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/SnippetGneration_ImageGeneration.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/NoviceVsExpert.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/NoviceVsExpert.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChangeGenerators.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/CodeSnippets.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/Ackerman.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/Ackerman.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/AckermanDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/AckermanDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/AckermanInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/AckermanInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/AckermanNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/AckermanNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/AckermanRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/AckermanRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/AckermanWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/AckermanWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/AckermanWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/AckermanWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/ArrayAverage.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/ArrayAverage.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/ArrayAverageDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/ArrayAverageDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/ArrayAverageInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/ArrayAverageInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/ArrayAverageNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/ArrayAverageNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/ArrayAverageRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/ArrayAverageRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/ArrayAverageWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/ArrayAverageWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/ArrayAverageWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/ArrayAverageWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/BinToDecimal.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/BinToDecimal.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/BinToDecimalDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/BinToDecimalDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/BinToDecimalInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/BinToDecimalInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/BinToDecimalNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/BinToDecimalNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/BinToDecimalRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/BinToDecimalRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/BinToDecimalWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/BinToDecimalWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/BinToDecimalWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/BinToDecimalWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/BinarySearch.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/BinarySearch.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/BinarySearchDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/BinarySearchDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/BinarySearchInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/BinarySearchInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/BinarySearchNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/BinarySearchNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/BinarySearchRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/BinarySearchRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/BinarySearchWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/BinarySearchWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/BinarySearchWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/BinarySearchWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/BinomialCoefficient.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/BinomialCoefficient.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/BinomialCoefficientDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/BinomialCoefficientDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/BinomialCoefficientInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/BinomialCoefficientInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/BinomialCoefficientNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/BinomialCoefficientNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/BinomialCoefficientRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/BinomialCoefficientRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/BinomialCoefficientWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/BinomialCoefficientWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/BinomialCoefficientWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/BinomialCoefficientWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/BogoSort.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/BogoSort.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/BogoSortDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/BogoSortDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/BogoSortInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/BogoSortInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/BogoSortNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/BogoSortNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/BogoSortRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/BogoSortRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/BogoSortWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/BogoSortWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/BogoSortWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/BogoSortWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/CheckIfLettersOnly.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/CheckIfLettersOnly.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/CheckIfLettersOnlyDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/CheckIfLettersOnlyDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/CheckIfLettersOnlyInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/CheckIfLettersOnlyInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/CheckIfLettersOnlyNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/CheckIfLettersOnlyNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/CheckIfLettersOnlyRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/CheckIfLettersOnlyRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/CheckIfLettersOnlyWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/CheckIfLettersOnlyWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/CheckIfLettersOnlyWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/CheckIfLettersOnlyWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/ContainsSubstring.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/ContainsSubstring.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/ContainsSubstringDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/ContainsSubstringDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/ContainsSubstringInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/ContainsSubstringInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/ContainsSubstringNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/ContainsSubstringNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/ContainsSubstringRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/ContainsSubstringRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/ContainsSubstringWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/ContainsSubstringWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/ContainsSubstringWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/ContainsSubstringWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/DropNumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/DropNumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/DropNumberDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/DropNumberDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/DropNumberInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/DropNumberInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/DropNumberNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/DropNumberNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/DropNumberRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/DropNumberRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/DropNumberWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/DropNumberWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/DropNumberWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/DropNumberWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/DumpSorting.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/DumpSorting.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/DumpSortingDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/DumpSortingDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/DumpSortingInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/DumpSortingInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/DumpSortingNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/DumpSortingNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/DumpSortingRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/DumpSortingRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/DumpSortingWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/DumpSortingWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/DumpSortingWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/DumpSortingWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/GreatestCommonDivisor.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/GreatestCommonDivisor.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/GreatestCommonDivisorDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/GreatestCommonDivisorDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/GreatestCommonDivisorInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/GreatestCommonDivisorInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/GreatestCommonDivisorNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/GreatestCommonDivisorNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/GreatestCommonDivisorRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/GreatestCommonDivisorRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/GreatestCommonDivisorWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/GreatestCommonDivisorWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/GreatestCommonDivisorWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/GreatestCommonDivisorWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/HIndex.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/HIndex.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/HIndexDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/HIndexDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/HIndexInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/HIndexInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/HIndexNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/HIndexNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/HIndexRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/HIndexRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/HIndexWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/HIndexWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/HIndexWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/HIndexWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/HeightOfTree.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/HeightOfTree.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/HeightOfTreeDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/HeightOfTreeDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/HeightOfTreeInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/HeightOfTreeInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/HeightOfTreeNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/HeightOfTreeNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/HeightOfTreeRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/HeightOfTreeRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/HeightOfTreeWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/HeightOfTreeWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/HeightOfTreeWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/HeightOfTreeWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/InsertSort.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/InsertSort.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/InsertSortDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/InsertSortDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/InsertSortInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/InsertSortInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/InsertSortNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/InsertSortNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/InsertSortRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/InsertSortRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/InsertSortWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/InsertSortWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/InsertSortWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/InsertSortWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/IsAnagram.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/IsAnagram.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/IsAnagramDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/IsAnagramDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/IsAnagramInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/IsAnagramInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/IsAnagramNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/IsAnagramNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/IsAnagramRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/IsAnagramRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/IsAnagramWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/IsAnagramWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/IsAnagramWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/IsAnagramWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/IsPrime.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/IsPrime.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/IsPrimeDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/IsPrimeDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/IsPrimeInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/IsPrimeInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/IsPrimeNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/IsPrimeNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/IsPrimeRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/IsPrimeRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/IsPrimeWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/IsPrimeWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/IsPrimeWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/IsPrimeWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/LengthOfLast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/LengthOfLast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/LengthOfLastDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/LengthOfLastDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/LengthOfLastInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/LengthOfLastInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/LengthOfLastNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/LengthOfLastNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/LengthOfLastRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/LengthOfLastRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/LengthOfLastWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/LengthOfLastWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/LengthOfLastWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/LengthOfLastWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/MedianOnSorted.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/MedianOnSorted.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/MedianOnSortedDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/MedianOnSortedDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/MedianOnSortedInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/MedianOnSortedInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/MedianOnSortedNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/MedianOnSortedNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/MedianOnSortedRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/MedianOnSortedRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/MedianOnSortedWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/MedianOnSortedWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/MedianOnSortedWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/MedianOnSortedWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/Palindrome.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/Palindrome.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/PalindromeDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/PalindromeDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/PalindromeInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/PalindromeInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/PalindromeNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/PalindromeNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/PalindromeRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/PalindromeRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/PalindromeWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/PalindromeWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/PalindromeWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/PalindromeWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/PermuteString.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/PermuteString.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/PermuteStringDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/PermuteStringDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/PermuteStringInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/PermuteStringInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/PermuteStringNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/PermuteStringNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/PermuteStringRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/PermuteStringRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/PermuteStringWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/PermuteStringWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/PermuteStringWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/PermuteStringWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/Power.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/Power.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/PowerDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/PowerDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/PowerInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/PowerInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/PowerNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/PowerNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/PowerRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/PowerRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/PowerWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/PowerWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/PowerWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/PowerWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/RabbitTortoise.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/RabbitTortoise.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/RabbitTortoiseDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/RabbitTortoiseDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/RabbitTortoiseInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/RabbitTortoiseInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/RabbitTortoiseNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/RabbitTortoiseNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/RabbitTortoiseRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/RabbitTortoiseRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/RabbitTortoiseWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/RabbitTortoiseWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/RabbitTortoiseWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/RabbitTortoiseWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/Rectangle.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/Rectangle.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/RectangleDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/RectangleDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/RectangleInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/RectangleInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/RectangleNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/RectangleNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/RectanglePower.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/RectanglePower.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/RectanglePowerDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/RectanglePowerDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/RectanglePowerInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/RectanglePowerInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/RectanglePowerNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/RectanglePowerNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/RectanglePowerRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/RectanglePowerRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/RectanglePowerWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/RectanglePowerWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/RectanglePowerWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/RectanglePowerWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/RectangleRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/RectangleRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/RectangleWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/RectangleWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/RectangleWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/RectangleWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/RemoveDoubleChar.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/RemoveDoubleChar.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/RemoveDoubleCharDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/RemoveDoubleCharDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/RemoveDoubleCharInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/RemoveDoubleCharInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/RemoveDoubleCharNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/RemoveDoubleCharNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/RemoveDoubleCharRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/RemoveDoubleCharRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/RemoveDoubleCharWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/RemoveDoubleCharWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/RemoveDoubleCharWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/RemoveDoubleCharWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/ReverseArray.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/ReverseArray.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/ReverseArrayDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/ReverseArrayDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/ReverseArrayInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/ReverseArrayInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/ReverseArrayNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/ReverseArrayNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/ReverseArrayRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/ReverseArrayRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/ReverseArrayWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/ReverseArrayWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/ReverseArrayWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/ReverseArrayWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/ReverseQueue.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/ReverseQueue.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/ReverseQueueDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/ReverseQueueDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/ReverseQueueInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/ReverseQueueInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/ReverseQueueNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/ReverseQueueNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/ReverseQueueRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/ReverseQueueRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/ReverseQueueWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/ReverseQueueWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/ReverseQueueWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/ReverseQueueWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/SiebDesEratosthenes.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/SiebDesEratosthenes.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/SiebDesEratosthenesDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/SiebDesEratosthenesDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/SiebDesEratosthenesInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/SiebDesEratosthenesInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/SiebDesEratosthenesNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/SiebDesEratosthenesNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/SiebDesEratosthenesRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/SiebDesEratosthenesRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/SiebDesEratosthenesWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/SiebDesEratosthenesWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/SiebDesEratosthenesWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/SiebDesEratosthenesWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/SignChecker.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/SignChecker.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/SignCheckerDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/SignCheckerDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/SignCheckerInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/SignCheckerInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/SignCheckerNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/SignCheckerNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/SignCheckerRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/SignCheckerRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/SignCheckerWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/SignCheckerWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/SignCheckerWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/SignCheckerWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/SmallGauss.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/SmallGauss.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/SmallGaussDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/SmallGaussDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/SmallGaussInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/SmallGaussInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/SmallGaussNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/SmallGaussNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/SmallGaussRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/SmallGaussRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/SmallGaussWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/SmallGaussWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/SmallGaussWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/SmallGaussWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/SumArray.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/SumArray.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/SumArrayDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/SumArrayDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/SumArrayInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/SumArrayInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/SumArrayNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/SumArrayNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/SumArrayRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/SumArrayRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/SumArrayWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/SumArrayWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/SumArrayWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/SumArrayWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/Vehicle.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/Vehicle.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/VehicleDontKnow.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/VehicleDontKnow.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/VehicleInput.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/VehicleInput.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/VehicleNext.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/VehicleNext.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/VehicleRight.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/VehicleRight.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/VehicleWrong1.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/VehicleWrong1.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators/VehicleWrong2.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Raw/VehicleWrong2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Snippets/Ackerman.png" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Snippets/Ackerman.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/Ackerman.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/Ackerman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/ArrayAverage.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/ArrayAverage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/BinToDecimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/BinToDecimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/BinarySearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/BinomialCoefficient.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/BinomialCoefficient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/BogoSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/BogoSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/CheckIfLettersOnly.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/CheckIfLettersOnly.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/ContainsSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/ContainsSubstring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/DropNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/DropNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/DumpSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/DumpSorting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/GreatestCommonDivisor.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/GreatestCommonDivisor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/HIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/HIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/HeightOfTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/HeightOfTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/InsertSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/InsertSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/IsAnagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/IsAnagram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/IsPrime.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/IsPrime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/LengthOfLast.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/LengthOfLast.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/MedianOnSorted.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/MedianOnSorted.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/Palindrome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/PermuteString.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/PermuteString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/Power.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/Power.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/RabbitTortoise.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/RabbitTortoise.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/RemoveDoubleChar.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/RemoveDoubleChar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/ReverseArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/ReverseArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/ReverseQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/ReverseQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/SiebDesEratosthenes.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/SiebDesEratosthenes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/SignChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/SignChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/SmallGauss.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/SmallGauss.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/SumArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/SumArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/Source/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Source/Vehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/Ackerman.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/Ackerman.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/Ackerman_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/Ackerman_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/ArrayAverage.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/ArrayAverage.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/ArrayAverage_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/ArrayAverage_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/BinToDecimal.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/BinToDecimal.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/BinToDecimal_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/BinToDecimal_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/BinarySearch.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/BinarySearch.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/BinarySearch_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/BinarySearch_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/BinomialCoefficient.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/BinomialCoefficient.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/BinomialCoefficient_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/BinomialCoefficient_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/BogoSort.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/BogoSort.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/BogoSort_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/BogoSort_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/CheckIfLettersOnly.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/CheckIfLettersOnly.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/CheckIfLettersOnly_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/CheckIfLettersOnly_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/ContainsSubstring.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/ContainsSubstring.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/ContainsSubstring_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/ContainsSubstring_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/DropNumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/DropNumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/DropNumber_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/DropNumber_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/DumpSorting.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/DumpSorting.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/DumpSorting_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/DumpSorting_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/GreatestCommonDivisor.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/GreatestCommonDivisor.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/GreatestCommonDivisor_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/GreatestCommonDivisor_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/HIndex.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/HIndex.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/HIndex_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/HIndex_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/HeightOfTree.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/HeightOfTree.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/HeightOfTree_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/HeightOfTree_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/InsertSort.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/InsertSort.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/InsertSort_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/InsertSort_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/IsAnagram.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/IsAnagram.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/IsAnagram_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/IsAnagram_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/IsPrime.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/IsPrime.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/IsPrime_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/IsPrime_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/LengthOfLast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/LengthOfLast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/LengthOfLast_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/LengthOfLast_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/MedianOnSorted.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/MedianOnSorted.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/MedianOnSorted_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/MedianOnSorted_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/Palindrome.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/Palindrome.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/Palindrome_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/Palindrome_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/PermuteString.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/PermuteString.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/PermuteString_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/PermuteString_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/Power.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/Power.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/Power_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/Power_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/RabbitTortoise.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/RabbitTortoise.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/RabbitTortoise_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/RabbitTortoise_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/Rectangle.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/Rectangle.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/RectanglePower.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/RectanglePower.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/RectanglePower_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/RectanglePower_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/Rectangle_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/Rectangle_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/RemoveDoubleChar.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/RemoveDoubleChar.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/RemoveDoubleChar_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/RemoveDoubleChar_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/ReverseArray.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/ReverseArray.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/ReverseArray_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/ReverseArray_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/ReverseQueue.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/ReverseQueue.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/ReverseQueue_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/ReverseQueue_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/SiebDesEratosthenes.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/SiebDesEratosthenes.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/SiebDesEratosthenes_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/SiebDesEratosthenes_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/SignChecker.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/SignChecker.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/SignChecker_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/SignChecker_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/SmallGauss.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/SmallGauss.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/SmallGauss_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/SmallGauss_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/SumArray.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/SumArray.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/SumArray_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/SumArray_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/Vehicle.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/Vehicle.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/Generators/Vehicle_ast.json" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/Vehicle_ast.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodeSnippets/aois/aois.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/aois.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenSnippetsLib.py" beforeDir="false" afterPath="$PROJECT_DIR$/SnippetGneration_Lib.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenerateExcelSettings.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SnippetGneration_ExcelConfig.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenerateGenerators.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/SnippetGneration_JsonGenerators.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenerateSnippets.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Study/Study_lastrun.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Study/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataEvaluation/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/Ackerman.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/Ackerman_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/ArrayAverage.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/ArrayAverage_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/BinToDecimal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/BinToDecimal_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/BinarySearch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/BinarySearch_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/BinomialCoefficient.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/BinomialCoefficient_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/BogoSort.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/BogoSort_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/CheckIfLettersOnly.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/CheckIfLettersOnly_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/ContainsSubstring.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/ContainsSubstring_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/DropNumber.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/DropNumber_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/DumpSorting.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/DumpSorting_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/GreatestCommonDivisor.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/GreatestCommonDivisor_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/HIndex.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/HIndex_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/HeightOfTree.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/HeightOfTree_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/InsertSort.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/InsertSort_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/IsAnagram.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/IsAnagram_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/IsPrime.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/IsPrime_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/LengthOfLast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/LengthOfLast_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/MedianOnSorted.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/MedianOnSorted_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/Palindrome.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/Palindrome_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/PermuteString.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/PermuteString_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/Power.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/Power_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/RabbitTortoise.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/RabbitTortoise_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/Rectangle.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/RectanglePower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/RectanglePower_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/Rectangle_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/RemoveDoubleChar.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/RemoveDoubleChar_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/ReverseArray.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/ReverseArray_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/ReverseQueue.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/ReverseQueue_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/SiebDesEratosthenes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/SiebDesEratosthenes_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/SignChecker.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/SignChecker_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/SmallGauss.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/SmallGauss_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/SumArray.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/SumArray_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/Vehicle.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/Generators/Vehicle_ast.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodeSnippets/Generators_Labelt/aois.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -391,7 +119,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1647424189764</updated>
-      <workItem from="1647424191967" duration="1844000" />
+      <workItem from="1647424191967" duration="3035000" />
     </task>
     <servers />
   </component>
