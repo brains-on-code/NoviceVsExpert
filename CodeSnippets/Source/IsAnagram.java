@@ -1,12 +1,4 @@
 
-/**
- * How much do you like the snippet in a scale from (1(bad) to 5(good)), may leave your comments below
- *
- * Annabelle: 5
- * Norman: 3 (I would probably use a Java function to sort to remove the additional method and just focus on isAnagram())
- * Jonas
- *
- */
 
 public class IsAnagram {
 

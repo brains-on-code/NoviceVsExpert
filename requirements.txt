@@ -1,0 +1,17 @@
+###### Requirements with Version Specifiers ######
+mne == 0.24.1
+pybv == 0.6.0
+numpy == 1.22.3
+tqdm == 4.62.3
+fooof == 1.0.0
+pandas == 1.3.5
+matplotlib == 3.5.1
+matplotlib-base == 3.5.0
+matplotlib-inline == 0.1.2
+seaborn == 0.11.2
+scipy == 1.7.3
+pillow == 8.4.0
+dask == 2021.10.0
+dask-core == 2021.10.0
+pygments == 2.10.0
+git+https://github.com/sonaion-eye-tracking/I2MC_Python

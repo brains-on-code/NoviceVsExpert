@@ -1,13 +1,4 @@
 
-/**
- * How much do you like the snippet in a scale from (1(bad) to 5(good)), may leave your comments below
- *
- * Annabelle:3
- * Norman: 3 (discuss identifiers, e.g., "array" instead of "field"?)
- * Jonas
- *
- */
-
 import java.util.Random;
 
 public class BogoSort {

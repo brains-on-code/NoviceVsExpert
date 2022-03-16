@@ -1,12 +1,3 @@
-/**
- * How much do you like the snippet in a scale from (1(bad) to 5(good)), may leave your comments below
- *
- * Anabelle:5
- * Norman: 4
- * Jonas
- *
- */
-
 
 class removeDoubleChar {
 

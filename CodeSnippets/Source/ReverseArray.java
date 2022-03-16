@@ -1,13 +1,4 @@
 
-/**
- * How much do you like the snippet in a scale from (1(bad) to 5(good)), may leave your comments below
- *
- * Annabelle:4
- * Norman: 5
- * Jonas
- *
- */
-
 class reverseArray {
     public static void main(String[] args) {
         int[] array = {1, 6, 4, 16, 2};

@@ -1,11 +1,3 @@
-/**
- * How much do you like the snippet in a scale from (1(bad) to 5(good)), may leave your comments below
- *
- * Anabelle:4 problem: participant may not know this algorithm
- * Norman: 4
- * Jonas
- *
- */
 
 class gcd {
 
