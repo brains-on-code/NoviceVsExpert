@@ -89,6 +89,6 @@ The study folder contains additional files necessary for running a replication. 
 Before running the evaluation pipeline, you must obtain the raw data (which will be shared after publication) and move it into 'dataEvaluation/data/'.
 
 In [dataEvaluation](dataEvaluation) you will find the files for running the data evaluation. These files are are named from Preprocessing01 to Preprocessing05.
-Execute them in order to obtain the data in the right format. Afterwards, you can run the data evaluation of [RQ1](dataEvaluation/RQ1_Eyetracking.ipynb) and [RQ2](dataEvaluation/RQ2_EEG.ipynb). You must have EEGLab installed in the [directory](dataEvaluation).
+Execute them in order to obtain the data in the right format. Afterwards, you can run the data evaluation of [RQ1](dataEvaluation/RQ1_Eyetracking.ipynb), [RQ2](dataEvaluation/RQ2_EEG.ipynb), and [RQ3](dataEvaluation/RQ3_ExperienceMeasures.ipynb). You must have EEGLab installed in the [directory](dataEvaluation).
 
 For further information read the [README.md](dataEvaluation/README.md) of the data evaluation or contact as directly.
