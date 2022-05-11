@@ -5,8 +5,8 @@
 addpath("eeg_lab\")
 
 %Env variables
-PATH_IN = './data/eeg_tmp/raw'; % The folder where the files to convert are.
-PATH_OUT = './data/eeg_tmp/ica'; % The output folder.
+PATH_IN = './data/tmp/eeg_raw'; % The folder where the files to convert are.
+PATH_OUT = './data/tmp/ica'; % The output folder.
 files = dir(fullfile(PATH_IN, "*.vhdr"));
 files = arrayfun(@(data){data.name}, files);
 convert_files(PATH_IN, files, PATH_OUT)
@@ -33,7 +33,7 @@ function convert_file(PATH_IN, file_name, PATH_OUT)
 
     % Set channel locs by teheir given name
     % TODO check if this is correct
-    EEG=pop_chanedit(EEG, 'lookup','./data/EEG/standard_1005.elc');
+    EEG=pop_chanedit(EEG, 'lookup','./data/EEG/standard_1020.elc');
     [ALLEEG EEG] = eeg_store(ALLEEG, EEG, CURRENTSET);
     EEG = eeg_checkset( EEG );
 
