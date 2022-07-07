@@ -81,3 +81,15 @@ Execute them in order to get the data in the right format. After that you can ru
 Make sure to have the EEGLab installed in the [directory](dataEvaluation).
 
 For further Information read the [README.md](dataEvaluation/README.md) of the data evaluation.
+
+# License
+
+This repository is licensed under a
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
+
+# Contact
+
+If you have questions, please contact me directly: `peitek@cs.uni-saarland.de`. Thank you!
