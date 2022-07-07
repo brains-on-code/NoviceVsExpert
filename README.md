@@ -1,18 +1,14 @@
-# NoviceVsExpert
+# Correlates of Programmer Efficacy and their Link to Experience: A Combined EEG and Eye-Tracking Study
 
----
-## Abstract
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
-will be there soon
+This repository contains the replication package, analysis scripts, and additional information on our study on programmer efficacy and their link to experience.
 
----
-## Paper
-
-[Here will be the Paper](https://tetris.com/play-tetris)
+Our paper was accepted at FSE 2022: Publication: Norman Peitek, Annabelle Bergum, Maurice Rekrut, Jonas Mucke, Matthias Nadig, Chris Parnin, Janet Siegmund, Sven Apel. *Correlates of Programmer Efficacy and their Link to Experience: A Combined EEG and Eye-Tracking Study*. In Proceedings of the Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE) 2022, ([preprint pdf](), [Digital Library]())
 
 ---
 
-## Requirements for the project
+## Requirements
 
 ```
 Psychopy
