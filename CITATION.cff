@@ -1,0 +1,66 @@
+cff-version: 1.2.0
+message: "If you use our data or replication package, please cite it as below."
+authors:
+- family-names: "Peitek"
+  given-names: "Norman"
+  orcid: "https://orcid.org/0000-0001-7828-4558"
+- family-names: "Bergum"
+  given-names: "Annabelle"
+  orcid: ""
+- family-names: "Rekrut"
+  given-names: "Maurice"
+  orcid: ""
+- family-names: "Mucke"
+  given-names: "Jonas"
+  orcid: ""
+- family-names: "Nadig"
+  given-names: "Matthias"
+  orcid: ""
+- family-names: "Parnin"
+  given-names: "Chris"
+  orcid: "https://orcid.org/0000-0001-6182-815X"
+- family-names: "Siegmund"
+  given-names: "Janet"
+  orcid: "https://orcid.org/0000-0002-5815-266X"
+- family-names: "Apel"
+  given-names: "Sven"
+  orcid: "https://orcid.org/0000-0003-3687-2233"
+title: "Correlates of Programmer Efficacy and their Link to Experience: A Combined EEG and Eye-Tracking Study"
+version: 1.0.0
+doi: 
+date-released: 2022-10-01
+url: "https://github.com/brains-on-code/NoviceVsExpert"
+preferred-citation:
+  type: proceedings
+  authors:
+  - family-names: "Peitek"
+    given-names: "Norman"
+    orcid: "https://orcid.org/0000-0001-7828-4558"
+  - family-names: "Bergum"
+    given-names: "Annabelle"
+    orcid: ""
+  - family-names: "Rekrut"
+    given-names: "Maurice"
+    orcid: ""
+  - family-names: "Mucke"
+    given-names: "Jonas"
+    orcid: ""
+  - family-names: "Nadig"
+    given-names: "Matthias"
+    orcid: ""
+  - family-names: "Parnin"
+    given-names: "Chris"
+    orcid: "https://orcid.org/0000-0001-6182-815X"
+  - family-names: "Siegmund"
+    given-names: "Janet"
+    orcid: "https://orcid.org/0000-0002-5815-266X"
+  - family-names: "Apel"
+    given-names: "Sven"
+    orcid: "https://orcid.org/0000-0003-3687-2233"
+  doi: ""
+  conference: "Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering (ESEC/FSE)"
+  month: 10
+  start: 0 # First page number 
+  end: 0 # Last page number
+  title: "Correlates of Programmer Efficacy and their Link to Experience: A Combined EEG and Eye-Tracking Study"
+  year: 2022
