@@ -5,8 +5,8 @@
 addpath("eeg_lab\")
 
 %Env variables
-PATH_IN = './data/tmp/eeg_raw'; % The folder where the files to convert are.
-PATH_OUT = './data/tmp/ica'; % The output folder.
+PATH_IN = './data/eeg_tmp/eeg_raw'; % The folder where the files to convert are.
+PATH_OUT = './data/eeg_tmp/ica'; % The output folder.
 files = dir(fullfile(PATH_IN, "*.vhdr"));
 files = arrayfun(@(data){data.name}, files);
 convert_files(PATH_IN, files, PATH_OUT)

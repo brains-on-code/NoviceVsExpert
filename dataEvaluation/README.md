@@ -26,11 +26,11 @@ Calculate the skill score for each Participant. Using correct answers per minute
 
 Calculate the fixation for each Participant using I2MC algorithm.
 
-## [RQ1](RQ1_Eyetracking.ipynb)
+## [RQ1](RQ1_PAPER_Eyetracking.ipynb)
 
 Calculate the Metrics needed for RQ1.
 
-## [RQ2](RQ2_EEG.ipynb)
+## [RQ2](RQ2_PAPER_EEG.ipynb)
 
 Calculate the Metrics needed for RQ2.
 
