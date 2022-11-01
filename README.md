@@ -74,7 +74,7 @@ The Study folder contains of different file kinds. The files are organized in th
 
 ## Data Evaluation
 
-Before you start get the rawData and put it into 'dataEvaluation/data/'
+Before you start get the rawData ([https://osf.io/4hjbd/](https://osf.io/4hjbd/)) and put it into 'dataEvaluation/data/'
 
 In [Here](dataEvaluation) you will find the files for running the data evaluation. These files are are named from Preporcessing01 to Preporcessing05.
 Execute them in order to get the data in the right format. After that you can run the data evaluation of [RQ1](dataEvaluation/RQ1_Eyetracking.ipynb) and [RQ2](dataEvaluation/RQ2_EEG.ipynb).
