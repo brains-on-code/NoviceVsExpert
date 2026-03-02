@@ -2,9 +2,9 @@
 
 ## General Rules
 
--	Never ask yes/no questions, instead use phrases like "how" and "why", and if a factual answer is required, "what"
--	Never contradict or correct the subject while they're still talking on a subject
--	Whether or not a subject's answer are correct, keep encouraging them to talk as they keep saying new things
+-	Do not ask yes/no questions, instead use phrases like "how" and "why", and if a factual answer is required, "what"
+-	Do not contradict or correct a participant while they're still talking on a subject
+-	Whether or not a participant's answers are correct, keep encouraging them to talk as they keep saying new things
 -	Any surprising responses should be investigated further. It is ok to stop following a tangential line of investigation once the participant starts repeating themselves, or has deviated such that their responses are no longer pertinent to the research questions.
 -	A rule of thumb for interviews is 90% should be you listening. 
 
